@@ -64,7 +64,7 @@
   background: var(--clear-grey);
   color: var(--dark-grey);
   border: 1px solid transparent;
-  
+
 }
 
 .input:hover {
@@ -540,7 +540,7 @@
 }
 
 .materials__card:nth-child(3) .materials__images .materials__img:nth-child(2) {
-  max-width: 224px;  
+  max-width: 224px;
 }
 
 .materials__card:nth-child(3) .materials__images .materials__img:nth-child(3) {
@@ -752,5 +752,208 @@
 
 .advantages__text {
   color: var(--white);
+  font: 400 14px/19.6px var(--font-M);
+}
+
+.connection {
+  padding: 100px 80px 0;
+}
+
+.connection__form {
+  box-shadow: 0px 2px 5px 0px #00000033;
+  border-radius: 20px;
+  position: relative;
+  padding: 37px 54px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.connection__form::before {
+  content: "";
+  display: inline-block;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 20px;
+  background: linear-gradient(93.73deg, #979797 2.4%, rgba(102, 102, 102, 0) 75.7%);
+  z-index: 0;
+}
+
+.connection__form::after {
+  content: "";
+  display: inline-block;
+  width: calc(100% - 42px);
+  height: calc(100% - 42px);
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  border-radius: 20px;
+  background: var(--white);
+  z-index: 0;
+}
+
+.connection__form * {
+  position: relative;
+  z-index: 1;
+}
+
+.connection__text {
+  max-width: 256px;
+}
+
+.connection__title {
+  text-transform: uppercase;
+  font: 500 20px/32px var(--font-M);
+  margin-bottom: 20px;
+}
+
+.connection__description {
+  font: 400 14px/19.6px var(--font-M);
+}
+
+.connection__line {
+  height: 164px;
+  border-left: 1px solid var(--gray);
+}
+
+.connection__img {
+  max-width: 116px;
+}
+
+.connection__inputs {
+  max-width: 651px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.connection__input {
+  padding: 15px 20px;
+  border: 1px solid var(--light-grey);
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  color: var(--gray);
+  font: 400 14px/19.6px var(--font-M);
+}
+
+.connection__file {
+  cursor: pointer;
+  width: 100%;
+  background: var(--dark-grey);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.connection__file-input {
+  display: none;
+}
+
+.connection__file-text {
+  color: var(--white);
+  font: 400 14px/19.6px var(--font-M);
+}
+
+.connection__submit {
+  height: 50px;
+  max-width: 171px;
+  width: 100%;
+  padding: 15px 20px;
+  font: 500 16px/22.4px var(--font-M);
+}
+
+.connection__info {
+  color: var(--gray);
+  font: 400 8px/11.2px var(--font-M);
+}
+
+.work {
+  padding: 100px 80px 0;
+}
+
+.work__title {
+  text-align: center;
+  font: 400 42px/54.6px var(--font-T);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.work__subtitle {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 566px;
+  font: 500 20px/32px var(--font-M);
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+
+.work__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-image: url("../img/contract.png");
+  background-repeat: no-repeat;
+  background-size: 983px;
+  background-position: top right;
+}
+
+.work__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work__item {
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 5px 0px #00000033;
+  background: #fff;
+  max-width: 558px;
+}
+
+.work__header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.work__num {
+  font: 400 14px/19.6px var(--font-M);
+  color: var(--light-grey);
+}
+
+.work__num-strong {
+  color: var(--black);
+}
+
+.work__name {
+  font: 500 20px/32px var(--font-M);
+  text-transform: uppercase;
+}
+
+.work__text {
+  font: 400 14px/19.6px var(--font-M);
+}
+
+.work__download {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  align-self: end;
+  cursor: pointer;
+  padding-right: 135px;
+}
+
+.work__download-text {
   font: 400 14px/19.6px var(--font-M);
 }
