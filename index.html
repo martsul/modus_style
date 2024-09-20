@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles/swiper.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/swiper.css">
+  <link rel="stylesheet" href="styles/flipclock.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -16,8 +17,7 @@
     <div class="header__top">
       <div class="header__container">
         <a href="index.html" class="header__home">
-          <svg class="header__logo" viewBox="0 0 153 48" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="header__logo" viewBox="0 0 153 48" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="153" height="47" transform="translate(0 0.5)" fill="white" />
             <mask id="path-1-outside-1_8024_5108" maskUnits="userSpaceOnUse" x="18.559" y="1.30273" width="100"
               height="21" fill="black">
@@ -75,8 +75,7 @@
         </a>
         <div class="header__address">
           <div class="header__address-top">
-            <svg class="header__marker" viewBox="0 0 21 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__marker" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="20" height="20" transform="translate(0.67572)" fill="white" />
               <path
                 d="M18.1757 8.33301C18.1757 14.1663 10.6757 19.1663 10.6757 19.1663C10.6757 19.1663 3.17572 14.1663 3.17572 8.33301C3.17572 6.34388 3.9659 4.43623 5.37242 3.02971C6.77894 1.62318 8.6866 0.833008 10.6757 0.833008C12.6648 0.833008 14.5725 1.62318 15.979 3.02971C17.3855 4.43623 18.1757 6.34388 18.1757 8.33301Z"
@@ -96,17 +95,19 @@
             ул.Куйбышева 28и, ТЦ Подкова, 2-й этаж
           </p>
         </div>
-        <label class="header__search">
-          <input type="text" class="header__input input" placeholder="Поиск">
-          <svg class="header__search-svg" width="22" height="20" viewBox="0 0 22 20" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M17.7193 8.46172C17.7193 12.8402 14.0192 16.4234 9.41235 16.4234C4.8055 16.4234 1.10538 12.8402 1.10538 8.46172C1.10538 4.08324 4.8055 0.5 9.41235 0.5C14.0192 0.5 17.7193 4.08324 17.7193 8.46172Z"
-              stroke="#4F4F4F" />
-            <line y1="-0.5" x2="7.77207" y2="-0.5" transform="matrix(0.7211 0.692831 -0.7211 0.692831 15.0177 14.6152)"
-              stroke="#4F4F4F" />
-          </svg>
-        </label>
+        <form class="header__search">
+          <input type="text" name="search" class="header__input input" placeholder="Поиск">
+          <button type="submit" class="header__search-svg">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.7193 8.46172C17.7193 12.8402 14.0192 16.4234 9.41235 16.4234C4.8055 16.4234 1.10538 12.8402 1.10538 8.46172C1.10538 4.08324 4.8055 0.5 9.41235 0.5C14.0192 0.5 17.7193 4.08324 17.7193 8.46172Z"
+                stroke="#4F4F4F" />
+              <line y1="-0.5" x2="7.77207" y2="-0.5" transform="matrix(0.7211 0.692831 -0.7211 0.692831 15.0177 14.6152)"
+                stroke="#4F4F4F" />
+            </svg>
+          </button>
+        </form>
         <div class="header__work">
           <div class="header__work-block">
             <svg class="header__clokc" width="21" height="20" viewBox="0 0 21 20" fill="none"
@@ -119,8 +120,7 @@
             <span class="header__text">Ежедневно с 09:00 до 19:00</span>
           </div>
           <div class="header__work-block">
-            <svg class="header__work-phone" viewBox="0 0 21 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__work-phone" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M18.6328 14.0994V16.5994C18.6338 16.8315 18.5862 17.0612 18.4932 17.2739C18.4003 17.4865 18.2639 17.6774 18.0929 17.8343C17.9219 17.9912 17.72 18.1107 17.5001 18.185C17.2803 18.2594 17.0473 18.287 16.8162 18.2661C14.2518 17.9875 11.7886 17.1112 9.62448 15.7078C7.61101 14.4283 5.90393 12.7212 4.62448 10.7078C3.21613 8.53377 2.33969 6.05859 2.06615 3.48276C2.04533 3.25232 2.07271 3.02006 2.14657 2.80078C2.22042 2.5815 2.33913 2.38 2.49512 2.20911C2.65112 2.03822 2.84099 1.90169 3.05264 1.8082C3.2643 1.71471 3.4931 1.66631 3.72448 1.6661H6.22448C6.62891 1.66212 7.02098 1.80533 7.32762 2.06904C7.63426 2.33275 7.83455 2.69897 7.89115 3.09943C7.99667 3.89949 8.19236 4.68504 8.47448 5.4411C8.5866 5.73937 8.61087 6.06353 8.54441 6.37516C8.47794 6.6868 8.32354 6.97286 8.09948 7.19943L7.04115 8.25776C8.22745 10.3441 9.95486 12.0715 12.0412 13.2578L13.0995 12.1994C13.3261 11.9754 13.6121 11.821 13.9237 11.7545C14.2354 11.688 14.5595 11.7123 14.8578 11.8244C15.6139 12.1066 16.3994 12.3022 17.1995 12.4078C17.6043 12.4649 17.974 12.6688 18.2383 12.9807C18.5025 13.2926 18.643 13.6907 18.6328 14.0994Z"
                 fill="#4F4F4F" />
@@ -552,13 +552,13 @@
         <div class="preview__bottom">
           <div class="preview__advantages">
             <div class="preview__advantage-item">
-              <div class="preview__circle"><svg viewBox="0 0 71 71" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="35.157" cy="35.1484" r="33.5382" stroke="url(#paint0_linear_108_598)"
-                    stroke-width="2.92359" />
+              <div class="preview__circle">
+                <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="48" cy="48" r="46" stroke="url(#paint0_linear_1_385)" stroke-width="4" />
                   <defs>
-                    <linearGradient id="paint0_linear_108_598" x1="2.40469" y1="24.231" x2="40.6157" y2="45.7448"
+                    <linearGradient id="paint0_linear_1_385" x1="3.08257" y1="33.0275" x2="55.4862" y2="62.5321"
                       gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF541F" />
                       <stop offset="1" stop-color="#FF541F" stop-opacity="0" />
                     </linearGradient>
                   </defs>
@@ -568,13 +568,13 @@
               <span class="preview__advantage-text">лет<br>опыта</span>
             </div>
             <div class="preview__advantage-item">
-              <div class="preview__circle"><svg viewBox="0 0 71 71" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="35.157" cy="35.1484" r="33.5382" stroke="url(#paint0_linear_108_599)"
-                    stroke-width="2.92359" />
+              <div class="preview__circle">
+                <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="48" cy="48" r="46" stroke="url(#paint0_linear_1_384)" stroke-width="4" />
                   <defs>
-                    <linearGradient id="paint0_linear_108_599" x1="2.40469" y1="24.231" x2="40.6157" y2="45.7448"
+                    <linearGradient id="paint0_linear_1_384" x1="3.08257" y1="33.0275" x2="55.4862" y2="62.5321"
                       gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF541F" />
                       <stop offset="1" stop-color="#FF541F" stop-opacity="0" />
                     </linearGradient>
                   </defs>
@@ -584,13 +584,13 @@
               <span class="preview__advantage-text">рассрочка<br>до 24 мес.</span>
             </div>
             <div class="preview__advantage-item">
-              <div class="preview__circle"><svg viewBox="0 0 71 71" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="35.157" cy="35.1484" r="33.5382" stroke="url(#paint0_linear_108_597)"
-                    stroke-width="2.92359" />
+              <div class="preview__circle">
+                <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="48" cy="48" r="46" stroke="url(#paint0_linear_1_383)" stroke-width="4" />
                   <defs>
-                    <linearGradient id="paint0_linear_108_597" x1="2.40469" y1="24.231" x2="40.6157" y2="45.7448"
+                    <linearGradient id="paint0_linear_1_383" x1="3.08257" y1="33.0275" x2="55.4862" y2="62.5321"
                       gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF541F" />
                       <stop offset="1" stop-color="#FF541F" stop-opacity="0" />
                     </linearGradient>
                   </defs>
@@ -1882,9 +1882,9 @@
         <h2 class="pop-on__title pop-consultation__title">консультация специалиста</h2>
         <p class="pop-on__text pop-consultation__text">Выбрать салон</p>
         <div class="pop-on__inputs pop-consultation__inputs">
-          <input type="text" placeholder="г. Владимир" class="pop-input pop-consultation__input">
-          <input type="text" placeholder="Ваше имя*" class="pop-input pop-consultation__input">
-          <input type="text" placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
+          <input type="text" required placeholder="г. Владимир" class="pop-input pop-consultation__input">
+          <input type="text" required placeholder="Ваше имя*" class="pop-input pop-consultation__input">
+          <input type="text" required placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
         </div>
         <p class="pop-on-description pop-consultation__description">Нажимая на кнопку, вы даете согласие на обработку
           персональных данных и
@@ -1979,17 +1979,19 @@
             <a href="#" class="footer__link">Сотрудничество с дизайнерами</a>
           </div>
           <div class="footer__group">
-            <label class="footer__label">
+            <form class="footer__label">
               <input type="text" class="footer__search input" placeholder="Поиск">
-              <svg class="footer__label-svg" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M17.9879 8.46172C17.9879 12.8402 14.2878 16.4234 9.68093 16.4234C5.07409 16.4234 1.37396 12.8402 1.37396 8.46172C1.37396 4.08324 5.07409 0.5 9.68093 0.5C14.2878 0.5 17.9879 4.08324 17.9879 8.46172Z"
-                  stroke="#4F4F4F" />
-                <line y1="-0.5" x2="7.77207" y2="-0.5"
-                  transform="matrix(0.7211 0.692831 -0.7211 0.692831 15.2863 14.6152)" stroke="#4F4F4F" />
-              </svg>
-            </label>
+              <button class="footer__label-svg" type=submit>
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.9879 8.46172C17.9879 12.8402 14.2878 16.4234 9.68093 16.4234C5.07409 16.4234 1.37396 12.8402 1.37396 8.46172C1.37396 4.08324 5.07409 0.5 9.68093 0.5C14.2878 0.5 17.9879 4.08324 17.9879 8.46172Z"
+                    stroke="#4F4F4F" />
+                  <line y1="-0.5" x2="7.77207" y2="-0.5"
+                    transform="matrix(0.7211 0.692831 -0.7211 0.692831 15.2863 14.6152)" stroke="#4F4F4F" />
+                </svg>
+              </button>
+            </form>
             <div class="footer__group-block">
               <p class="footer__text">Политика конфиденциальности</p>
               <div class="footer__contacts">

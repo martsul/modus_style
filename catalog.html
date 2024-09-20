@@ -94,17 +94,18 @@
             ул.Куйбышева 28и, ТЦ Подкова, 2-й этаж
           </p>
         </div>
-        <label class="header__search">
-          <input type="text" class="header__input input" placeholder="Поиск">
-          <svg class="header__search-svg" width="22" height="20" viewBox="0 0 22 20" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M17.7193 8.46172C17.7193 12.8402 14.0192 16.4234 9.41235 16.4234C4.8055 16.4234 1.10538 12.8402 1.10538 8.46172C1.10538 4.08324 4.8055 0.5 9.41235 0.5C14.0192 0.5 17.7193 4.08324 17.7193 8.46172Z"
-              stroke="#4F4F4F" />
-            <line y1="-0.5" x2="7.77207" y2="-0.5" transform="matrix(0.7211 0.692831 -0.7211 0.692831 15.0177 14.6152)"
-              stroke="#4F4F4F" />
-          </svg>
-        </label>
+        <form class="header__search">
+          <input type="text" name="search" class="header__input input" placeholder="Поиск">
+          <button type="submit" class="header__search-svg">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.7193 8.46172C17.7193 12.8402 14.0192 16.4234 9.41235 16.4234C4.8055 16.4234 1.10538 12.8402 1.10538 8.46172C1.10538 4.08324 4.8055 0.5 9.41235 0.5C14.0192 0.5 17.7193 4.08324 17.7193 8.46172Z"
+                stroke="#4F4F4F" />
+              <line y1="-0.5" x2="7.77207" y2="-0.5"
+                transform="matrix(0.7211 0.692831 -0.7211 0.692831 15.0177 14.6152)" stroke="#4F4F4F" />
+            </svg>
+          </button>
+        </form>
         <div class="header__work">
           <div class="header__work-block">
             <svg class="header__clokc" width="21" height="20" viewBox="0 0 21 20" fill="none"
@@ -498,6 +499,73 @@
     </div>
   </header>
   <main class="content">
+    <section class="preview-c">
+      <img src="img/catalog-people.png" class="preview-c__people" alt="Люди">
+      <div class="preview-c__title-block">
+      </div>
+      <div class="container">
+        <h1 class="preview-c__title"><strong class="preview-c__title-strong">10%</strong>
+          Честная скидка на всю мебель</h1>
+        <div class="preview-c-section">
+          <div class="preview-block">
+            <span class="preview-c__text">Успей воспользоваться специальным предложением!</span>
+            <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1362_13770)">
+                <path
+                  d="M38.1007 35.0388L33.1933 37.8721C32.9361 38.0206 32.5677 37.9219 32.4192 37.6647L29.5859 32.7573C29.2039 32.0957 30.1916 31.5399 30.5673 32.1906L33.1173 36.6073L37.5341 34.0573C38.1622 33.6946 38.7525 34.6625 38.1007 35.0388ZM33.0638 20.6071C35.2181 24.7328 35.7947 29.696 34.277 34.4656C34.0532 35.1365 32.9676 34.8224 33.2091 34.1006C36.057 25.1501 31.028 15.6122 22.0737 12.7599C17.5191 11.313 12.5474 11.8409 8.40545 14.2322L7.92746 14.5082C7.25612 14.8958 6.72577 13.8933 7.36079 13.5267L7.83878 13.2507C12.2555 10.7007 17.5604 10.1153 22.4216 11.6626C27.1879 13.177 30.911 16.4793 33.0658 20.606L33.0638 20.6071Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1362_13770">
+                  <rect width="34" height="34" fill="white" transform="translate(29.4448 0.777344) rotate(60)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="preview-c__sale">
+            <a href="#" class="present">
+              <img src="img/present.png" class="present__img" alt="Подарок">
+              <div class="present__block">
+                <div class="present__time">
+                  <div class="present__time-piece">
+                    <div class="present__time-hours">
+                      <span class="present__time-num">0</span>
+                      <span class="present__time-num">4</span>
+                    </div>
+                    <span class="present__time-text">дня</span>
+                  </div>
+                  <span class="present__dot">:</span>
+                  <div class="present__time-piece">
+                    <div class="present__time-hours">
+                      <span class="present__time-num">0</span>
+                      <span class="present__time-num">3</span>
+                    </div>
+                    <span class="present__time-text">часа</span>
+                  </div>
+                  <span class="present__dot">:</span>
+                  <div class="present__time-piece">
+                    <div class="present__time-hours">
+                      <span class="present__time-num">2</span>
+                      <span class="present__time-num">3</span>
+                    </div>
+                    <span class="present__time-text">минут</span>
+                  </div>
+                  <span class="present__dot">:</span>
+                  <div class="present__time-piece">
+                    <div class="present__time-hours">
+                      <span class="present__time-num">3</span>
+                      <span class="present__time-num">1</span>
+                    </div>
+                    <span class="present__time-text">секунд</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <button type="button" class="btn preview-c__btn">Хочу скидку!</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="bread-crumbs">
       <div class="container">
         <a href="index.html" class="bread-crumbs__home bread-crumbs__link">
@@ -711,50 +779,50 @@
         </div>
       </div>
       <form class="cost__qustions">
-        <div class="cost__card">
+        <div class="cost__card cost__card-on">
           <h4 class="cost__name">1/<span class="cost__name-num">6 </span>Выберите место установки шкафа:</h4>
           <div class="cost__block">
             <label class="cost__answer">
               <input type="radio" name="place" value="Гардеробная" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-1.png" alt="Гардеробная" class="cost__img">
-                <p class="cost__text">Гардеробная</p>
-              </div>
+                <span class="cost__text">Гардеробная</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="place" value="Гостиная" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-2.png" alt="Гостиная" class="cost__img">
-                <p class="cost__text">Гостиная</p>
-              </div>
+                <span class="cost__text">Гостиная</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="place" value="Детская" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-3.png" alt="Детская" class="cost__img">
-                <p class="cost__text">Детская</p>
-              </div>
+                <span class="cost__text">Детская</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="place" value="Прихожая" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-4.png" alt="Прихожая" class="cost__img">
-                <p class="cost__text">Прихожая</p>
-              </div>
+                <span class="cost__text">Прихожая</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="place" value="Спальня" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-5.png" alt="Спальня" class="cost__img">
-                <p class="cost__text">Спальня</p>
-              </div>
+                <span class="cost__text">Спальня</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="place" value="Балкон" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-6.png" alt="Балкон" class="cost__img">
-                <p class="cost__text">Балкон</p>
-              </div>
+                <span class="cost__text">Балкон</span>
+              </span>
             </label>
           </div>
         </div>
@@ -763,31 +831,31 @@
           <div class="cost__block">
             <label class="cost__answer">
               <input type="radio" name="type" value="Встроенный" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-7.png" alt="Встроенный" class="cost__img">
-                <p class="cost__text">Встроенный</p>
-              </div>
+                <span class="cost__text">Встроенный</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="type" value="Корпусный" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-8.png" alt="Корпусный" class="cost__img">
-                <p class="cost__text">Корпусный</p>
-              </div>
+                <span class="cost__text">Корпусный</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="type" value="Радиусный" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-9.png" alt="Радиусный" class="cost__img">
-                <p class="cost__text">Радиусный</p>
-              </div>
+                <span class="cost__text">Радиусный</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="type" value="Угловой" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-10.png" alt="Угловой" class="cost__img">
-                <p class="cost__text">Угловой</p>
-              </div>
+                <span class="cost__text">Угловой</span>
+              </span>
             </label>
           </div>
         </div>
@@ -796,17 +864,17 @@
           <div class="cost__block">
             <label class="cost__answer">
               <input type="radio" name="kind" value="Купе (раздвижной)" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-11.png" alt="Купе (раздвижной)" class="cost__img">
-                <p class="cost__text">Купе (раздвижной)</p>
-              </div>
+                <span class="cost__text">Купе (раздвижной)</span>
+              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="kind" value="Платяной (распашной)" class="cost__radio">
-              <div class="cost__card-item">
+              <span class="cost__card-item">
                 <img src="img/quiz-cabinet/quiz-cabinet-12.png" alt="Платяной (распашной)" class="cost__img">
-                <p class="cost__text">Платяной (распашной)</p>
-              </div>
+                <span class="cost__text">Платяной (распашной)</span>
+              </span>
             </label>
           </div>
         </div>
@@ -850,68 +918,76 @@
           <div class="cost__block">
             <label class="cost__answer">
               <input type="radio" name="connection" value="WhatsApp" class="cost__radio">
+              <span class="cost__card-item-mess">WhatsApp
+              </span>
               <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="80" height="79.8186" rx="39.9093" fill="#48C95F" />
                 <path
                   d="M55.8536 24.0701C51.9024 20.1415 46.6341 17.959 41.0732 17.959C29.5122 17.959 20.1463 27.2712 20.1463 38.7659C20.1463 42.4034 21.1707 46.041 22.9268 49.0965L20 59.8637L31.122 56.9537C34.1951 58.5542 37.561 59.4272 41.0732 59.4272C52.6341 59.4272 62 50.1151 62 38.6204C61.8537 33.2368 59.8049 27.9987 55.8536 24.0701ZM51.1707 46.1865C50.7317 47.3505 48.6829 48.5145 47.6585 48.66C46.7805 48.8055 45.6098 48.8055 44.439 48.5145C43.7073 48.2235 42.6829 47.9325 41.5122 47.3505C36.2439 45.168 32.8781 39.9299 32.5854 39.4934C32.2927 39.2024 30.3902 36.7288 30.3902 34.1098C30.3902 31.4907 31.7073 30.3267 32.1463 29.7447C32.5854 29.1627 33.1707 29.1627 33.6098 29.1627C33.9024 29.1627 34.3415 29.1627 34.6341 29.1627C34.9268 29.1627 35.3659 29.0172 35.8049 30.0357C36.2439 31.0542 37.2683 33.6733 37.4146 33.8188C37.561 34.1098 37.561 34.4008 37.4146 34.6918C37.2683 34.9828 37.1219 35.2738 36.8293 35.5648C36.5366 35.8558 36.2439 36.2923 36.0976 36.4378C35.8049 36.7288 35.5122 37.0198 35.8049 37.4563C36.0976 38.0383 37.1219 39.6389 38.7317 41.0939C40.7805 42.8399 42.3902 43.4219 42.9756 43.713C43.561 44.004 43.8537 43.8585 44.1463 43.5674C44.439 43.2764 45.4634 42.1124 45.7561 41.5304C46.0488 40.9484 46.4878 41.0939 46.9268 41.2394C47.3658 41.3849 50 42.6944 50.439 42.9854C51.0244 43.2764 51.3171 43.4219 51.4634 43.5674C51.6097 44.004 51.6098 45.0225 51.1707 46.1865Z"
                   fill="white" />
               </svg>
-              <span class="cost__card-item-mess">
-                WhatsApp
-              </span>
+
             </label>
             <label class="cost__answer">
               <input type="radio" name="connection" value="Viber" class="cost__radio">
+              <span class="cost__card-item-mess">
+                Viber
+              </span>
               <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="80" height="79.8186" rx="39.9093" fill="#7C509A" />
                 <path
                   d="M52.5079 19.0483C44.8848 17.5959 36.9686 17.5959 29.3455 19.0483C25.9738 19.7746 21.7225 23.8415 20.9895 27.0369C19.6702 33.2825 19.6702 39.6734 20.9895 45.919C21.8691 49.1144 26.1204 53.1814 29.3455 53.9076C29.4921 53.9076 29.6387 54.0528 29.6387 54.1981V63.3486C29.6387 63.7844 30.2251 64.0749 30.5183 63.6391L34.9162 59.1365C34.9162 59.1365 38.4346 55.5053 39.0209 54.9243C39.0209 54.9243 39.1675 54.7791 39.3141 54.7791C43.712 54.9243 48.2565 54.4886 52.6545 53.7623C56.0262 53.0361 60.2775 48.9692 61.0105 45.7738C62.3298 39.5281 62.3298 33.1373 61.0105 26.8917C60.1309 23.8415 55.8796 19.7746 52.5079 19.0483ZM52.6545 46.3548C51.9215 47.8072 51.0419 48.9692 49.5759 49.6954C49.1361 49.8407 48.6963 49.9859 48.2565 50.1312C47.6702 49.9859 47.2304 49.8407 46.7906 49.6954C42.0995 47.8072 37.7016 45.1928 34.1832 41.4164C32.2775 39.2377 30.6649 36.7685 29.3455 34.154C28.7592 32.8468 28.1728 31.6848 27.733 30.3776C27.2932 29.2156 28.0262 28.0536 28.7592 27.1822C29.4921 26.3107 30.3717 25.7297 31.3979 25.294C32.1309 24.8582 32.8639 25.1487 33.4503 25.7297C34.623 27.1822 35.7958 28.6346 36.6754 30.2323C37.2618 31.2491 37.1152 32.411 36.089 33.1373C35.7958 33.2825 35.6492 33.4278 35.356 33.7183C35.2094 33.8635 34.9162 34.0088 34.7696 34.2993C34.4764 34.735 34.4764 35.1707 34.623 35.6065C35.7958 38.9472 37.9948 41.5616 41.3665 43.0141C41.9529 43.3046 42.3927 43.4498 43.1257 43.4498C44.1518 43.3046 44.5916 42.1426 45.3246 41.5616C46.0576 40.9806 46.9372 40.9806 47.8168 41.4164C48.5497 41.8521 49.2827 42.4331 50.1623 43.0141C50.8953 43.5951 51.6283 44.0308 52.3613 44.6118C52.801 44.9023 52.9476 45.6285 52.6545 46.3548ZM46.4974 35.4612C46.2042 35.4612 46.3508 35.4612 46.4974 35.4612C45.911 35.4612 45.7644 35.1707 45.6178 34.735C45.6178 34.4445 45.6178 34.0088 45.4712 33.7183C45.3246 33.1373 45.0314 32.5563 44.445 32.1206C44.1518 31.9753 43.8586 31.8301 43.5654 31.6848C43.1256 31.5396 42.8325 31.5396 42.3927 31.5396C41.9529 31.3943 41.8063 31.1038 41.8063 30.6681C41.8063 30.3776 42.2461 30.0871 42.5393 30.0871C44.8848 30.2323 46.644 31.5396 46.9372 34.2993C46.9372 34.4445 46.9372 34.735 46.9372 34.8802C46.9372 35.1707 46.7906 35.4612 46.4974 35.4612ZM45.0314 29.0704C44.2984 28.7799 43.5654 28.4894 42.6859 28.3441C42.3927 28.3441 41.9529 28.1989 41.6597 28.1989C41.2199 28.1989 40.9267 27.9084 41.0733 27.4727C41.0733 27.0369 41.3665 26.7464 41.8063 26.8917C43.2723 27.0369 44.5916 27.3274 45.911 27.9084C48.5497 29.2156 50.0157 31.3943 50.4555 34.2993C50.4555 34.4445 50.4555 34.5898 50.4555 34.735C50.4555 35.0255 50.4555 35.316 50.4555 35.7517C50.4555 35.897 50.4555 36.0422 50.4555 36.1875C50.3089 36.7685 49.2827 36.9137 49.1361 36.1875C49.1361 36.0422 48.9895 35.7517 48.9895 35.6065C48.9895 34.2993 48.6963 32.992 48.11 31.8301C47.2304 30.5228 46.2042 29.6514 45.0314 29.0704ZM52.9476 37.7852C52.5079 37.7852 52.2147 37.3494 52.2147 36.9137C52.2147 36.0422 52.0681 35.1707 51.9215 34.2993C51.3351 29.6514 47.5236 25.8749 42.9791 25.1487C42.2461 25.0035 41.5131 25.0035 40.9267 24.8582C40.4869 24.8582 39.9005 24.8582 39.7539 24.2772C39.6073 23.8415 40.0471 23.4057 40.4869 23.4057C40.6335 23.4057 40.7801 23.4057 40.7801 23.4057C41.0733 23.4057 46.7906 23.551 40.7801 23.4057C46.9372 23.551 52.0681 27.6179 53.0942 33.7183C53.2408 34.735 53.3874 35.7517 53.3874 36.9137C53.6806 37.3494 53.3874 37.7852 52.9476 37.7852Z"
                   fill="white" />
               </svg>
-              <span class="cost__card-item-mess">
-                Viber
-              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="connection" value="Telegram" class="cost__radio">
-              <svg width="80" height="111" viewBox="0 0 80 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <span class="cost__card-item-mess">
+                Telegram
+              </span>
+              <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="80" height="79.8186" rx="39.9093" fill="#27A6E5" />
                 <path
                   d="M56 25.147L49.9892 56.456C49.9892 56.456 49.1481 58.6267 46.8378 57.5857L32.9692 46.599L32.9048 46.5666C34.7782 44.8286 49.3048 31.3338 49.9397 30.7222C50.9225 29.7748 50.3124 29.2108 49.1712 29.9264L27.7136 44.0057L19.4353 41.1278C19.4353 41.1278 18.1325 40.649 18.0072 39.6079C17.8802 38.5652 19.4782 38.0012 19.4782 38.0012L53.2263 24.3224C53.2263 24.3224 56 23.0632 56 25.147Z"
                   fill="#FEFEFE" />
-                <path
-                  d="M10.5 105.376V96.472H7.056V95.576H14.98V96.472H11.536V105.376H10.5ZM18.7814 105.446C18.0161 105.446 17.3441 105.287 16.7654 104.97C16.1868 104.643 15.7341 104.2 15.4074 103.64C15.0808 103.071 14.9174 102.422 14.9174 101.694C14.9174 100.966 15.0714 100.322 15.3794 99.762C15.6968 99.202 16.1261 98.7633 16.6674 98.446C17.2181 98.1193 17.8341 97.956 18.5154 97.956C19.2061 97.956 19.8174 98.1146 20.3494 98.432C20.8908 98.74 21.3154 99.1786 21.6234 99.748C21.9314 100.308 22.0854 100.957 22.0854 101.694C22.0854 101.741 22.0808 101.792 22.0714 101.848C22.0714 101.895 22.0714 101.946 22.0714 102.002H15.6734V101.26H21.5394L21.1474 101.554C21.1474 101.022 21.0308 100.551 20.7974 100.14C20.5734 99.72 20.2654 99.3933 19.8734 99.16C19.4814 98.9266 19.0288 98.81 18.5154 98.81C18.0114 98.81 17.5588 98.9266 17.1574 99.16C16.7561 99.3933 16.4434 99.72 16.2194 100.14C15.9954 100.56 15.8834 101.041 15.8834 101.582V101.736C15.8834 102.296 16.0048 102.791 16.2474 103.22C16.4994 103.64 16.8448 103.971 17.2834 104.214C17.7314 104.447 18.2401 104.564 18.8094 104.564C19.2574 104.564 19.6728 104.485 20.0554 104.326C20.4474 104.167 20.7834 103.925 21.0634 103.598L21.6234 104.242C21.2968 104.634 20.8861 104.933 20.3914 105.138C19.9061 105.343 19.3694 105.446 18.7814 105.446ZM24.1087 105.376V94.988H25.1027V105.376H24.1087ZM30.9904 105.446C30.2251 105.446 29.5531 105.287 28.9744 104.97C28.3958 104.643 27.9431 104.2 27.6164 103.64C27.2898 103.071 27.1264 102.422 27.1264 101.694C27.1264 100.966 27.2804 100.322 27.5884 99.762C27.9058 99.202 28.3351 98.7633 28.8764 98.446C29.4271 98.1193 30.0431 97.956 30.7244 97.956C31.4151 97.956 32.0264 98.1146 32.5584 98.432C33.0998 98.74 33.5244 99.1786 33.8324 99.748C34.1404 100.308 34.2944 100.957 34.2944 101.694C34.2944 101.741 34.2898 101.792 34.2804 101.848C34.2804 101.895 34.2804 101.946 34.2804 102.002H27.8824V101.26H33.7484L33.3564 101.554C33.3564 101.022 33.2398 100.551 33.0064 100.14C32.7824 99.72 32.4744 99.3933 32.0824 99.16C31.6904 98.9266 31.2378 98.81 30.7244 98.81C30.2204 98.81 29.7678 98.9266 29.3664 99.16C28.9651 99.3933 28.6524 99.72 28.4284 100.14C28.2044 100.56 28.0924 101.041 28.0924 101.582V101.736C28.0924 102.296 28.2138 102.791 28.4564 103.22C28.7084 103.64 29.0538 103.971 29.4924 104.214C29.9404 104.447 30.4491 104.564 31.0184 104.564C31.4664 104.564 31.8818 104.485 32.2644 104.326C32.6564 104.167 32.9924 103.925 33.2724 103.598L33.8324 104.242C33.5058 104.634 33.0951 104.933 32.6004 105.138C32.1151 105.343 31.5784 105.446 30.9904 105.446ZM39.4536 108.162C38.7816 108.162 38.1376 108.064 37.5216 107.868C36.9056 107.672 36.4063 107.392 36.0236 107.028L36.5276 106.272C36.873 106.58 37.2976 106.823 37.8016 107C38.315 107.187 38.8563 107.28 39.4256 107.28C40.359 107.28 41.045 107.061 41.4836 106.622C41.9223 106.193 42.1416 105.521 42.1416 104.606V102.772L42.2816 101.512L42.1836 100.252V98.026H43.1356V104.48C43.1356 105.749 42.823 106.678 42.1976 107.266C41.5816 107.863 40.667 108.162 39.4536 108.162ZM39.2716 105.096C38.5716 105.096 37.9416 104.947 37.3816 104.648C36.8216 104.34 36.3783 103.915 36.0516 103.374C35.7343 102.833 35.5756 102.212 35.5756 101.512C35.5756 100.812 35.7343 100.196 36.0516 99.664C36.3783 99.1226 36.8216 98.7026 37.3816 98.404C37.9416 98.1053 38.5716 97.956 39.2716 97.956C39.925 97.956 40.513 98.0913 41.0356 98.362C41.5583 98.6326 41.9736 99.034 42.2816 99.566C42.5896 100.098 42.7436 100.747 42.7436 101.512C42.7436 102.277 42.5896 102.926 42.2816 103.458C41.9736 103.99 41.5583 104.396 41.0356 104.676C40.513 104.956 39.925 105.096 39.2716 105.096ZM39.3696 104.214C39.911 104.214 40.3916 104.102 40.8116 103.878C41.2316 103.645 41.563 103.327 41.8056 102.926C42.0483 102.515 42.1696 102.044 42.1696 101.512C42.1696 100.98 42.0483 100.513 41.8056 100.112C41.563 99.7106 41.2316 99.398 40.8116 99.174C40.3916 98.9406 39.911 98.824 39.3696 98.824C38.8376 98.824 38.357 98.9406 37.9276 99.174C37.5076 99.398 37.1763 99.7106 36.9336 100.112C36.7003 100.513 36.5836 100.98 36.5836 101.512C36.5836 102.044 36.7003 102.515 36.9336 102.926C37.1763 103.327 37.5076 103.645 37.9276 103.878C38.357 104.102 38.8376 104.214 39.3696 104.214ZM45.9016 105.376V98.026H46.8536V100.028L46.7556 99.678C46.961 99.118 47.3063 98.6933 47.7916 98.404C48.277 98.1053 48.879 97.956 49.5976 97.956V98.922C49.5603 98.922 49.523 98.922 49.4856 98.922C49.4483 98.9126 49.411 98.908 49.3736 98.908C48.599 98.908 47.9923 99.146 47.5536 99.622C47.115 100.089 46.8956 100.756 46.8956 101.624V105.376H45.9016ZM55.4705 105.376V103.752L55.4285 103.486V100.77C55.4285 100.145 55.2512 99.664 54.8965 99.328C54.5512 98.992 54.0332 98.824 53.3425 98.824C52.8665 98.824 52.4138 98.9033 51.9845 99.062C51.5552 99.2206 51.1912 99.4306 50.8925 99.692L50.4445 98.95C50.8178 98.6326 51.2658 98.39 51.7885 98.222C52.3112 98.0446 52.8618 97.956 53.4405 97.956C54.3925 97.956 55.1252 98.194 55.6385 98.67C56.1612 99.1366 56.4225 99.8506 56.4225 100.812V105.376H55.4705ZM52.9365 105.446C52.3858 105.446 51.9052 105.357 51.4945 105.18C51.0932 104.993 50.7852 104.741 50.5705 104.424C50.3558 104.097 50.2485 103.724 50.2485 103.304C50.2485 102.921 50.3372 102.576 50.5145 102.268C50.7012 101.951 50.9998 101.699 51.4105 101.512C51.8305 101.316 52.3905 101.218 53.0905 101.218H55.6245V101.96H53.1185C52.4092 101.96 51.9145 102.086 51.6345 102.338C51.3638 102.59 51.2285 102.903 51.2285 103.276C51.2285 103.696 51.3918 104.032 51.7185 104.284C52.0452 104.536 52.5025 104.662 53.0905 104.662C53.6505 104.662 54.1312 104.536 54.5325 104.284C54.9432 104.023 55.2418 103.649 55.4285 103.164L55.6525 103.85C55.4658 104.335 55.1392 104.723 54.6725 105.012C54.2152 105.301 53.6365 105.446 52.9365 105.446ZM68.3063 97.956C68.9037 97.956 69.4217 98.0726 69.8603 98.306C70.3083 98.53 70.6537 98.8753 70.8963 99.342C71.1483 99.8086 71.2743 100.397 71.2743 101.106V105.376H70.2803V101.204C70.2803 100.429 70.0937 99.846 69.7203 99.454C69.3563 99.0526 68.8383 98.852 68.1663 98.852C67.6623 98.852 67.2237 98.9593 66.8503 99.174C66.4863 99.3793 66.2017 99.6826 65.9963 100.084C65.8003 100.476 65.7023 100.952 65.7023 101.512V105.376H64.7083V101.204C64.7083 100.429 64.5217 99.846 64.1483 99.454C63.775 99.0526 63.2523 98.852 62.5803 98.852C62.0857 98.852 61.6517 98.9593 61.2783 99.174C60.905 99.3793 60.6157 99.6826 60.4103 100.084C60.2143 100.476 60.1163 100.952 60.1163 101.512V105.376H59.1223V98.026H60.0743V100.014L59.9203 99.664C60.1443 99.132 60.5037 98.7166 60.9983 98.418C61.5023 98.11 62.095 97.956 62.7763 97.956C63.495 97.956 64.1063 98.138 64.6103 98.502C65.1143 98.8566 65.441 99.3933 65.5903 100.112L65.1983 99.958C65.413 99.3606 65.791 98.88 66.3323 98.516C66.883 98.1426 67.541 97.956 68.3063 97.956Z"
-                  fill="black" />
               </svg>
-              <span class="cost__card-item-mess">
-                Telegram
-              </span>
             </label>
             <label class="cost__answer">
               <input type="radio" name="connection" value="sms" class="cost__radio">
+              <span class="cost__card-item-mess">
+                СМС на телефон
+              </span>
               <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="80" height="79.8186" rx="39.9093" fill="black" />
                 <path
                   d="M60 46.5613C60 47.7373 59.5317 48.8652 58.6983 49.6968C57.8648 50.5285 56.7343 50.9956 55.5556 50.9956H28.8889L20 59.8644V24.3894C20 23.2134 20.4683 22.0855 21.3017 21.2539C22.1352 20.4223 23.2657 19.9551 24.4444 19.9551H55.5556C56.7343 19.9551 57.8648 20.4223 58.6983 21.2539C59.5317 22.0855 60 23.2134 60 24.3894V46.5613Z"
                   fill="white" />
               </svg>
-              <span class="cost__card-item-mess">
-                СМС на телефон
-              </span>
             </label>
           </div>
         </div>
-        <div class="cost__card">
+        <div class="cost__card-end cost__card">
           <h4 class="cost__name">6/<span class="cost__name-num">6 </span>Вам осталось добавить контактные данные</h4>
-
+          <div class="cost__block">
+            <span class="cost__card-end-text">Ваш город</span>
+            <div class="cost__card-inputs">
+              <input type="text" name="city" placeholder="г.Владимир" class="pop-input cost__card-input">
+              <input type="text" name="name" placeholder="Ваше имя*" class="pop-input cost__card-input">
+              <input type="tel" name="tel" placeholder="Ваш телефон*" class="pop-input cost__card-input">
+            </div>
+            <span class="cost__card-end-description">Нажимая на кнопку, вы даете согласие на обработку персональных
+              данных
+              и соглашаетесь c политикой конфиденциальности.</span>
+            <button type="submit" class="btn cost__card-submit">Отправить</button>
+          </div>
         </div>
         <div class="cost__load">
           <div class="cost__load-line-b">
             <div class="cost__load-line"></div>
           </div>
           <div class="cost__btns">
-            <button type="button" class="cost__btn-prev"><svg width="26" height="8" viewBox="0 0 26 8" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
+            <button type="button" style="display: none;" class="cost__btn-prev"><svg width="26" height="8"
+                viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H26V3.5H1V4.5Z"
                   fill="#A5A5A5" />
@@ -927,70 +1003,6 @@
           </div>
         </div>
       </form>
-    </section>
-    <section class="advantages">
-      <div class="container">
-        <h2 class="advantages__title">наши преимущества</h2>
-        <div class="advantages__block">
-          <div class="advantages__card">
-            <img src="img/advantages-1.png" alt="Мастер" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">Сервис под ключ </h3>
-              <ol class="advantages__list">
-                <li class="advantages__text">Точный замер помещения профессиональным инструментом.</li>
-                <li class="advantages__text">Создание дизайн-проекта в нашем фирменном салоне.</li>
-                <li class="advantages__text">Бережная доставка своим транспортом.</li>
-                <li class="advantages__text">Профессиональный монтаж и подъём на этаж нашими опытными сборщиками.</li>
-                <li class="advantages__text">Уборка после установки мебели - после нас всегда чисто.</li>
-              </ol>
-            </div>
-          </div>
-          <div class="advantages__card">
-            <img src="img/advantages-2.png" alt="Дизайнер" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">Замер и 3D дизайн-проект бесплатно</h3>
-              <p class="advantages__text">Вы получаете замер, проект и визуализацию в подарок при заказе мебели в нашей
-                компании. Точный замер с учётом всех нюансов и грамотная планировка. Благодаря визуализации вы сможете
-                ознакомиться со своей новой мебелью в мельчайших деталях ещё до начала производства.</p>
-            </div>
-          </div>
-          <div class="advantages__card">
-            <img src="img/advantages-3.png" alt="Проект" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">На замер выезжает Дизайнер</h3>
-              <p class="advantages__text">В "случае необходимости" на замер, выезжает профессиональный Дизайнер, а не
-                просто замерщик. Для того, чтобы с самого начала понимать, что хочет клиент, и какую мы можем предложить
-                реализацию идей.</p>
-            </div>
-          </div>
-          <div class="advantages__card">
-            <img src="img/advantages-4.png" alt="Девушка" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">акции и Скидки</h3>
-              <p class="advantages__text">Для клиентов у нас предусмотрена гибкая система скидок, которая дарит нашим
-                заказчикам дополнительную выгоду при заказе мебели. Все актуальные акции уточняйте у наших менеджеров.
-              </p>
-            </div>
-          </div>
-          <div class="advantages__card">
-            <img src="img/advantages-5.png" alt="Мужчина" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">Нам нужно срочно!</h3>
-              <p class="advantages__text">Мы понимаем, если вам требуется изготовить мебель в срочном порядке, и идем
-                навстречу своим клиентам. Возможность срочного производства обсуждается заранее с заказчиком. Будьте
-                уверены – все сроки, прописанные в договоре, будут четко соблюдены.</p>
-            </div>
-          </div>
-          <div class="advantages__card">
-            <img src="img/advantages-6.png" alt="Расчет" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">Остаток суммы</h3>
-              <p class="advantages__text">Оставшуюся сумму клиент оплачивает только после того, как изделие будет
-                установлено, все детали прописываются в договоре.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <section class="work">
       <div class="container">
@@ -1061,6 +1073,70 @@
         </div>
       </div>
     </section>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="advantages__title">наши преимущества</h2>
+        <div class="advantages__block">
+          <div class="advantages__card">
+            <img src="img/advantages-1.png" alt="Мастер" class="advantages__img">
+            <div class="advantages__info">
+              <h3 class="advantages__name">Сервис под ключ </h3>
+              <ol class="advantages__list">
+                <li class="advantages__text">Точный замер помещения профессиональным инструментом.</li>
+                <li class="advantages__text">Создание дизайн-проекта в нашем фирменном салоне.</li>
+                <li class="advantages__text">Бережная доставка своим транспортом.</li>
+                <li class="advantages__text">Профессиональный монтаж и подъём на этаж нашими опытными сборщиками.</li>
+                <li class="advantages__text">Уборка после установки мебели - после нас всегда чисто.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="advantages__card">
+            <img src="img/advantages-2.png" alt="Дизайнер" class="advantages__img">
+            <div class="advantages__info">
+              <h3 class="advantages__name">Замер и 3D дизайн-проект бесплатно</h3>
+              <p class="advantages__text">Вы получаете замер, проект и визуализацию в подарок при заказе мебели в нашей
+                компании. Точный замер с учётом всех нюансов и грамотная планировка. Благодаря визуализации вы сможете
+                ознакомиться со своей новой мебелью в мельчайших деталях ещё до начала производства.</p>
+            </div>
+          </div>
+          <div class="advantages__card">
+            <img src="img/advantages-3.png" alt="Проект" class="advantages__img">
+            <div class="advantages__info">
+              <h3 class="advantages__name">На замер выезжает Дизайнер</h3>
+              <p class="advantages__text">В "случае необходимости" на замер, выезжает профессиональный Дизайнер, а не
+                просто замерщик. Для того, чтобы с самого начала понимать, что хочет клиент, и какую мы можем предложить
+                реализацию идей.</p>
+            </div>
+          </div>
+          <div class="advantages__card">
+            <img src="img/advantages-4.png" alt="Девушка" class="advantages__img">
+            <div class="advantages__info">
+              <h3 class="advantages__name">акции и Скидки</h3>
+              <p class="advantages__text">Для клиентов у нас предусмотрена гибкая система скидок, которая дарит нашим
+                заказчикам дополнительную выгоду при заказе мебели. Все актуальные акции уточняйте у наших менеджеров.
+              </p>
+            </div>
+          </div>
+          <div class="advantages__card">
+            <img src="img/advantages-5.png" alt="Мужчина" class="advantages__img">
+            <div class="advantages__info">
+              <h3 class="advantages__name">Нам нужно срочно!</h3>
+              <p class="advantages__text">Мы понимаем, если вам требуется изготовить мебель в срочном порядке, и идем
+                навстречу своим клиентам. Возможность срочного производства обсуждается заранее с заказчиком. Будьте
+                уверены – все сроки, прописанные в договоре, будут четко соблюдены.</p>
+            </div>
+          </div>
+          <div class="advantages__card">
+            <img src="img/advantages-6.png" alt="Расчет" class="advantages__img">
+            <div class="advantages__info">
+              <h3 class="advantages__name">Остаток суммы</h3>
+              <p class="advantages__text">Оставшуюся сумму клиент оплачивает только после того, как изделие будет
+                установлено, все детали прописываются в договоре.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <aside class="aside">
       <button class="aside__btn"></button>
       <div class="aside__links">
@@ -1118,9 +1194,9 @@
         <h2 class="pop-on__title pop-consultation__title">консультация специалиста</h2>
         <p class="pop-on__text pop-consultation__text">Выбрать салон</p>
         <div class="pop-on__inputs pop-consultation__inputs">
-          <input type="text" placeholder="г. Владимир" class="pop-input pop-consultation__input">
-          <input type="text" placeholder="Ваше имя*" class="pop-input pop-consultation__input">
-          <input type="text" placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
+          <input type="text" required placeholder="г. Владимир" class="pop-input pop-consultation__input">
+          <input type="text" required placeholder="Ваше имя*" class="pop-input pop-consultation__input">
+          <input type="text" required placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
         </div>
         <p class="pop-on-description pop-consultation__description">Нажимая на кнопку, вы даете согласие на обработку
           персональных данных и
@@ -1215,17 +1291,18 @@
             <a href="#" class="footer__link">Сотрудничество с дизайнерами</a>
           </div>
           <div class="footer__group">
-            <label class="footer__label">
+            <form class="footer__label">
               <input type="text" class="footer__search input" placeholder="Поиск">
-              <svg class="footer__label-svg" width="22" height="20" viewBox="0 0 22 20" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M17.9879 8.46172C17.9879 12.8402 14.2878 16.4234 9.68093 16.4234C5.07409 16.4234 1.37396 12.8402 1.37396 8.46172C1.37396 4.08324 5.07409 0.5 9.68093 0.5C14.2878 0.5 17.9879 4.08324 17.9879 8.46172Z"
-                  stroke="#4F4F4F" />
-                <line y1="-0.5" x2="7.77207" y2="-0.5"
-                  transform="matrix(0.7211 0.692831 -0.7211 0.692831 15.2863 14.6152)" stroke="#4F4F4F" />
-              </svg>
-            </label>
+              <button class="footer__label-svg" type=submit>
+                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.9879 8.46172C17.9879 12.8402 14.2878 16.4234 9.68093 16.4234C5.07409 16.4234 1.37396 12.8402 1.37396 8.46172C1.37396 4.08324 5.07409 0.5 9.68093 0.5C14.2878 0.5 17.9879 4.08324 17.9879 8.46172Z"
+                    stroke="#4F4F4F" />
+                  <line y1="-0.5" x2="7.77207" y2="-0.5"
+                    transform="matrix(0.7211 0.692831 -0.7211 0.692831 15.2863 14.6152)" stroke="#4F4F4F" />
+                </svg>
+              </button>
+            </form>
             <div class="footer__group-block">
               <p class="footer__text">Политика конфиденциальности</p>
               <div class="footer__contacts">
