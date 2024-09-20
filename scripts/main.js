@@ -44,8 +44,29 @@ if (questionsCard) {
 // Menu
 
 document.querySelector(".menu__btn").addEventListener("click", () => {
-  document.querySelector(".menu__bottom").classList.toggle("menu__bottom-on");
+  document.querySelector(".menu-bottom").classList.toggle("menu-bottom-on");
 });
+
+// Menu Change
+
+let menuChanges = document.querySelectorAll(".menu-bottom__btn");
+let menuTargetChange = document.querySelector(".menu-bottom__btn.active");
+let menuLinks = document.querySelectorAll(".menu-bottom__links");
+let menuTargetLinks = document.querySelector(".menu-bottom__links.active");
+
+menuChanges.forEach((element, ind) => {
+  element.addEventListener("click", event => {
+    if (event.target !== menuTargetChange) {
+      menuTargetChange.classList.remove("active");
+      element.classList.add("active");
+      menuTargetChange = element;
+
+      menuTargetLinks.classList.remove("active");
+      menuLinks[ind].classList.add("active");
+      menuTargetLinks = menuLinks[ind];
+    }
+  })
+})
 
 // Menu full
 
@@ -94,12 +115,12 @@ callBtn.forEach((e) => {
       }
     });
 
-    callPop.addEventListener("click", event => {
+    callPop.addEventListener("click", (event) => {
       if (event.target === callPop) {
         callPop.classList.remove("pop-on-full");
         document.body.classList.remove("body-hidden");
       }
-    })
+    });
   });
 });
 
@@ -154,3 +175,163 @@ if (nextBtnCat) {
     }
   });
 }
+
+// Clock
+
+class Clock {
+  constructor(selector, selectTime) {
+    this.item = selector;
+    this.bool = true;
+    this.time = selectTime;
+  }
+}
+
+let firstSecondBlock = new Clock(
+  document.querySelector(
+    "div.present__time-piece:nth-child(7) > div:nth-child(1) > div:nth-child(2)"
+  )
+);
+let secondSecondBlock = new Clock(
+  document.querySelector(
+    "div.present__time-piece:nth-child(7) > div:nth-child(1) > div:nth-child(1)"
+  ),
+  3
+);
+let firstMinuteBlock = new Clock(
+  document.querySelector(
+    "div.present__time-piece:nth-child(5) > div:nth-child(1) > div:nth-child(2)"
+  ),
+  3
+);
+let secondMinuteBlock = new Clock(
+  document.querySelector(
+    "div.present__time-piece:nth-child(5) > div:nth-child(1) > div:nth-child(1)"
+  ),
+  2
+);
+let firstHourBlock = new Clock(
+  document.querySelector(
+    "div.present__time-piece:nth-child(3) > div:nth-child(1) > div:nth-child(2)"
+  ),
+  3
+);
+let firstDayBlock = new Clock(
+  document.querySelector(
+    "div.present__time-piece:nth-child(1) > div:nth-child(1) > div:nth-child(2)"
+  ),
+  4
+);
+
+let timerDate = new Date(0, 0, 4, 3, 23, 30);
+
+setInterval(() => {
+  firstSecondBlock.item.classList.toggle("present__time-num-rotate");
+  timerDate = new Date(timerDate - 1000);
+  setTimeout(() => {
+    let seconds =
+      timerDate.getSeconds() >= 10
+        ? "" + timerDate.getSeconds()
+        : "0" + timerDate.getSeconds();
+    let minutes =
+      timerDate.getMinutes() >= 10
+        ? "" + timerDate.getMinutes()
+        : "0" + timerDate.getMinutes();
+    let hours =
+      timerDate.getHours() >= 10
+        ? "" + timerDate.getHours()
+        : "0" + timerDate.getHours();
+    let days =
+      timerDate.getDay() >= 10
+        ? "" + timerDate.getDay()
+        : "0" + timerDate.getDay();
+
+    function changeTime(timeElem, currentTime) {
+      if (timeElem.bool) {
+        timeElem.item.querySelector(".present__time-num-second").innerText =
+          currentTime;
+        timeElem.bool = false;
+      } else {
+        timeElem.item.querySelector(".present__time-num-first").innerText =
+          currentTime;
+        timeElem.bool = true;
+      }
+    }
+
+    if (firstSecondBlock.bool) {
+      firstSecondBlock.item.querySelector(
+        ".present__time-num-first"
+      ).innerText = seconds[1];
+      firstSecondBlock.bool = false;
+    } else {
+      firstSecondBlock.item.querySelector(
+        ".present__time-num-second"
+      ).innerText = seconds[1];
+      firstSecondBlock.bool = true;
+    }
+
+    if (secondSecondBlock.time != seconds[0]) {
+      setTimeout(() => {
+        changeTime(secondSecondBlock, seconds[0]);
+        secondSecondBlock.time = seconds[0];
+        secondSecondBlock.item.classList.toggle("present__time-num-rotate");
+      }, 510);
+
+      if (firstMinuteBlock.time != minutes[1]) {
+        setTimeout(() => {
+          changeTime(firstMinuteBlock, minutes[1]);
+          firstMinuteBlock.time = minutes[1];
+          firstMinuteBlock.item.classList.toggle("present__time-num-rotate");
+        }, 510);
+      }
+
+      if (secondMinuteBlock.time != minutes[0]) {
+        setTimeout(() => {
+          changeTime(secondMinuteBlock, minutes[0]);
+          secondMinuteBlock.time = minutes[0];
+          secondMinuteBlock.item.classList.toggle("present__time-num-rotate");
+        }, 510);
+      }
+
+      if (firstHourBlock.time != hours[1]) {
+        setTimeout(() => {
+          changeTime(firstHourBlock, hours[1]);
+          firstHourBlock.time = hours[1];
+          firstHourBlock.item.classList.toggle("present__time-num-rotate");
+        }, 510);
+      }
+
+      if (firstDayBlock.time != days[1]) {
+        setTimeout(() => {
+          changeTime(firstDayBlock, days[1]);
+          firstDayBlock.time = days[1];
+          firstDayBlock.item.classList.toggle("present__time-num-rotate");
+        }, 510);
+      }
+    }
+  }, 500);
+}, 1000);
+
+// Select Btn 
+
+document.querySelectorAll(".pop-on").forEach(element => {
+  element.querySelector(".section__btn").addEventListener("click", () => {
+    document.querySelector(".select__options").classList.toggle("select__options-on");
+  })
+
+  element.querySelectorAll(".select__option").forEach(e => {
+    e.addEventListener("click", event => {
+      element.querySelector(".search-input").value = event.target.innerText;
+      document.querySelector(".select__options").classList.remove("select__options-on");
+      
+    })
+  })
+})
+
+// Add file 
+
+let filesLabel = document.querySelector(".connection__file");
+
+filesLabel.querySelector(".connection__file-input").addEventListener("change", function() {
+  filesLabel.querySelector(".connection__file-text").innerText = this.files[0].name
+  
+})
