@@ -55,7 +55,7 @@ let menuLinks = document.querySelectorAll(".menu-bottom__links");
 let menuTargetLinks = document.querySelector(".menu-bottom__links.active");
 
 menuChanges.forEach((element, ind) => {
-  element.addEventListener("click", event => {
+  element.addEventListener("mouseover", (event) => {
     if (event.target !== menuTargetChange) {
       menuTargetChange.classList.remove("active");
       element.classList.add("active");
@@ -65,8 +65,8 @@ menuChanges.forEach((element, ind) => {
       menuLinks[ind].classList.add("active");
       menuTargetLinks = menuLinks[ind];
     }
-  })
-})
+  });
+});
 
 // Menu full
 
@@ -311,27 +311,39 @@ setInterval(() => {
   }, 500);
 }, 1000);
 
-// Select Btn 
+// Select Btn
 
-document.querySelectorAll(".pop-on").forEach(element => {
-  element.querySelector(".section__btn").addEventListener("click", () => {
-    document.querySelector(".select__options").classList.toggle("select__options-on");
-  })
-
-  element.querySelectorAll(".select__option").forEach(e => {
-    e.addEventListener("click", event => {
+document.querySelectorAll(".pop-on").forEach((element) => {
+  element.querySelectorAll(".select__option").forEach((e) => {
+    e.addEventListener("click", (event) => {
       element.querySelector(".search-input").value = event.target.innerText;
-      document.querySelector(".select__options").classList.remove("select__options-on");
-      
-    })
-  })
-})
+    });
+  });
+});
 
-// Add file 
+// Select input
+
+let selectLabels = document.querySelector(".select__label");
+
+selectLabels.querySelector("input").addEventListener("keydown", (event) => {
+  event.preventDefault();
+});
+
+selectLabels.querySelector("input").addEventListener("click", () => {
+  {
+    document
+      .querySelector(".select__options")
+      .classList.toggle("select__options-on");
+  }
+});
+
+// Add file
 
 let filesLabel = document.querySelector(".connection__file");
 
-filesLabel.querySelector(".connection__file-input").addEventListener("change", function() {
-  filesLabel.querySelector(".connection__file-text").innerText = this.files[0].name
-  
-})
+filesLabel
+  .querySelector(".connection__file-input")
+  .addEventListener("change", function () {
+    filesLabel.querySelector(".connection__file-text").innerText =
+      this.files[0].name;
+  });

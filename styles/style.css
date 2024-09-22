@@ -3074,6 +3074,11 @@ html {
     grid-template-columns: 1fr;
   }
 
+  .advantages__block {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
   .connection__img, .connection__line {
     display: none;
   }
