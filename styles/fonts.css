@@ -82,7 +82,7 @@
 @font-face {
   font-family: "Hans Hand";
   src: local("Hans Hand"),
-  url("../fonts/hanshand/BadScript-Regular.ttf") format("truetype");
+  url("../fonts/hanshand/HansHand.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;

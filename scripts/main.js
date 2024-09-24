@@ -18,12 +18,17 @@ const teamSwiper = new Swiper(".team__swiper", {
 });
 
 const reviewSwiper = new Swiper(".review__swiper", {
-  spaceBetween: 40,
+  spaceBetween: 200,
   loop: true,
   centeredSlides: true,
   navigation: {
     nextEl: ".review-button-next",
     prevEl: ".review-button-prev",
+  },
+  breakpoints: {
+    765: {
+      spaceBetween: 40,
+    },
   },
 });
 
@@ -173,143 +178,150 @@ if (nextBtnCat) {
     if (i === 0) {
       prevBtnCat.setAttribute("style", "display: none;");
     }
+
+    line.setAttribute(
+      "style",
+      `width: calc(${i + 1} * 100% / ${cards.length})`
+    );
   });
 }
 
 // Clock
 
-class Clock {
-  constructor(selector, selectTime) {
-    this.item = selector;
-    this.bool = true;
-    this.time = selectTime;
+if (document.querySelector(".present")) {
+  class Clock {
+    constructor(selector, selectTime) {
+      this.item = selector;
+      this.bool = true;
+      this.time = selectTime;
+    }
   }
-}
 
-let firstSecondBlock = new Clock(
-  document.querySelector(
-    "div.present__time-piece:nth-child(7) > div:nth-child(1) > div:nth-child(2)"
-  )
-);
-let secondSecondBlock = new Clock(
-  document.querySelector(
-    "div.present__time-piece:nth-child(7) > div:nth-child(1) > div:nth-child(1)"
-  ),
-  3
-);
-let firstMinuteBlock = new Clock(
-  document.querySelector(
-    "div.present__time-piece:nth-child(5) > div:nth-child(1) > div:nth-child(2)"
-  ),
-  3
-);
-let secondMinuteBlock = new Clock(
-  document.querySelector(
-    "div.present__time-piece:nth-child(5) > div:nth-child(1) > div:nth-child(1)"
-  ),
-  2
-);
-let firstHourBlock = new Clock(
-  document.querySelector(
-    "div.present__time-piece:nth-child(3) > div:nth-child(1) > div:nth-child(2)"
-  ),
-  3
-);
-let firstDayBlock = new Clock(
-  document.querySelector(
-    "div.present__time-piece:nth-child(1) > div:nth-child(1) > div:nth-child(2)"
-  ),
-  4
-);
+  let firstSecondBlock = new Clock(
+    document.querySelector(
+      "div.present__time-piece:nth-child(7) > div:nth-child(1) > div:nth-child(2)"
+    )
+  );
+  let secondSecondBlock = new Clock(
+    document.querySelector(
+      "div.present__time-piece:nth-child(7) > div:nth-child(1) > div:nth-child(1)"
+    ),
+    3
+  );
+  let firstMinuteBlock = new Clock(
+    document.querySelector(
+      "div.present__time-piece:nth-child(5) > div:nth-child(1) > div:nth-child(2)"
+    ),
+    3
+  );
+  let secondMinuteBlock = new Clock(
+    document.querySelector(
+      "div.present__time-piece:nth-child(5) > div:nth-child(1) > div:nth-child(1)"
+    ),
+    2
+  );
+  let firstHourBlock = new Clock(
+    document.querySelector(
+      "div.present__time-piece:nth-child(3) > div:nth-child(1) > div:nth-child(2)"
+    ),
+    3
+  );
+  let firstDayBlock = new Clock(
+    document.querySelector(
+      "div.present__time-piece:nth-child(1) > div:nth-child(1) > div:nth-child(2)"
+    ),
+    4
+  );
 
-let timerDate = new Date(0, 0, 4, 3, 23, 30);
+  let timerDate = new Date(0, 0, 4, 3, 23, 30);
 
-setInterval(() => {
-  firstSecondBlock.item.classList.toggle("present__time-num-rotate");
-  timerDate = new Date(timerDate - 1000);
-  setTimeout(() => {
-    let seconds =
-      timerDate.getSeconds() >= 10
-        ? "" + timerDate.getSeconds()
-        : "0" + timerDate.getSeconds();
-    let minutes =
-      timerDate.getMinutes() >= 10
-        ? "" + timerDate.getMinutes()
-        : "0" + timerDate.getMinutes();
-    let hours =
-      timerDate.getHours() >= 10
-        ? "" + timerDate.getHours()
-        : "0" + timerDate.getHours();
-    let days =
-      timerDate.getDay() >= 10
-        ? "" + timerDate.getDay()
-        : "0" + timerDate.getDay();
+  setInterval(() => {
+    firstSecondBlock.item.classList.toggle("present__time-num-rotate");
+    timerDate = new Date(timerDate - 1000);
+    setTimeout(() => {
+      let seconds =
+        timerDate.getSeconds() >= 10
+          ? "" + timerDate.getSeconds()
+          : "0" + timerDate.getSeconds();
+      let minutes =
+        timerDate.getMinutes() >= 10
+          ? "" + timerDate.getMinutes()
+          : "0" + timerDate.getMinutes();
+      let hours =
+        timerDate.getHours() >= 10
+          ? "" + timerDate.getHours()
+          : "0" + timerDate.getHours();
+      let days =
+        timerDate.getDay() >= 10
+          ? "" + timerDate.getDay()
+          : "0" + timerDate.getDay();
 
-    function changeTime(timeElem, currentTime) {
-      if (timeElem.bool) {
-        timeElem.item.querySelector(".present__time-num-second").innerText =
-          currentTime;
-        timeElem.bool = false;
+      function changeTime(timeElem, currentTime) {
+        if (timeElem.bool) {
+          timeElem.item.querySelector(".present__time-num-second").innerText =
+            currentTime;
+          timeElem.bool = false;
+        } else {
+          timeElem.item.querySelector(".present__time-num-first").innerText =
+            currentTime;
+          timeElem.bool = true;
+        }
+      }
+
+      if (firstSecondBlock.bool) {
+        firstSecondBlock.item.querySelector(
+          ".present__time-num-first"
+        ).innerText = seconds[1];
+        firstSecondBlock.bool = false;
       } else {
-        timeElem.item.querySelector(".present__time-num-first").innerText =
-          currentTime;
-        timeElem.bool = true;
+        firstSecondBlock.item.querySelector(
+          ".present__time-num-second"
+        ).innerText = seconds[1];
+        firstSecondBlock.bool = true;
       }
-    }
 
-    if (firstSecondBlock.bool) {
-      firstSecondBlock.item.querySelector(
-        ".present__time-num-first"
-      ).innerText = seconds[1];
-      firstSecondBlock.bool = false;
-    } else {
-      firstSecondBlock.item.querySelector(
-        ".present__time-num-second"
-      ).innerText = seconds[1];
-      firstSecondBlock.bool = true;
-    }
-
-    if (secondSecondBlock.time != seconds[0]) {
-      setTimeout(() => {
-        changeTime(secondSecondBlock, seconds[0]);
-        secondSecondBlock.time = seconds[0];
-        secondSecondBlock.item.classList.toggle("present__time-num-rotate");
-      }, 510);
-
-      if (firstMinuteBlock.time != minutes[1]) {
+      if (secondSecondBlock.time != seconds[0]) {
         setTimeout(() => {
-          changeTime(firstMinuteBlock, minutes[1]);
-          firstMinuteBlock.time = minutes[1];
-          firstMinuteBlock.item.classList.toggle("present__time-num-rotate");
+          changeTime(secondSecondBlock, seconds[0]);
+          secondSecondBlock.time = seconds[0];
+          secondSecondBlock.item.classList.toggle("present__time-num-rotate");
         }, 510);
-      }
 
-      if (secondMinuteBlock.time != minutes[0]) {
-        setTimeout(() => {
-          changeTime(secondMinuteBlock, minutes[0]);
-          secondMinuteBlock.time = minutes[0];
-          secondMinuteBlock.item.classList.toggle("present__time-num-rotate");
-        }, 510);
-      }
+        if (firstMinuteBlock.time != minutes[1]) {
+          setTimeout(() => {
+            changeTime(firstMinuteBlock, minutes[1]);
+            firstMinuteBlock.time = minutes[1];
+            firstMinuteBlock.item.classList.toggle("present__time-num-rotate");
+          }, 510);
+        }
 
-      if (firstHourBlock.time != hours[1]) {
-        setTimeout(() => {
-          changeTime(firstHourBlock, hours[1]);
-          firstHourBlock.time = hours[1];
-          firstHourBlock.item.classList.toggle("present__time-num-rotate");
-        }, 510);
-      }
+        if (secondMinuteBlock.time != minutes[0]) {
+          setTimeout(() => {
+            changeTime(secondMinuteBlock, minutes[0]);
+            secondMinuteBlock.time = minutes[0];
+            secondMinuteBlock.item.classList.toggle("present__time-num-rotate");
+          }, 510);
+        }
 
-      if (firstDayBlock.time != days[1]) {
-        setTimeout(() => {
-          changeTime(firstDayBlock, days[1]);
-          firstDayBlock.time = days[1];
-          firstDayBlock.item.classList.toggle("present__time-num-rotate");
-        }, 510);
+        if (firstHourBlock.time != hours[1]) {
+          setTimeout(() => {
+            changeTime(firstHourBlock, hours[1]);
+            firstHourBlock.time = hours[1];
+            firstHourBlock.item.classList.toggle("present__time-num-rotate");
+          }, 510);
+        }
+
+        if (firstDayBlock.time != days[1]) {
+          setTimeout(() => {
+            changeTime(firstDayBlock, days[1]);
+            firstDayBlock.time = days[1];
+            firstDayBlock.item.classList.toggle("present__time-num-rotate");
+          }, 510);
+        }
       }
-    }
-  }, 500);
-}, 1000);
+    }, 500);
+  }, 1000);
+}
 
 // Select Btn
 
@@ -341,9 +353,169 @@ selectLabels.querySelector("input").addEventListener("click", () => {
 
 let filesLabel = document.querySelector(".connection__file");
 
-filesLabel
-  .querySelector(".connection__file-input")
-  .addEventListener("change", function () {
-    filesLabel.querySelector(".connection__file-text").innerText =
-      this.files[0].name;
+if (filesLabel) {
+  filesLabel
+    .querySelector(".connection__file-input")
+    .addEventListener("change", function () {
+      filesLabel.querySelector(".connection__file-text").innerText =
+        this.files[0].name;
+    });
+}
+
+// Filters
+
+let filterGroups = document.querySelectorAll(".filters__block");
+
+if (filterGroups) {
+  filterGroups.forEach((e) => {
+    e.querySelector(".filters__btn").addEventListener("click", () => {
+      e.querySelector(".filters__group").classList.toggle("filters__group-off");
+    });
+
+    let btnMore = e.querySelector(".filters__subgroup-btn");
+
+    if (btnMore) {
+      btnMore.addEventListener("click", () => {
+        e.querySelector(".filters-second").classList.toggle(
+          "filters-second-full"
+        );
+      });
+    }
   });
+
+  document.querySelector(".filters__wrap").addEventListener("click", () => {
+    document.querySelector(".filters").classList.toggle("filters-full");
+    document
+      .querySelector(".filters__all")
+      .classList.toggle("filters__all-full");
+  });
+}
+
+// Cases Pagination
+
+let caseBlock = document.querySelector(".cases");
+
+if (caseBlock) {
+  let caseGroups = caseBlock.querySelectorAll(".cases__group");
+  let paginationNum = caseBlock.querySelectorAll(".cases__pagination-num-btn");
+  let paginationPrev = caseBlock.querySelector(".cases__pagination-prev");
+  let paginationNext = caseBlock.querySelector(".cases__pagination-next");
+  let paginationAll = caseBlock.querySelector(".cases__pagination-all");
+  let currIndexGroup;
+  let indexGroups = [];
+  let currGroup = 1;
+
+  paginationPrev.addEventListener("click", () => {
+    caseGroups[currGroup - 1].classList.remove("active");
+    caseGroups[currGroup - 2].classList.add("active");
+    paginationNum[currGroup - 1].classList.remove("active");
+    paginationNum[currGroup - 2].classList.add("active");
+
+    currGroup--;
+
+    if (currGroup === 1) {
+      paginationPrev.disabled = true;
+    }
+    if (currGroup < caseGroups.length) {
+      paginationNext.disabled = false;
+    }
+  });
+
+  paginationNext.addEventListener("click", () => {
+    caseGroups[currGroup - 1].classList.remove("active");
+    caseGroups[currGroup].classList.add("active");
+    paginationNum[currGroup - 1].classList.remove("active");
+    paginationNum[currGroup].classList.add("active");
+
+    currGroup++;
+
+    if (currGroup === caseGroups.length) {
+      paginationNext.disabled = true;
+    }
+    if (currGroup > 1) {
+      paginationPrev.disabled = false;
+    }
+  });
+
+  paginationNum.forEach((e) => {
+    e.addEventListener("click", () => {
+      let currNum = +e.innerHTML;
+      caseGroups[currGroup - 1].classList.remove("active");
+      caseGroups[currNum - 1].classList.add("active");
+      paginationNum[currGroup - 1].classList.remove("active");
+      paginationNum[currNum - 1].classList.add("active");
+
+      currGroup = currNum;
+
+      if (currGroup === 1) {
+        paginationPrev.disabled = true;
+      } else {
+        paginationPrev.disabled = false;
+      }
+
+      if (currGroup === caseGroups.length) {
+        paginationNext.disabled = true;
+      } else {
+        paginationNext.disabled = false;
+      }
+    });
+  });
+
+  paginationAll.addEventListener("click", () => {
+    if (paginationAll.classList.contains("active")) {
+      paginationAll.classList.remove("active");
+      caseGroups[currGroup - 1].innerHTML = currIndexGroup;
+
+      paginationNum[currGroup - 1].classList.add("active");
+
+      paginationNum.forEach((e) => {
+        e.disabled = false;
+      });
+
+      if (currGroup === 1) {
+        paginationPrev.disabled = true;
+        paginationNext.disabled = false;
+      } else if (currGroup === paginationNum.length) {
+        paginationPrev.disabled = false;
+        paginationNext.disabled = true;
+      } else {
+        paginationNext.disabled = false;
+        paginationPrev.disabled = false;
+      }
+
+      indexGroups = [];
+    } else {
+      paginationAll.classList.add("active");
+      currIndexGroup = caseGroups[currGroup - 1].innerHTML;
+      indexGroups.push(currIndexGroup);
+
+      caseGroups.forEach((e, ind) => {
+        if (ind != currGroup - 1) {
+          indexGroups.push(e.innerHTML);
+        }
+      });
+
+      caseGroups[currGroup - 1].innerHTML = indexGroups;
+
+      paginationNum[currGroup - 1].classList.remove("active");
+
+      paginationPrev.disabled = true;
+      paginationNext.disabled = true;
+      paginationNum.forEach((e) => {
+        e.disabled = true;
+      });
+    }
+  });
+}
+
+// Description More
+
+let description = document.querySelector(".description");
+
+if (description) {
+  document.querySelector(".description__more").addEventListener("click", () => {
+    document
+      .querySelector(".description__block.second")
+      .classList.toggle("description__block-full");
+  });
+}
