@@ -32,6 +32,41 @@ const reviewSwiper = new Swiper(".review__swiper", {
   },
 });
 
+const interestingSwiper = new Swiper(".interesting__swiper", {
+  spaceBetween: 20,
+  loop: true,
+  slidesPerView: 1,
+  breakpoints: {
+    966: {
+      spaceBetween: 40,
+      slidesPerView: 3,
+    },
+    695: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    }
+  },
+  navigation: {
+    nextEl: ".interesting-button-next",
+    prevEl: ".interesting-button-prev",
+  },
+});
+
+const interestingFilters = new Swiper(".interesting__fiters", {
+  spaceBetween: 8.67,
+  slidesPerView: "auto",
+  centredSlides: true,
+  freeMode: true,
+  breakpoints: {
+    695: {
+      spaceBetween: 9.5,
+    },
+    966: {
+      spaceBetween: 21.67,
+    }
+  },
+});
+
 // Questions
 
 let questionsCard = document.querySelectorAll(".questions__card");
@@ -143,15 +178,23 @@ if (nextBtnCat) {
   let cards = document.querySelectorAll(".cost__card");
   let load = document.querySelector(".cost__load");
   let line = document.querySelector(".cost__load-line");
+  let checkedInputs = [];
   let i = 0;
+
+  cards.forEach(e => {
+    e.querySelectorAll("input").forEach((e) => {
+      e.addEventListener("change", () => {
+        checkedInputs[i] = true;
+        nextBtnCat.disabled = false;
+      });
+    });
+  })
 
   nextBtnCat.addEventListener("click", () => {
     cards[i].classList.remove("cost__card-on");
-    cards[i].setAttribute("style", "display: none;");
 
     i++;
 
-    cards[i].setAttribute("style", "display: inline-block;");
     cards[i].classList.add("cost__card-on");
 
     line.setAttribute(
@@ -164,15 +207,15 @@ if (nextBtnCat) {
     if (i === cards.length - 1) {
       load.setAttribute("style", "display: none;");
     }
+
+    nextBtnCat.disabled = !checkedInputs[i];
   });
 
   prevBtnCat.addEventListener("click", () => {
     cards[i].classList.remove("cost__card-on");
-    cards[i].setAttribute("style", "display: none;");
 
     i--;
 
-    cards[i].setAttribute("style", "display: inline-block;");
     cards[i].classList.add("cost__card-on");
 
     if (i === 0) {
@@ -183,6 +226,8 @@ if (nextBtnCat) {
       "style",
       `width: calc(${i + 1} * 100% / ${cards.length})`
     );
+
+    nextBtnCat.disabled = !checkedInputs[i];
   });
 }
 
@@ -325,7 +370,7 @@ if (document.querySelector(".present")) {
 
 // Select Btn
 
-document.querySelectorAll(".pop-on").forEach((element) => {
+document.querySelectorAll(".select__label").forEach((element) => {
   element.querySelectorAll(".select__option").forEach((e) => {
     e.addEventListener("click", (event) => {
       element.querySelector(".search-input").value = event.target.innerText;
@@ -335,18 +380,18 @@ document.querySelectorAll(".pop-on").forEach((element) => {
 
 // Select input
 
-let selectLabels = document.querySelector(".select__label");
+let selectLabels = document.querySelectorAll(".select__label");
 
-selectLabels.querySelector("input").addEventListener("keydown", (event) => {
-  event.preventDefault();
+selectLabels.forEach((e) => {
+  e.querySelector("input").addEventListener("keydown", (event) => {
+    event.preventDefault();
+  });
 });
 
-selectLabels.querySelector("input").addEventListener("click", () => {
-  {
-    document
-      .querySelector(".select__options")
-      .classList.toggle("select__options-on");
-  }
+selectLabels.forEach((e) => {
+  e.querySelector("input").addEventListener("click", () => {
+    e.querySelector(".select__options").classList.toggle("select__options-on");
+  });
 });
 
 // Add file
@@ -366,7 +411,7 @@ if (filesLabel) {
 
 let filterGroups = document.querySelectorAll(".filters__block");
 
-if (filterGroups) {
+if (filterGroups[0]) {
   filterGroups.forEach((e) => {
     e.querySelector(".filters__btn").addEventListener("click", () => {
       e.querySelector(".filters__group").classList.toggle("filters__group-off");
@@ -383,11 +428,19 @@ if (filterGroups) {
     }
   });
 
-  document.querySelector(".filters__wrap").addEventListener("click", () => {
-    document.querySelector(".filters").classList.toggle("filters-full");
-    document
-      .querySelector(".filters__all")
-      .classList.toggle("filters__all-full");
+  let wrapBtn = document.querySelector(".filters__wrap");
+  let wrapFilters = document.querySelector(".filters");
+  let wrapAllFilters = document.querySelector(".filters__all");
+
+  wrapBtn.addEventListener("click", () => {
+    wrapFilters.classList.toggle("filters-full");
+    wrapAllFilters.classList.toggle("filters__all-full");
+
+    if (wrapFilters.classList.contains("filters-full")) {
+      wrapBtn.innerText = "свернуть каталог";
+    } else {
+      wrapBtn.innerText = "развернуть фильтр";
+    }
   });
 }
 
@@ -488,6 +541,7 @@ if (caseBlock) {
       paginationAll.classList.add("active");
       currIndexGroup = caseGroups[currGroup - 1].innerHTML;
       indexGroups.push(currIndexGroup);
+      console.log(indexGroups);
 
       caseGroups.forEach((e, ind) => {
         if (ind != currGroup - 1) {
@@ -495,7 +549,7 @@ if (caseBlock) {
         }
       });
 
-      caseGroups[currGroup - 1].innerHTML = indexGroups;
+      caseGroups[currGroup - 1].innerHTML = indexGroups.join("");
 
       paginationNum[currGroup - 1].classList.remove("active");
 

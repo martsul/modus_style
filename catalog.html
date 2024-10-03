@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media.css">
 </head>
 
 <body class="catalog">
@@ -883,7 +884,7 @@
           </div>
         </div>
         <form class="cost__qustions">
-          <div class="cost__card cost__card-on">
+          <div class="cost__card six cost__card-on">
             <h4 class="cost__name">1/<span class="cost__name-num">6 </span>Выберите место установки шкафа:</h4>
             <div class="cost__block">
               <label class="cost__answer">
@@ -930,7 +931,7 @@
               </label>
             </div>
           </div>
-          <div class="cost__card">
+          <div class="cost__card four">
             <h4 class="cost__name">2/<span class="cost__name-num">6 </span>Выберите вид шкафа:</h4>
             <div class="cost__block">
               <label class="cost__answer">
@@ -963,7 +964,7 @@
               </label>
             </div>
           </div>
-          <div class="cost__card">
+          <div class="cost__card two">
             <h4 class="cost__name">3/<span class="cost__name-num">6 </span>Выберите тип шкафа:</h4>
             <div class="cost__block">
               <label class="cost__answer">
@@ -982,7 +983,7 @@
               </label>
             </div>
           </div>
-          <div class="cost__card">
+          <div class="cost__card text-five text">
             <h4 class="cost__name">4/<span class="cost__name-num">6 </span>В какой бюджет необходимо уложиться?</h4>
             <div class="cost__block">
               <label class="cost__answer">
@@ -992,15 +993,15 @@
                 </span>
               </label>
               <label class="cost__answer">
-                <input type="radio" name="cost" value="120 000 - 150 000 рублей" class="cost__radio">
-                <span class="cost__card-item-text">
-                  120 000 - 150 000 рублей
-                </span>
-              </label>
-              <label class="cost__answer">
                 <input type="radio" name="cost" value="80 000 - 120 000 рублей" class="cost__radio">
                 <span class="cost__card-item-text">
                   80 000 - 120 000 рублей
+                </span>
+              </label>
+              <label class="cost__answer">
+                <input type="radio" name="cost" value="120 000 - 150 000 рублей" class="cost__radio">
+                <span class="cost__card-item-text">
+                  120 000 - 150 000 рублей
                 </span>
               </label>
               <label class="cost__answer">
@@ -1017,7 +1018,7 @@
               </label>
             </div>
           </div>
-          <div class="cost__card">
+          <div class="cost__card network">
             <h4 class="cost__name">5/<span class="cost__name-num">6 </span>Куда отправить Вам расчет?</h4>
             <div class="cost__block">
               <label class="cost__answer">
@@ -1030,7 +1031,6 @@
                     d="M55.8536 24.0701C51.9024 20.1415 46.6341 17.959 41.0732 17.959C29.5122 17.959 20.1463 27.2712 20.1463 38.7659C20.1463 42.4034 21.1707 46.041 22.9268 49.0965L20 59.8637L31.122 56.9537C34.1951 58.5542 37.561 59.4272 41.0732 59.4272C52.6341 59.4272 62 50.1151 62 38.6204C61.8537 33.2368 59.8049 27.9987 55.8536 24.0701ZM51.1707 46.1865C50.7317 47.3505 48.6829 48.5145 47.6585 48.66C46.7805 48.8055 45.6098 48.8055 44.439 48.5145C43.7073 48.2235 42.6829 47.9325 41.5122 47.3505C36.2439 45.168 32.8781 39.9299 32.5854 39.4934C32.2927 39.2024 30.3902 36.7288 30.3902 34.1098C30.3902 31.4907 31.7073 30.3267 32.1463 29.7447C32.5854 29.1627 33.1707 29.1627 33.6098 29.1627C33.9024 29.1627 34.3415 29.1627 34.6341 29.1627C34.9268 29.1627 35.3659 29.0172 35.8049 30.0357C36.2439 31.0542 37.2683 33.6733 37.4146 33.8188C37.561 34.1098 37.561 34.4008 37.4146 34.6918C37.2683 34.9828 37.1219 35.2738 36.8293 35.5648C36.5366 35.8558 36.2439 36.2923 36.0976 36.4378C35.8049 36.7288 35.5122 37.0198 35.8049 37.4563C36.0976 38.0383 37.1219 39.6389 38.7317 41.0939C40.7805 42.8399 42.3902 43.4219 42.9756 43.713C43.561 44.004 43.8537 43.8585 44.1463 43.5674C44.439 43.2764 45.4634 42.1124 45.7561 41.5304C46.0488 40.9484 46.4878 41.0939 46.9268 41.2394C47.3658 41.3849 50 42.6944 50.439 42.9854C51.0244 43.2764 51.3171 43.4219 51.4634 43.5674C51.6097 44.004 51.6098 45.0225 51.1707 46.1865Z"
                     fill="white" />
                 </svg>
-  
               </label>
               <label class="cost__answer">
                 <input type="radio" name="connection" value="Viber" class="cost__radio">
@@ -1075,7 +1075,33 @@
             <div class="cost__block">
               <span class="cost__card-end-text">Ваш город</span>
               <div class="cost__card-inputs">
-                <input type="text" name="city" placeholder="г.Владимир" class="pop-input cost__card-input">
+                <label class="select__label">
+                  <input type="text" required="" placeholder="г. Владимир" class="pop-input search-input pop-consultation__input">
+                    <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3 8.7L12 16.7L21 8.7" stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  <span class="select__options">
+                    <span class="select__option">г. Владимир</span>
+                    <span class="select__option">г. Карабаново</span>
+                    <span class="select__option">г. Собинка</span>
+                    <span class="select__option">г. Киржач</span>
+                    <span class="select__option">г. Александров</span>
+                    <span class="select__option">г. Судогда</span>
+                    <span class="select__option">г. Лакинск</span>
+                    <span class="select__option">г. Струнино</span>
+                    <span class="select__option">г. Вязники</span>
+                    <span class="select__option">г. Муром</span>
+                    <span class="select__option">г. Гороховец</span>
+                    <span class="select__option">г. Меленки</span>
+                    <span class="select__option">г. Юрьев-Польский</span>
+                    <span class="select__option">г. Кольчугино</span>
+                    <span class="select__option">г. Ковров</span>
+                    <span class="select__option">г. Петушки</span>
+                    <span class="select__option">г. Покров</span>
+                    <span class="select__option">г. Радужный</span>
+                    <span class="select__option">г. Гусь-Хрустальный</span>
+                  </span>
+                </label>
                 <input type="text" name="name" placeholder="Ваше имя*" class="pop-input cost__card-input">
                 <input type="tel" name="tel" placeholder="Ваш телефон*" class="pop-input cost__card-input">
               </div>
@@ -1097,7 +1123,7 @@
                     fill="#A5A5A5" />
                 </svg>
                 <span class="cost__btn-text">Назад</span></button>
-              <button type="button" class="cost__btn-next"><span class="cost__btn-text">Далее</span>
+              <button type="button" disabled class="cost__btn-next"><span class="cost__btn-text">Далее</span>
                 <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
@@ -1338,8 +1364,30 @@
       </form>
     </section>
   </main>
+  <a href="#" class="link__up">
+    <svg class="link__up-svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z"
+        stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M40 30L30 20L20 30" stroke="#4F4F4F" stroke-width="4" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <path d="M30 40V20" stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </a>
   <footer class="footer">
     <div class="footer__header">
+      <a href="#" class="footer__top">
+        <svg class="footer__top-svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z"
+            stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M40 30L30 20L20 30" stroke="#4F4F4F" stroke-width="4" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M30 40V20" stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
       <div class="footer__container">
         <h2 class="footer__title">работаем по владимирской области</h2>
         <div class="footer__block">
@@ -1363,17 +1411,6 @@
           <span class="footer__city">Радужный</span>
           <span class="footer__city">Гусь-Хрустальный</span>
         </div>
-        <a href="#" class="footer__top">
-          <svg class="footer__top-svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z"
-              stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M40 30L30 20L20 30" stroke="#4F4F4F" stroke-width="4" stroke-linecap="round"
-              stroke-linejoin="round" />
-            <path d="M30 40V20" stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </a>
       </div>
     </div>
     <div class="footer__bottom">
