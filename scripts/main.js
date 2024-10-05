@@ -44,7 +44,7 @@ const interestingSwiper = new Swiper(".interesting__swiper", {
     695: {
       spaceBetween: 20,
       slidesPerView: 2,
-    }
+    },
   },
   navigation: {
     nextEl: ".interesting-button-next",
@@ -63,7 +63,23 @@ const interestingFilters = new Swiper(".interesting__fiters", {
     },
     966: {
       spaceBetween: 21.67,
-    }
+    },
+  },
+});
+
+const products = new Swiper(".product__pagination", {
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 20,
+  breakpoints: {
+    695: {
+      slidesPerView: 4,
+      spaceBetween: 29,
+    },
+  },
+  navigation: {
+    nextEl: ".product-button-next",
+    prevEl: ".product-button-prev",
   },
 });
 
@@ -138,36 +154,57 @@ document.querySelector(".aside__btn").addEventListener("click", () => {
 
 // POP-ON
 
-// Call
-let callBtn = document.querySelectorAll(".header__btn");
-let callPop = document.querySelector(".pop-consultation");
-let callClose = document.querySelector(".pop-consultation__close");
+function callPop(callingButton, callingPop, closePop) {
+  callingButton.forEach((e) => {
+    e.addEventListener("click", () => {
+      callingPop.classList.add("pop-on-full");
+      document.body.classList.add("body-hidden");
 
-callBtn.forEach((e) => {
-  e.addEventListener("click", () => {
-    callPop.classList.add("pop-on-full");
-    document.body.classList.add("body-hidden");
+      document.addEventListener("keyup", (event) => {
+        if (event.key === "Escape") {
+          callingPop.classList.remove("pop-on-full");
+          document.body.classList.remove("body-hidden");
+        }
+      });
 
-    document.addEventListener("keyup", (event) => {
-      if (event.key === "Escape") {
-        callPop.classList.remove("pop-on-full");
-        document.body.classList.remove("body-hidden");
-      }
-    });
-
-    callPop.addEventListener("click", (event) => {
-      if (event.target === callPop) {
-        callPop.classList.remove("pop-on-full");
-        document.body.classList.remove("body-hidden");
-      }
+      callingPop.addEventListener("click", (event) => {
+        if (event.target === callingPop) {
+          callingPop.classList.remove("pop-on-full");
+          document.body.classList.remove("body-hidden");
+        }
+      });
     });
   });
-});
 
-callClose.addEventListener("click", () => {
-  callPop.classList.remove("pop-on-full");
-  document.body.classList.remove("body-hidden");
-});
+  closePop.addEventListener("click", () => {
+    callingPop.classList.remove("pop-on-full");
+    document.body.classList.remove("body-hidden");
+  });
+}
+
+// Call
+let callCurrBtn = document.querySelectorAll(".header__btn");
+let callCurrPop = document.querySelector(".pop-consultation");
+let callCurrClose = document.querySelector(".pop-consultation__close");
+
+callPop(callCurrBtn, callCurrPop, callCurrClose);
+
+// Delivery
+let deliveryBtn = document.querySelectorAll("#product-deliv");
+
+if (deliveryBtn) {
+  let deliveryPop = document.querySelector(".pop-delivery");
+  let deliveryClose = document.querySelector(".pop-delivery__close");
+
+  callPop(deliveryBtn, deliveryPop, deliveryClose);
+
+  // Payment 
+  let paymentBtn = document.querySelectorAll("#product-pay");
+  let paymentPop = document.querySelector(".pop-payment");
+  let paymentClose = document.querySelector(".pop-payment__close");
+
+  callPop(paymentBtn, paymentPop, paymentClose);
+}
 
 // Qwiz catalog
 
@@ -181,14 +218,14 @@ if (nextBtnCat) {
   let checkedInputs = [];
   let i = 0;
 
-  cards.forEach(e => {
+  cards.forEach((e) => {
     e.querySelectorAll("input").forEach((e) => {
       e.addEventListener("change", () => {
         checkedInputs[i] = true;
         nextBtnCat.disabled = false;
       });
     });
-  })
+  });
 
   nextBtnCat.addEventListener("click", () => {
     cards[i].classList.remove("cost__card-on");
@@ -572,4 +609,36 @@ if (description) {
       .querySelector(".description__block.second")
       .classList.toggle("description__block-full");
   });
+}
+
+// Product
+
+let cards = document.querySelectorAll(".product__img");
+
+if (cards) {
+  let i = 0;
+
+  document
+    .querySelector(".product__btn-block")
+    .addEventListener("click", (event) => {
+      if (event.target.getAttribute("aria-label") === "Next slide") {
+        cards[i].classList.remove("active");
+        if (i === cards.length - 1) {
+          i = 0;
+          cards[i].classList.add("active");
+        } else {
+          i++;
+          cards[i].classList.add("active");
+        }
+      } else {
+        cards[i].classList.remove("active");
+        if (i === 0) {
+          i = cards.length - 1;
+          cards[i].classList.add("active");
+        } else {
+          i--;
+          cards[i].classList.add("active");
+        }
+      }
+    });
 }
