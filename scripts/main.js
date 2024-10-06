@@ -192,13 +192,13 @@ callPop(callCurrBtn, callCurrPop, callCurrClose);
 // Delivery
 let deliveryBtn = document.querySelectorAll("#product-deliv");
 
-if (deliveryBtn) {
+if (deliveryBtn[0]) {
   let deliveryPop = document.querySelector(".pop-delivery");
   let deliveryClose = document.querySelector(".pop-delivery__close");
 
   callPop(deliveryBtn, deliveryPop, deliveryClose);
 
-  // Payment 
+  // Payment
   let paymentBtn = document.querySelectorAll("#product-pay");
   let paymentPop = document.querySelector(".pop-payment");
   let paymentClose = document.querySelector(".pop-payment__close");
@@ -602,9 +602,10 @@ if (caseBlock) {
 // Description More
 
 let description = document.querySelector(".description");
+let descriptionMore = document.querySelector(".description__more");
 
-if (description) {
-  document.querySelector(".description__more").addEventListener("click", () => {
+if (descriptionMore) {
+  descriptionMore.addEventListener("click", () => {
     document
       .querySelector(".description__block.second")
       .classList.toggle("description__block-full");
@@ -615,7 +616,7 @@ if (description) {
 
 let cards = document.querySelectorAll(".product__img");
 
-if (cards) {
+if (cards[0]) {
   let i = 0;
 
   document
