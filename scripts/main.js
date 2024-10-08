@@ -71,6 +71,7 @@ const products = new Swiper(".product__pagination", {
   loop: true,
   slidesPerView: 5,
   spaceBetween: 20,
+  allowTouchMove: false,
   breakpoints: {
     695: {
       slidesPerView: 4,
@@ -620,26 +621,130 @@ if (cards[0]) {
   let i = 0;
 
   document
+    .querySelector(".product__pagination")
+    .addEventListener("click", (event) => {
+      if (event.target.getAttribute("count")) {
+        let curCount = +event.target.getAttribute("count");
+
+        cards[i].classList.remove("active");
+        document
+          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .forEach((e) => {
+            e.classList.remove("active");
+          });
+        i = curCount;
+
+        cards[i].classList.add("active");
+        document
+          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .forEach((e) => {
+            e.classList.add("active");
+          });
+      }
+    });
+
+  document
     .querySelector(".product__btn-block")
     .addEventListener("click", (event) => {
       if (event.target.getAttribute("aria-label") === "Next slide") {
         cards[i].classList.remove("active");
+        document
+          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .forEach((e) => {
+            e.classList.remove("active");
+          });
         if (i === cards.length - 1) {
           i = 0;
-          cards[i].classList.add("active");
         } else {
           i++;
-          cards[i].classList.add("active");
         }
-      } else {
+        cards[i].classList.add("active");
+        document
+          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .forEach((e) => {
+            e.classList.add("active");
+          });
+      } else if (event.target.getAttribute("aria-label") === "Previous slide") {
         cards[i].classList.remove("active");
+        document
+          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .forEach((e) => {
+            e.classList.remove("active");
+          });
         if (i === 0) {
           i = cards.length - 1;
-          cards[i].classList.add("active");
         } else {
           i--;
-          cards[i].classList.add("active");
         }
+        cards[i].classList.add("active");
+        document
+          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .forEach((e) => {
+            e.classList.add("active");
+          });
       }
     });
+}
+
+// Fav btn
+
+let btnFav = document.querySelector(".fav");
+
+if (btnFav) {
+  btnFav.addEventListener("click", () => {
+    btnFav.classList.toggle("active");
+  });
+}
+
+// Interesting Filters
+
+let filtersInteresting = document.querySelectorAll(".interesting__filter");
+
+if (filtersInteresting[0]) {
+  filtersInteresting.forEach((e) => {
+    e.addEventListener("click", () => {
+      if (e.classList.contains("active")) {
+        e.classList.remove("active");
+      } else {
+        filtersInteresting.forEach((e) => {
+          e.classList.remove("active");
+        });
+
+        e.classList.add("active");
+      }
+    });
+  });
+}
+
+// Volume Swiper
+
+let volumeCards = document.querySelectorAll(".volume__img");
+
+if (volumeCards[0]) {
+  let i = 0;
+  let btnPrev = document.querySelector(".volume__btn-prev");
+  let btnNext = document.querySelector(".volume__btn-next");
+  let volumeCardsMini = document.querySelectorAll(".volume__img-mini");
+
+  btnNext.addEventListener("click", () => {
+    volumeCards[i].classList.remove("active");
+    volumeCardsMini[i].classList.remove("active");
+    if (i === volumeCards.length - 1) {
+      i = 0
+    } else i++
+
+    volumeCards[i].classList.add("active");
+    volumeCardsMini[i].classList.add("active");
+  })
+
+  btnPrev.addEventListener("click", () => {
+    volumeCards[i].classList.remove("active");
+    volumeCardsMini[i].classList.remove("active");
+    if (i === 0) {
+      i = volumeCards.length - 1
+    } else i--
+
+    volumeCards[i].classList.add("active");
+    volumeCardsMini[i].classList.add("active");
+  })
 }
