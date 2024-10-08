@@ -726,25 +726,37 @@ if (volumeCards[0]) {
   let btnNext = document.querySelector(".volume__btn-next");
   let volumeCardsMini = document.querySelectorAll(".volume__img-mini");
 
+  volumeCardsMini.forEach((e) => {
+    e.addEventListener("click", () => {
+      console.log(e);
+      
+      volumeCards[i].classList.remove("active");
+      volumeCardsMini[i].classList.remove("active");
+      i = e.getAttribute("count") - 1;
+      volumeCards[i].classList.add("active");
+      volumeCardsMini[i].classList.add("active");
+    });
+  });
+
   btnNext.addEventListener("click", () => {
     volumeCards[i].classList.remove("active");
     volumeCardsMini[i].classList.remove("active");
     if (i === volumeCards.length - 1) {
-      i = 0
-    } else i++
+      i = 0;
+    } else i++;
 
     volumeCards[i].classList.add("active");
     volumeCardsMini[i].classList.add("active");
-  })
+  });
 
   btnPrev.addEventListener("click", () => {
     volumeCards[i].classList.remove("active");
     volumeCardsMini[i].classList.remove("active");
     if (i === 0) {
-      i = volumeCards.length - 1
-    } else i--
+      i = volumeCards.length - 1;
+    } else i--;
 
     volumeCards[i].classList.add("active");
     volumeCardsMini[i].classList.add("active");
-  })
+  });
 }
