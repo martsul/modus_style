@@ -3989,3 +3989,56 @@ body.desk img.descriptions__img {
 .volume__title {
   margin-bottom: 40px;
 }
+
+.preview-condit {
+  max-width: 1406px;
+  margin: 0 auto;
+  padding: 132px 20px 155px;
+  position: relative;
+  background-image: url("../img/conditions/preview-back.jpg");
+  background-size: auto 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.preview-condit::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 53%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 20.45%, #FFFFFF 100%);
+}
+
+.preview-condit__title {
+  text-transform: uppercase;
+  font: var(--font-title);
+  max-width: 303px;
+  margin-bottom: 40px;
+}
+
+.preview-condit__info {
+  max-width: 351px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.preview-condit__text {
+  font: var(--font-t20);
+}
+
+.preview-condit__arrow {
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+}
+
+.preview-condit__btn {
+  height: 50px;
+  font: var(--font-s16);
+  max-width: 326px;
+  width: 100%;
+}

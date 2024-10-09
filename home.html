@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styles/swiper.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/swiper.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/media.css">
 </head>
 
-<body class="catalog">
+<body>
   <header class="header">
     <div class="header__top">
       <div class="header__container">
@@ -579,112 +579,186 @@
     </div>
   </header>
   <main class="content">
-    <section class="preview-c">
-      <img src="img/catalog-people.png" class="preview-c__people" alt="Люди">
-      <div class="preview-c__title-block">
-      </div>
+    <section class="preview">
+      <img src="img/peolple.png" alt="Люди" class="preview__people">
       <div class="container">
-        <h1 class="preview-c__title"><strong class="preview-c__title-strong">10%</strong>
-          Честная скидка на всю мебель</h1>
-        <div class="preview-c-section">
-          <div class="preview-block">
-            <span class="preview-c__text">Успей воспользоваться специальным предложением!</span>
-            <svg width="47" height="48" viewBox="0 0 47 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_1362_13770)">
+        <p class="preview__banner">“Когда качество соединяется со стилем...”</p>
+        <h1 class="preview__title">мебель на заказ под ключ </h1>
+        <ol class="preview__list">
+          <li class="preview__list-item">
+            <svg class="preview__list-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 11.0804V12.0004C21.9988 14.1568 21.3005 16.255 20.0093 17.9822C18.7182 19.7093 16.9033 20.9728 14.8354 21.5843C12.7674 22.1957 10.5573 22.1223 8.53447 21.3749C6.51168 20.6276 4.78465 19.2465 3.61096 17.4374C2.43727 15.6284 1.87979 13.4884 2.02168 11.3367C2.16356 9.18492 2.99721 7.13668 4.39828 5.49743C5.79935 3.85817 7.69279 2.71574 9.79619 2.2405C11.8996 1.76526 14.1003 1.98269 16.07 2.86035"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 4L12 14.01L9 11.01" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="preview__list-text">создаем ДИЗАЙН-ПРОЕКТы</span>
+          </li>
+          <li class="preview__list-item">
+            <svg class="preview__list-svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22 11.0804V12.0004C21.9988 14.1568 21.3005 16.255 20.0093 17.9822C18.7182 19.7093 16.9033 20.9728 14.8354 21.5843C12.7674 22.1957 10.5573 22.1223 8.53447 21.3749C6.51168 20.6276 4.78465 19.2465 3.61096 17.4374C2.43727 15.6284 1.87979 13.4884 2.02168 11.3367C2.16356 9.18492 2.99721 7.13668 4.39828 5.49743C5.79935 3.85817 7.69279 2.71574 9.79619 2.2405C11.8996 1.76526 14.1003 1.98269 16.07 2.86035"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M22 4L12 14.01L9 11.01" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="preview__list-text">собственное производство</span>
+          </li>
+        </ol>
+        <div class="preview__measurer">
+          <button class="preview__btn btn" type="button">Вызвать замерщика</button>
+          <div class="preview__proposal">
+            <span class="preview__proposal-text">Успей воспользоваться специальным предложением!</span>
+            <svg class="preview__proposal-svg" width="47" height="48" viewBox="0 0 47 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1260_7317)">
                 <path
-                  d="M38.1007 35.0388L33.1933 37.8721C32.9361 38.0206 32.5677 37.9219 32.4192 37.6647L29.5859 32.7573C29.2039 32.0957 30.1916 31.5399 30.5673 32.1906L33.1173 36.6073L37.5341 34.0573C38.1622 33.6946 38.7525 34.6625 38.1007 35.0388ZM33.0638 20.6071C35.2181 24.7328 35.7947 29.696 34.277 34.4656C34.0532 35.1365 32.9676 34.8224 33.2091 34.1006C36.057 25.1501 31.028 15.6122 22.0737 12.7599C17.5191 11.313 12.5474 11.8409 8.40545 14.2322L7.92746 14.5082C7.25612 14.8958 6.72577 13.8933 7.36079 13.5267L7.83878 13.2507C12.2555 10.7007 17.5604 10.1153 22.4216 11.6626C27.1879 13.177 30.911 16.4793 33.0658 20.606L33.0638 20.6071Z"
+                  d="M38.1009 35.0388L33.1934 37.8721C32.9363 38.0206 32.5678 37.9219 32.4194 37.6647L29.586 32.7573C29.2041 32.0957 30.1918 31.5399 30.5675 32.1906L33.1175 36.6073L37.5342 34.0573C38.1624 33.6946 38.7526 34.6625 38.1009 35.0388ZM33.064 20.6071C35.2182 24.7328 35.7949 29.696 34.2771 34.4656C34.0534 35.1365 32.9677 34.8224 33.2093 34.1006C36.0572 25.1501 31.0282 15.6122 22.0738 12.7599C17.5192 11.313 12.5475 11.8409 8.40562 14.2322L7.92763 14.5082C7.25628 14.8958 6.72593 13.8933 7.36096 13.5267L7.83895 13.2507C12.2557 10.7007 17.5606 10.1153 22.4218 11.6626C27.1881 13.177 30.9111 16.4793 33.0659 20.606L33.064 20.6071Z"
                   fill="black" />
               </g>
               <defs>
-                <clipPath id="clip0_1362_13770">
-                  <rect width="34" height="34" fill="white" transform="translate(29.4448 0.777344) rotate(60)" />
+                <clipPath id="clip0_1260_7317">
+                  <rect width="34" height="34" fill="white" transform="translate(29.4449 0.777344) rotate(60)" />
                 </clipPath>
               </defs>
             </svg>
           </div>
-          <div class="preview-c__sale">
-            <a href="#" class="present">
-              <img src="img/present.png" class="present__img" alt="Подарок">
-              <div class="present__block">
-                <div class="present__time">
-                  <div class="present__time-piece">
-                    <div class="present__time-hours">
-                      <div class="present__time-num">
-                        <span class="present__time-num-first">0</span>
-                        <span class="present__time-num-second">0</span>
-                      </div>
-                      <div class="present__time-num">
-                        <span class="present__time-num-first">4</span>
-                        <span class="present__time-num-second">3</span>
-                      </div>
+        </div>
+        <div class="preview__bottom">
+          <div class="preview__advantages">
+            <div class="preview__advantage-item">
+              <div class="preview__circle">
+                <svg width="100%" height="100%" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="48" cy="48" r="46" stroke="url(#paint0_linear_1_385)" stroke-width="4" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1_385" x1="3.08257" y1="33.0275" x2="55.4862" y2="62.5321"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF541F" />
+                      <stop offset="1" stop-color="#FF541F" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <strong class="preview__advantage-strong">16</strong>
+              <span class="preview__advantage-text">лет<br>опыта</span>
+            </div>
+            <div class="preview__advantage-item">
+              <div class="preview__circle">
+                <svg width="100%" height="100%" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="48" cy="48" r="46" stroke="url(#paint0_linear_1_384)" stroke-width="4" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1_384" x1="3.08257" y1="33.0275" x2="55.4862" y2="62.5321"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF541F" />
+                      <stop offset="1" stop-color="#FF541F" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <strong class="preview__advantage-strong">0%</strong>
+              <span class="preview__advantage-text">рассрочка<br>до 24 мес.</span>
+            </div>
+            <div class="preview__advantage-item">
+              <div class="preview__circle">
+                <svg width="100%" height="100%" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="48" cy="48" r="46" stroke="url(#paint0_linear_1_383)" stroke-width="4" />
+                  <defs>
+                    <linearGradient id="paint0_linear_1_383" x1="3.08257" y1="33.0275" x2="55.4862" y2="62.5321"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF541F" />
+                      <stop offset="1" stop-color="#FF541F" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <strong class="preview__advantage-strong">18</strong>
+              <span class="preview__advantage-text">месяцев<br>гарантия </span>
+            </div>
+          </div>
+          <a href="#" class="present">
+            <img src="img/present.png" class="present__img" alt="Подарок">
+            <div class="present__block">
+              <svg class="present__hand" width="26" height="30" viewBox="0 0 26 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M6.73978 4.03849C6.73978 2.42311 8.00905 1.15391 9.62437 1.15391C11.2397 1.15391 12.509 2.42317 12.509 4.03849V6.80772C13.2012 6.11541 13.6628 5.07692 13.6628 4.03849C13.6629 1.84615 11.8167 0 9.62443 0C7.43215 0 5.58594 1.84615 5.58594 4.03849C5.58594 5.19234 6.04748 6.11541 6.73978 6.80772V4.03849Z"
+                  fill="black" />
+                <path
+                  d="M23.4678 10.3845C22.5447 10.3845 21.737 11.1923 21.737 12.1153V14.6538V14.9999H20.5831V12.3461V10.9615C20.5831 10.0384 19.7754 9.23069 18.8523 9.23069C17.9292 9.23069 17.1215 10.0384 17.1215 10.9615V12.1153V13.8461H15.9677V12.1153V9.80759C15.9677 8.88451 15.1599 8.07679 14.2369 8.07679C13.3138 8.07679 12.5061 8.88451 12.5061 9.80759V11.9999V14.9999H11.3523V12.1153V4.03842C11.3523 3.11534 10.5446 2.30762 9.62148 2.30762C8.6984 2.30762 7.89068 3.11534 7.89068 4.03842V15.923C5.46757 13.3845 2.35222 10.6153 1.08302 11.8845C-0.186242 13.1538 3.04453 16.6153 7.54456 24.2307C9.62148 27.6922 12.1599 29.9999 16.5445 29.9999C21.2752 29.9999 25.1984 26.0768 25.1984 21.346V17.5384V12.1153C25.1986 11.1923 24.3908 10.3845 23.4678 10.3845Z"
+                  fill="black" />
+              </svg>
+              <div class="present__time">
+                <div class="present__time-piece">
+                  <div class="present__time-hours">
+                    <div class="present__time-num">
+                      <span class="present__time-num-first">0</span>
+                      <span class="present__time-num-second">0</span>
                     </div>
-                    <span class="present__time-text">дня</span>
-                  </div>
-                  <span class="present__dot">:</span>
-                  <div class="present__time-piece">
-                    <div class="present__time-hours">
-                      <div class="present__time-num">
-                        <span class="present__time-num-first">0</span>
-                        <span class="present__time-num-second">0</span>
-                      </div>
-                      <div class="present__time-num">
-                        <span class="present__time-num-first">3</span>
-                        <span class="present__time-num-second">2</span>
-                      </div>
+                    <div class="present__time-num">
+                      <span class="present__time-num-first">4</span>
+                      <span class="present__time-num-second">3</span>
                     </div>
-                    <span class="present__time-text">часа</span>
                   </div>
-                  <span class="present__dot">:</span>
-                  <div class="present__time-piece">
-                    <div class="present__time-hours">
-                      <div class="present__time-num">
-                        <span class="present__time-num-first">2</span>
-                        <span class="present__time-num-second">1</span>
-                      </div>
-                      <div class="present__time-num">
-                        <span class="present__time-num-first">3</span>
-                        <span class="present__time-num-second">2</span>
-                      </div>
+                  <span class="present__time-text">дня</span>
+                </div>
+                <span class="present__dot">:</span>
+                <div class="present__time-piece">
+                  <div class="present__time-hours">
+                    <div class="present__time-num">
+                      <span class="present__time-num-first">0</span>
+                      <span class="present__time-num-second">0</span>
                     </div>
-                    <span class="present__time-text">минут</span>
-                  </div>
-                  <span class="present__dot">:</span>
-                  <div class="present__time-piece">
-                    <div class="present__time-hours">
-                      <div class="present__time-num">
-                        <span class="present__time-num-first">3</span>
-                        <span class="present__time-num-second">2</span>
-                      </div>
-                      <div class="present__time-num">
-                        <span class="present__time-num-first">1</span>
-                        <span class="present__time-num-second">0</span>
-                      </div>
+                    <div class="present__time-num">
+                      <span class="present__time-num-first">3</span>
+                      <span class="present__time-num-second">2</span>
                     </div>
-                    <span class="present__time-text">секунд</span>
                   </div>
+                  <span class="present__time-text">часа</span>
+                </div>
+                <span class="present__dot">:</span>
+                <div class="present__time-piece">
+                  <div class="present__time-hours">
+                    <div class="present__time-num">
+                      <span class="present__time-num-first">2</span>
+                      <span class="present__time-num-second">1</span>
+                    </div>
+                    <div class="present__time-num">
+                      <span class="present__time-num-first">3</span>
+                      <span class="present__time-num-second">2</span>
+                    </div>
+                  </div>
+                  <span class="present__time-text">минут</span>
+                </div>
+                <span class="present__dot">:</span>
+                <div class="present__time-piece">
+                  <div class="present__time-hours">
+                    <div class="present__time-num">
+                      <span class="present__time-num-first">3</span>
+                      <span class="present__time-num-second">2</span>
+                    </div>
+                    <div class="present__time-num">
+                      <span class="present__time-num-first">1</span>
+                      <span class="present__time-num-second">0</span>
+                    </div>
+                  </div>
+                  <span class="present__time-text">секунд</span>
                 </div>
               </div>
-            </a>
-            <button type="button" class="btn preview-c__btn">Хочу скидку!</button>
-          </div>
+              <div class="preset__sale">
+                <strong class="preset__sale-strong">10%</strong>
+                <span class="preset__sale-text">Честная скидка на всю мебель</span>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-    </section>
-    <section class="bread-crumbs">
-      <div class="container">
-        <a href="home.html" class="bread-crumbs__home bread-crumbs__link">
-          <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.5 7.49984L10 1.6665L17.5 7.49984V16.6665C17.5 17.1085 17.3244 17.5325 17.0118 17.845C16.6993 18.1576 16.2754 18.3332 15.8333 18.3332H4.16667C3.72464 18.3332 3.30072 18.1576 2.98816 17.845C2.67559 17.5325 2.5 17.1085 2.5 16.6665V7.49984Z"
-              stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M7.5 18.3333V10H12.5V18.3333" stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </a>
-        <a href="catalog.html" class="bread-crumbs__link bread-crumbs__text">Каталог</a>
       </div>
     </section>
     <section class="portfolio">
       <div class="container">
+        <h2 class="portfolio__title">портфолио</h2>
         <div class="portfolio__block">
           <a href="#" class="portfolio__card">
             <div class="portfolio__more">
@@ -786,354 +860,616 @@
             <img src="img/dressers.jpg" alt="Комоды" class="portfolio__img">
           </a>
         </div>
-        <div class="portfolio__text-section">
-          <div class="portfolio__text-block">
-            <h4 class="portfolio__text-title">Мебель — важная часть любого дома. Она создает комфортную обстановку и
-              оформляет пространство, делая его максимально удобным для проживания.</h4>
-            <p class="portfolio__text-info">Именно такую мебель изготавливаем мы – красивую, функциональную и
-              эргономичную. Наша продукция – результат творческого подхода дизайнеров, которые стремятся воплотить ваши
-              идеи и пожелания в стильной, современной и созданной исключительно для вас мебели.</p>
-            <p class="portfolio__text-info">Только такой подход позволяет нам производить подходящую под дизайн
-              помещения и выражающие ваши личные предпочтения мебель на заказ. </p>
-            <p class="portfolio__text-info">Над изготовлением вашей мебели будут работать мастера с большим опытом
-              работы, а благодаря собственной службе доставке мы быстро привезем заказанные вами изделия, выполним
-              сборку и установку на месте.</p>
-            <p class="portfolio__text-info">Представленный на официальном сайте каталог мебели на заказ поможет вам
-              сделать выбор и сориентироваться по стоимости. Также мы готовы реализовать любые ваши идеи или создать
-              индивидуальный дизайн-проект гостиной, прихожей или кухни.</p>
+      </div>
+    </section>
+    <section class="materials">
+      <div class="container">
+        <h2 class="materials__title">материалы</h2>
+        <p class="materials__subtitle">ШИРОКИЙ АССОРТИМЕНТ МАТЕРИАЛОВ ДЛЯ РЕАЛИЗАЦИИ ЛЮБЫХ ВАШИХ ИДЕЙ</p>
+        <div class="materials__block">
+          <div class="materials__card">
+            <h3 class="materials__name">фасады лдсп</h3>
+            <div class="materials__images">
+              <div class="materials__img-name">
+                <img src="img/egger.png" alt="Egger" class="materials__img">
+                <span class="materials__text">Egger</span>
+              </div>
+              <div class="materials__img-name">
+                <img src="img/kronospan.png" alt="Kronospan" class="materials__img">
+                <span class="materials__text">Kronospan</span>
+              </div>
+            </div>
           </div>
-          <div class="portfolio__text-block">
-            <p class="portfolio__text-info">Каталог товаров, представленный на нашем сайте, включает следующие виды
-              мебели:</p>
-            <ul class="portfolio__text-list">
-              <li class="portfolio__text-item"><strong class="portfolio__text-strong">Кухни</strong> — мы изготовим
-                кухню в любом стиле и цвете, используя качественные материалы и фурнитуру.</li>
-              <li class="portfolio__text-item"><strong class="portfolio__text-strong">Шкафы</strong> — каталог мебели на
-                заказ представлен распашными, угловыми, радиусными и мансардными шкафами, а также моделями
-                эконом-класса.</li>
-              <li class="portfolio__text-item"><strong class="portfolio__text-strong">Гостиные</strong> — к нам можно
-                обратиться как за изготовлением отдельных элементов гостиной, так и современных стенок, включающих
-                стеллажи, полки и шкафчики.</li>
-              <li class="portfolio__text-item"><strong class="portfolio__text-strong">Гардеробные</strong> — мы создадим
-                дизайн-проект и изготовим мебель, которая станет неотъемлемой частью вашего интерьера, независимо от
-                имеющегося пространства.</li>
-              <li class="portfolio__text-item"><strong class="portfolio__text-strong">Детские</strong> — при разработке
-                проекта мы учитываем возраст и пол ребенка, функциональное назначение мебели, площадь помещения и ваши
-                личные пожелания.</li>
-              <li class="portfolio__text-item"><strong class="portfolio__text-strong">Прихожие</strong> — мы изготовим
-                практичную и функциональную мебель, предназначенную для грамотной организации хранения сумок, зонтов,
-                верхней одежды.</li>
-              <li class="portfolio__text-item"><strong class="portfolio__text-strong">Спальни</strong> — мы создадим
-                уютную и комфортную спальню, учитывая все ваши пожелания. Поможем выбрать материалы, цвет и стиль
-                мебели, чтобы ваша спальня стала местом для отдыха и расслабления.</li>
-            </ul>
+          <div class="materials__card">
+            <h3 class="materials__name">фасады пластик</h3>
+            <div class="materials__images">
+              <div class="materials__img-name">
+                <img src="img/fenix.png" alt="Fenix" class="materials__img">
+                <span class="materials__text">Fenix</span>
+              </div>
+              <div class="materials__img-name">
+                <img src="img/AGT.png" alt="AGT" class="materials__img">
+                <span class="materials__text">AGT</span>
+              </div>
+            </div>
+          </div>
+          <div class="materials__card">
+            <h3 class="materials__name">фурнитура</h3>
+            <div class="materials__images">
+              <img src="img/blum.png" alt="blum" class="materials__img">
+              <img src="img/boyard.png" alt="boyard" class="materials__img">
+              <img src="img/hettich.png" alt="hettich" class="materials__img">
+            </div>
+          </div>
+          <div class="materials__card">
+            <h3 class="materials__name">эмаль</h3>
+            <div class="materials__images">
+              <img src="img/ral.png" alt="ral" class="materials__img">
+              <img src="img/ralk7.png" alt="ralk7" class="materials__img">
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="cost">
-      <div class="cost__container">
-        <h2 class="cost__title">Рассчитайте стоимость Вашего шкафа ответив на 6 вопросов и получите:</h2>
-        <div class="cost__sale">
-          <div class="cost__item">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_1579_16048)">
-                <path
-                  d="M68.0276 42.2323C67.9835 42.1181 67.9132 42.0159 67.8224 41.9338L65.4534 39.5457L41.5959 15.7395C41.483 15.6211 41.3399 15.536 41.1821 15.4932C41.0242 15.4505 40.8577 15.4518 40.7005 15.497L21.6369 20.2545C21.4719 20.3 21.3216 20.3875 21.2007 20.5085C21.0797 20.6295 20.9922 20.7798 20.9467 20.9448L19.9954 24.7881C19.7121 24.5275 19.4782 24.2178 19.3052 23.8739C18.7132 22.6742 18.5933 21.2958 18.9694 20.0119C19.3425 17.997 19.7529 15.7022 15.3694 13.426C15.156 13.345 14.9203 13.345 14.7069 13.426C14.4936 13.5071 14.3173 13.6636 14.2116 13.8659C14.1058 14.0683 14.078 14.3023 14.1332 14.5238C14.1884 14.7453 14.323 14.9389 14.5113 15.0678C17.6637 16.7283 17.4585 17.8291 17.1414 19.6761C16.69 21.3729 16.869 23.1758 17.6451 24.7508C18.0663 25.5885 18.7121 26.2926 19.5104 26.7844L16.1901 40.0121C16.1449 40.1693 16.1436 40.3358 16.1864 40.4937C16.2291 40.6516 16.3143 40.7947 16.4326 40.9076L40.2715 64.7698L42.6591 67.1392C42.7412 67.23 42.8434 67.3003 42.9576 67.3444C43.0742 67.3708 43.1953 67.3708 43.312 67.3444C43.4285 67.3722 43.5499 67.3722 43.6664 67.3444C43.7863 67.301 43.8948 67.2308 43.9835 67.1392L67.8224 43.2957C67.914 43.2069 67.9842 43.0985 68.0276 42.9785C68.079 42.8608 68.1055 42.7338 68.1055 42.6054C68.1055 42.477 68.079 42.35 68.0276 42.2323ZM21.2265 27.512C21.7642 27.6395 22.3153 27.7021 22.868 27.6986C23.1226 27.717 23.3782 27.717 23.6328 27.6986C23.872 28.1318 24.2015 28.5086 24.5991 28.8033C24.9967 29.098 25.4529 29.3037 25.937 29.4065C26.421 29.5093 26.9215 29.5067 27.4045 29.399C27.8875 29.2914 28.3417 29.081 28.7363 28.7824C29.1308 28.4837 29.4566 28.1036 29.6914 27.6679C29.9262 27.2322 30.0645 26.7512 30.0971 26.2573C30.1297 25.7634 30.0556 25.2683 29.8801 24.8056C29.7045 24.3429 29.4315 23.9233 29.0795 23.5754C28.6095 23.1018 28.0123 22.7747 27.3602 22.6336C26.7081 22.4925 26.0292 22.5435 25.4055 22.7804C24.7818 23.0173 24.2401 23.4299 23.846 23.9684C23.4519 24.5068 23.2224 25.148 23.1851 25.8142C22.6839 25.8459 22.1809 25.8019 21.6928 25.6836L22.6255 21.9522L40.6446 17.4186L63.4389 40.2546L40.943 62.7548L18.1114 39.9561L21.2265 27.512ZM27.2888 25.2732L26.3935 24.3776H26.6173C26.9318 24.3799 27.2387 24.4745 27.4998 24.6498C27.761 24.8251 27.9649 25.0733 28.0861 25.3635C28.2074 25.6538 28.2406 25.9733 28.1818 26.2823C28.1229 26.5913 27.9746 26.8762 27.7551 27.1015C27.4936 27.3546 27.1547 27.5124 26.7927 27.5496C26.4307 27.5868 26.0668 27.5013 25.7592 27.3068C26.1874 27.1921 26.6054 27.0424 27.009 26.859C27.1471 26.7974 27.2682 26.7031 27.3617 26.5843C27.4553 26.4655 27.5185 26.3257 27.5461 26.177C27.5736 26.0282 27.5646 25.8751 27.5198 25.7306C27.4749 25.5862 27.3957 25.4548 27.2888 25.3478V25.2732ZM43.312 65.1616L42.2488 64.0981L64.7819 41.5606L65.8452 42.6241L43.312 65.1616Z"
-                  fill="black" />
-                <path
-                  d="M41.1864 48.0721H41.4475C41.5651 48.0378 41.6748 47.9807 41.7703 47.904C41.8658 47.8273 41.9452 47.7325 42.0041 47.6251C42.063 47.5177 42.1002 47.3997 42.1135 47.278C42.1268 47.1562 42.116 47.033 42.0817 46.9154L36.8401 28.3145C36.8071 28.192 36.7502 28.0772 36.6728 27.9767C36.5953 27.8761 36.4989 27.7919 36.3889 27.7286C36.2789 27.6654 36.1575 27.6244 36.0317 27.6081C35.9059 27.5918 35.7781 27.6004 35.6556 27.6335C35.5332 27.6666 35.4184 27.7235 35.3179 27.8009C35.2174 27.8783 35.1331 27.9748 35.0699 28.0848C35.0067 28.1948 34.9658 28.3162 34.9494 28.4421C34.9331 28.5679 34.9417 28.6957 34.9748 28.8182L40.235 47.4751C40.3046 47.6663 40.4359 47.8288 40.6082 47.937C40.7805 48.0451 40.984 48.0927 41.1864 48.0721Z"
-                  fill="black" />
-                <path
-                  d="M29.4344 36.1316C28.83 36.7336 28.4179 37.5015 28.2501 38.338C28.0824 39.1745 28.1667 40.042 28.4923 40.8305C28.8179 41.6191 29.3702 42.2932 30.0792 42.7676C30.7881 43.2419 31.6219 43.4951 32.4749 43.4951C33.3279 43.4951 34.1617 43.2419 34.8707 42.7676C35.5797 42.2932 36.132 41.6191 36.4576 40.8305C36.7832 40.042 36.8674 39.1745 36.6997 38.338C36.532 37.5015 36.1198 36.7336 35.5154 36.1316C34.7009 35.3406 33.6102 34.8982 32.4749 34.8982C31.3396 34.8982 30.249 35.3406 29.4344 36.1316ZM34.2097 40.8891C33.9268 41.1759 33.5775 41.3883 33.1928 41.5074C32.808 41.6265 32.3998 41.6487 32.0044 41.5719C31.6091 41.4952 31.2388 41.3218 30.9266 41.0674C30.6143 40.8129 30.3698 40.4852 30.2148 40.1134C30.0598 39.7416 29.9991 39.3373 30.038 38.9363C30.0769 38.5354 30.2144 38.1503 30.4381 37.8153C30.6617 37.4803 30.9647 37.2058 31.3201 37.0162C31.6755 36.8266 32.0722 36.7278 32.4749 36.7286C33.1232 36.731 33.7452 36.9852 34.2097 37.4376C34.6576 37.9004 34.908 38.5192 34.908 39.1633C34.908 39.8074 34.6576 40.4263 34.2097 40.8891Z"
-                  fill="black" />
-                <path
-                  d="M44.6175 40.8515C45.3289 40.8567 46.0305 40.6856 46.6596 40.3535C47.2888 40.0214 47.826 39.5386 48.2232 38.9484C48.6204 38.3581 48.8654 37.6786 48.9361 36.9706C49.0069 36.2626 48.9013 35.5481 48.6287 34.8908C48.3562 34.2335 47.9252 33.654 47.3742 33.2039C46.8232 32.7538 46.1693 32.4472 45.471 32.3114C44.7727 32.1756 44.0516 32.2148 43.3721 32.4256C42.6926 32.6364 42.0759 33.0122 41.577 33.5194C41.1691 33.9274 40.8481 34.4138 40.6333 34.9493C40.4185 35.4848 40.3144 36.0583 40.3272 36.6351C40.3297 37.7733 40.7784 38.8652 41.577 39.6762C42.3953 40.4545 43.4885 40.8771 44.6175 40.8515ZM42.92 34.7694C43.3765 34.3164 43.9931 34.0617 44.6361 34.0604C45.2848 34.0608 45.9075 34.3153 46.3709 34.7694C46.8359 35.2271 47.1001 35.8508 47.1054 36.5034C47.1106 37.1559 46.8565 37.7838 46.3989 38.2489C45.9413 38.714 45.3177 38.9783 44.6652 38.9835C44.0128 38.9888 43.3851 38.7346 42.92 38.2769C42.6915 38.0539 42.5108 37.7868 42.389 37.4917C42.2671 37.1966 42.2066 36.8797 42.2112 36.5605C42.2008 36.2293 42.2583 35.8996 42.3802 35.5915C42.5021 35.2835 42.6858 35.0037 42.92 34.7694Z"
-                  fill="black" />
-              </g>
-              <circle cx="40" cy="40" r="39" stroke="black" stroke-width="2" />
-              <defs>
-                <clipPath id="clip0_1579_16048">
-                  <rect width="54" height="54" fill="white" transform="translate(16 14)" />
-                </clipPath>
-              </defs>
+    <section class="why">
+      <div class="container">
+        <h2 class="why__title">Почему нам доверяют?</h2>
+        <ul class="why__block">
+          <li class="why__item">
+            <svg class="why__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
             </svg>
-            <span class="cost__item-text">Скидка 10%</span>
+            <div class="why__text">
+              <h3 class="why__name">Мебельная фабрика с 15 летним стажем</h3>
+              <p class="why__description">Основа нашего производства - высокоточное современное оборудование мировых
+                производителей и крепкая команда высококвалифицированных специалистов, позволяющая создавать
+                качественные
+                индивидуальные изделия с гарантированными в договоре сроками.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="why__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="why__text">
+              <h3 class="why__name">Наша команда</h3>
+              <p class="why__description">Найти производителя, который создаёт не только качественную мебель, но и имеет
+                в
+                штате профессиональных специалистов непросто. В нашей компании работают люди с практическим опытом от 7
+                лет. Ведь делая хорошо одному клиенту, к нам обратиться ещё 10 по его рекомендации.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="why__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="why__text">
+              <h3 class="why__name">Наша квалификация</h3>
+              <p class="why__description">Выполняем самые нестандартные проекты. Грамотно, не нарушая строительных норм,
+                обыгрываем проблемные места: вентиляционные каналы, трубы, котлы и счётчики. Создадим техническую
+                документацию по расположению электроточек под вытяжку, розетки и бытовую технику.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="why__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="why__text">
+              <h3 class="why__name">Уникальный дизайн</h3>
+              <p class="why__description">Несмотря на большой выбор среди мебели на заказ, нам удаётся создавать
+                действительно уникальные проекты. Умело сочетаем: материалы, дизайн, декоры, исходя из Ваших
+                предпочтений.
+                Заказывая мебель у нас, Вы делаете выбор в пользу непревзойденного качества, адекватных цен и
+                исключительно положительных эмоций.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="why__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="why__text">
+              <h3 class="why__name">Гарантия и конкретные сроки</h3>
+              <p class="why__description">Вы получаете реальную гарантию, прописанную в договоре 18 месяцев и 2 года на
+                сервисное обслуживание. Мы уверены в качестве создаваемой продукции и дорожим репутацией. Всегда
+                соблюдаем
+                сроки, которые прописаны в договоре.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="why__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="why__text">
+              <h3 class="why__name">Премиум качество без переплат</h3>
+              <p class="why__description">В производстве мебели мы используем материалы ведущих мировых брэндов - BLUM,
+                FENIX, HETTICH, EGGER, KRONOSPAN и др. Они полностью соответствуют стандартам качества и экологичности.
+                Имеют все соответствующие сертификаты. Это залог комфорта и Вашего здоровья.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="why__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="why__text">
+              <h3 class="why__name">Вдохновляющая мебель</h3>
+              <p class="why__description">Создаём мебель для Вас, в которой идеально сочетаются актуальные тренды,
+                функциональность, безопасность и современные технологии. Практичная и стильная дизайнерская мебель для
+                Вашего образа жизни.</p>
+            </div>
+          </li>
+          <li class="why__item">
+            <svg class="why__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
+                stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <div class="why__text">
+              <h3 class="why__name">Уважение и забота</h3>
+              <p class="why__description">Клиенты компании отмечают, что наши сотрудники всегда вежливые и опрятные. Мы
+                бережно относимся к каждому заказу, сопровождаем клиента на всех этапах.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="container">
+        <h2 class="popular__title">Популярное</h2>
+        <div class="popular__block">
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1833)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1833">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-1.jpg" alt="Шкаф" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Шкаф купе Леон</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">45 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
           </div>
-          <div class="cost__item">
-            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_1579_16050)">
-                <path
-                  d="M14.2168 56.875H12.5293C12.5293 60.8406 15.7355 64.0469 19.7012 64.0469H64.8418V20.1719H20.5449V13.8438H19.7012C15.7355 13.8438 12.5293 17.05 12.5293 21.0156V56.875H14.2168C14.2168 53.8375 16.6637 51.3906 19.7012 51.3906H20.5449V21.8594H63.1543V62.3594H19.7012C16.6637 62.3594 14.2168 59.9125 14.2168 56.875ZM18.8574 49.7453C17.0012 49.9562 15.3559 50.8844 14.2168 52.2344V21.0156C14.2168 18.2734 16.2418 15.9953 18.8574 15.6156V49.7453Z"
-                  fill="black" />
-                <path
-                  d="M55.1387 25.2344H50.0762V53.7109L52.6074 58.7734L55.1387 53.7109V25.2344ZM53.4512 26.9219V31.5625H51.7637V26.9219H53.4512ZM52.6074 54.9766L51.7637 53.2891V33.25H53.4512V53.2891L52.6074 54.9766Z"
-                  fill="black" />
-                <path
-                  d="M29.4043 45.4844V47.1719H32.7793L30.6699 58.8578L32.3152 59.1531L34.4668 47.1719H39.5293L41.6809 59.1531L43.3262 58.8578L41.2168 47.1719H44.5918V45.4844H40.9215L39.9512 39.9156C41.259 38.9875 42.0605 37.4266 42.0605 35.7813C42.0605 33.2922 40.2465 31.1828 37.8418 30.8031V25.2344H36.1543V30.8031C33.7496 31.225 31.9355 33.2922 31.9355 35.7813C31.9355 37.4266 32.7371 38.9453 34.0449 39.9156L33.0746 45.4844H29.4043ZM35.3949 38.7344C34.298 38.1438 33.623 37.0047 33.623 35.7813C33.623 33.925 35.1418 32.4063 36.998 32.4063C38.8543 32.4063 40.373 33.925 40.373 35.7813C40.373 37.0047 39.698 38.1438 38.6012 38.7344L38.0527 39.0297L39.234 45.4844H34.7621L35.9012 39.0297L35.3949 38.7344Z"
-                  fill="black" />
-              </g>
-              <circle cx="40" cy="40" r="39" stroke="black" stroke-width="2" />
-              <defs>
-                <clipPath id="clip0_1579_16050">
-                  <rect width="54" height="54" fill="white" transform="translate(13 13)" />
-                </clipPath>
-              </defs>
-            </svg>
-            <span class="cost__item-text">Бесплатный дизайн проект</span>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1839)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1839">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-2.jpg" alt="Гарнитур" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Кухонный гарнитур Витторе</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">55 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1837)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1837">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-3.jpg" alt="Шкаф" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Шкаф купе Дарио</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">35 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1836)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1836">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-4.jpg" alt="Гарнитур" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Кухонный гарнитур Валерио</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">55 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1835)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1835">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-5.jpg" alt="Шкаф" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Шкаф купе Луиджи</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">33 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1834)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1834">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-6.jpg" alt="Детская" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Детская Эннио</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">45 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
           </div>
         </div>
-        <form class="cost__qustions">
-          <div class="cost__card six cost__card-on">
-            <h4 class="cost__name">1/<span class="cost__name-num">6 </span>Выберите место установки шкафа:</h4>
-            <div class="cost__block">
-              <label class="cost__answer">
-                <input type="radio" name="place" value="Гардеробная" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-1.png" alt="Гардеробная" class="cost__img">
-                  <span class="cost__text">Гардеробная</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="place" value="Гостиная" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-2.png" alt="Гостиная" class="cost__img">
-                  <span class="cost__text">Гостиная</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="place" value="Детская" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-3.png" alt="Детская" class="cost__img">
-                  <span class="cost__text">Детская</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="place" value="Прихожая" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-4.png" alt="Прихожая" class="cost__img">
-                  <span class="cost__text">Прихожая</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="place" value="Спальня" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-5.png" alt="Спальня" class="cost__img">
-                  <span class="cost__text">Спальня</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="place" value="Балкон" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-6.png" alt="Балкон" class="cost__img">
-                  <span class="cost__text">Балкон</span>
-                </span>
-              </label>
+        <a href="#" class="popular__more">
+          <span class="popular__more-text">Показать еще</span>
+          <svg class="popular__more-svg" width="26" height="8" viewBox="0 0 26 8" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25.8536 4.35355C26.0488 4.15829 26.0488 3.84171 25.8536 3.64645L22.6716 0.464466C22.4763 0.269204 22.1597 0.269204 21.9645 0.464466C21.7692 0.659728 21.7692 0.976311 21.9645 1.17157L24.7929 4L21.9645 6.82843C21.7692 7.02369 21.7692 7.34027 21.9645 7.53553C22.1597 7.7308 22.4763 7.7308 22.6716 7.53553L25.8536 4.35355ZM0.5 4.5H25.5V3.5H0.5V4.5Z"
+              fill="black" />
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="advantages__title">наши преимущества</h2>
+        <div class="advantages__block">
+          <div class="advantages__card">
+            <div class="advantage__img-container"><img src="img/advantages-1.png" alt="Мастер" class="advantages__img">
+            </div>
+            <div class="advantages__info">
+              <h3 class="advantages__name">Сервис под ключ </h3>
+              <ol class="advantages__list">
+                <li class="advantages__text">Точный замер помещения профессиональным инструментом.</li>
+                <li class="advantages__text">Создание дизайн-проекта в нашем фирменном салоне.</li>
+                <li class="advantages__text">Бережная доставка своим транспортом.</li>
+                <li class="advantages__text">Профессиональный монтаж и подъём на этаж нашими опытными сборщиками.</li>
+                <li class="advantages__text">Уборка после установки мебели - после нас всегда чисто.</li>
+              </ol>
             </div>
           </div>
-          <div class="cost__card four">
-            <h4 class="cost__name">2/<span class="cost__name-num">6 </span>Выберите вид шкафа:</h4>
-            <div class="cost__block">
-              <label class="cost__answer">
-                <input type="radio" name="type" value="Встроенный" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-7.png" alt="Встроенный" class="cost__img">
-                  <span class="cost__text">Встроенный</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="type" value="Корпусный" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-8.png" alt="Корпусный" class="cost__img">
-                  <span class="cost__text">Корпусный</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="type" value="Радиусный" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-9.png" alt="Радиусный" class="cost__img">
-                  <span class="cost__text">Радиусный</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="type" value="Угловой" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-10.png" alt="Угловой" class="cost__img">
-                  <span class="cost__text">Угловой</span>
-                </span>
-              </label>
+          <div class="advantages__card">
+            <div class="advantage__img-container"><img src="img/advantages-2.png" alt="Дизайнер"
+                class="advantages__img"></div>
+            <div class="advantages__info">
+              <h3 class="advantages__name">Замер и 3D дизайн-проект бесплатно</h3>
+              <p class="advantages__text">Вы получаете замер, проект и визуализацию в подарок при заказе мебели в нашей
+                компании. Точный замер с учётом всех нюансов и грамотная планировка. Благодаря визуализации вы сможете
+                ознакомиться со своей новой мебелью в мельчайших деталях ещё до начала производства.</p>
             </div>
           </div>
-          <div class="cost__card two">
-            <h4 class="cost__name">3/<span class="cost__name-num">6 </span>Выберите тип шкафа:</h4>
-            <div class="cost__block">
-              <label class="cost__answer">
-                <input type="radio" name="kind" value="Купе (раздвижной)" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-11.png" alt="Купе (раздвижной)" class="cost__img">
-                  <span class="cost__text">Купе (раздвижной)</span>
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="kind" value="Платяной (распашной)" class="cost__radio">
-                <span class="cost__card-item">
-                  <img src="img/quiz-cabinet/quiz-cabinet-12.png" alt="Платяной (распашной)" class="cost__img">
-                  <span class="cost__text">Платяной (распашной)</span>
-                </span>
-              </label>
+          <div class="advantages__card">
+            <div class="advantage__img-container"><img src="img/advantages-3.png" alt="Проект" class="advantages__img">
+            </div>
+            <div class="advantages__info">
+              <h3 class="advantages__name">На замер выезжает Дизайнер</h3>
+              <p class="advantages__text">В "случае необходимости" на замер, выезжает профессиональный Дизайнер, а не
+                просто замерщик. Для того, чтобы с самого начала понимать, что хочет клиент, и какую мы можем предложить
+                реализацию идей.</p>
             </div>
           </div>
-          <div class="cost__card text-five text">
-            <h4 class="cost__name">4/<span class="cost__name-num">6 </span>В какой бюджет необходимо уложиться?</h4>
-            <div class="cost__block">
-              <label class="cost__answer">
-                <input type="radio" name="cost" value="50 000 - 80 000 рублей" class="cost__radio">
-                <span class="cost__card-item-text">
-                  50 000 - 80 000 рублей
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="cost" value="80 000 - 120 000 рублей" class="cost__radio">
-                <span class="cost__card-item-text">
-                  80 000 - 120 000 рублей
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="cost" value="120 000 - 150 000 рублей" class="cost__radio">
-                <span class="cost__card-item-text">
-                  120 000 - 150 000 рублей
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="cost" value="150 000 - 200 000 рублей" class="cost__radio">
-                <span class="cost__card-item-text">
-                  150 000 - 200 000 рублей
-                </span>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="cost" value="более 200 000 рублей" class="cost__radio">
-                <span class="cost__card-item-text">
-                  более 200 000 рублей
-                </span>
-              </label>
+          <div class="advantages__card">
+            <div class="advantage__img-container"><img src="img/advantages-4.png" alt="Девушка" class="advantages__img">
+            </div>
+            <div class="advantages__info">
+              <h3 class="advantages__name">акции и Скидки</h3>
+              <p class="advantages__text">Для клиентов у нас предусмотрена гибкая система скидок, которая дарит нашим
+                заказчикам дополнительную выгоду при заказе мебели. Все актуальные акции уточняйте у наших менеджеров.
+              </p>
             </div>
           </div>
-          <div class="cost__card network">
-            <h4 class="cost__name">5/<span class="cost__name-num">6 </span>Куда отправить Вам расчет?</h4>
-            <div class="cost__block">
-              <label class="cost__answer">
-                <input type="radio" name="connection" value="WhatsApp" class="cost__radio">
-                <span class="cost__card-item-mess">WhatsApp
-                </span>
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="80" height="79.8186" rx="39.9093" fill="#48C95F" />
-                  <path
-                    d="M55.8536 24.0701C51.9024 20.1415 46.6341 17.959 41.0732 17.959C29.5122 17.959 20.1463 27.2712 20.1463 38.7659C20.1463 42.4034 21.1707 46.041 22.9268 49.0965L20 59.8637L31.122 56.9537C34.1951 58.5542 37.561 59.4272 41.0732 59.4272C52.6341 59.4272 62 50.1151 62 38.6204C61.8537 33.2368 59.8049 27.9987 55.8536 24.0701ZM51.1707 46.1865C50.7317 47.3505 48.6829 48.5145 47.6585 48.66C46.7805 48.8055 45.6098 48.8055 44.439 48.5145C43.7073 48.2235 42.6829 47.9325 41.5122 47.3505C36.2439 45.168 32.8781 39.9299 32.5854 39.4934C32.2927 39.2024 30.3902 36.7288 30.3902 34.1098C30.3902 31.4907 31.7073 30.3267 32.1463 29.7447C32.5854 29.1627 33.1707 29.1627 33.6098 29.1627C33.9024 29.1627 34.3415 29.1627 34.6341 29.1627C34.9268 29.1627 35.3659 29.0172 35.8049 30.0357C36.2439 31.0542 37.2683 33.6733 37.4146 33.8188C37.561 34.1098 37.561 34.4008 37.4146 34.6918C37.2683 34.9828 37.1219 35.2738 36.8293 35.5648C36.5366 35.8558 36.2439 36.2923 36.0976 36.4378C35.8049 36.7288 35.5122 37.0198 35.8049 37.4563C36.0976 38.0383 37.1219 39.6389 38.7317 41.0939C40.7805 42.8399 42.3902 43.4219 42.9756 43.713C43.561 44.004 43.8537 43.8585 44.1463 43.5674C44.439 43.2764 45.4634 42.1124 45.7561 41.5304C46.0488 40.9484 46.4878 41.0939 46.9268 41.2394C47.3658 41.3849 50 42.6944 50.439 42.9854C51.0244 43.2764 51.3171 43.4219 51.4634 43.5674C51.6097 44.004 51.6098 45.0225 51.1707 46.1865Z"
-                    fill="white" />
-                </svg>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="connection" value="Viber" class="cost__radio">
-                <span class="cost__card-item-mess">
-                  Viber
-                </span>
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="80" height="79.8186" rx="39.9093" fill="#7C509A" />
-                  <path
-                    d="M52.5079 19.0483C44.8848 17.5959 36.9686 17.5959 29.3455 19.0483C25.9738 19.7746 21.7225 23.8415 20.9895 27.0369C19.6702 33.2825 19.6702 39.6734 20.9895 45.919C21.8691 49.1144 26.1204 53.1814 29.3455 53.9076C29.4921 53.9076 29.6387 54.0528 29.6387 54.1981V63.3486C29.6387 63.7844 30.2251 64.0749 30.5183 63.6391L34.9162 59.1365C34.9162 59.1365 38.4346 55.5053 39.0209 54.9243C39.0209 54.9243 39.1675 54.7791 39.3141 54.7791C43.712 54.9243 48.2565 54.4886 52.6545 53.7623C56.0262 53.0361 60.2775 48.9692 61.0105 45.7738C62.3298 39.5281 62.3298 33.1373 61.0105 26.8917C60.1309 23.8415 55.8796 19.7746 52.5079 19.0483ZM52.6545 46.3548C51.9215 47.8072 51.0419 48.9692 49.5759 49.6954C49.1361 49.8407 48.6963 49.9859 48.2565 50.1312C47.6702 49.9859 47.2304 49.8407 46.7906 49.6954C42.0995 47.8072 37.7016 45.1928 34.1832 41.4164C32.2775 39.2377 30.6649 36.7685 29.3455 34.154C28.7592 32.8468 28.1728 31.6848 27.733 30.3776C27.2932 29.2156 28.0262 28.0536 28.7592 27.1822C29.4921 26.3107 30.3717 25.7297 31.3979 25.294C32.1309 24.8582 32.8639 25.1487 33.4503 25.7297C34.623 27.1822 35.7958 28.6346 36.6754 30.2323C37.2618 31.2491 37.1152 32.411 36.089 33.1373C35.7958 33.2825 35.6492 33.4278 35.356 33.7183C35.2094 33.8635 34.9162 34.0088 34.7696 34.2993C34.4764 34.735 34.4764 35.1707 34.623 35.6065C35.7958 38.9472 37.9948 41.5616 41.3665 43.0141C41.9529 43.3046 42.3927 43.4498 43.1257 43.4498C44.1518 43.3046 44.5916 42.1426 45.3246 41.5616C46.0576 40.9806 46.9372 40.9806 47.8168 41.4164C48.5497 41.8521 49.2827 42.4331 50.1623 43.0141C50.8953 43.5951 51.6283 44.0308 52.3613 44.6118C52.801 44.9023 52.9476 45.6285 52.6545 46.3548ZM46.4974 35.4612C46.2042 35.4612 46.3508 35.4612 46.4974 35.4612C45.911 35.4612 45.7644 35.1707 45.6178 34.735C45.6178 34.4445 45.6178 34.0088 45.4712 33.7183C45.3246 33.1373 45.0314 32.5563 44.445 32.1206C44.1518 31.9753 43.8586 31.8301 43.5654 31.6848C43.1256 31.5396 42.8325 31.5396 42.3927 31.5396C41.9529 31.3943 41.8063 31.1038 41.8063 30.6681C41.8063 30.3776 42.2461 30.0871 42.5393 30.0871C44.8848 30.2323 46.644 31.5396 46.9372 34.2993C46.9372 34.4445 46.9372 34.735 46.9372 34.8802C46.9372 35.1707 46.7906 35.4612 46.4974 35.4612ZM45.0314 29.0704C44.2984 28.7799 43.5654 28.4894 42.6859 28.3441C42.3927 28.3441 41.9529 28.1989 41.6597 28.1989C41.2199 28.1989 40.9267 27.9084 41.0733 27.4727C41.0733 27.0369 41.3665 26.7464 41.8063 26.8917C43.2723 27.0369 44.5916 27.3274 45.911 27.9084C48.5497 29.2156 50.0157 31.3943 50.4555 34.2993C50.4555 34.4445 50.4555 34.5898 50.4555 34.735C50.4555 35.0255 50.4555 35.316 50.4555 35.7517C50.4555 35.897 50.4555 36.0422 50.4555 36.1875C50.3089 36.7685 49.2827 36.9137 49.1361 36.1875C49.1361 36.0422 48.9895 35.7517 48.9895 35.6065C48.9895 34.2993 48.6963 32.992 48.11 31.8301C47.2304 30.5228 46.2042 29.6514 45.0314 29.0704ZM52.9476 37.7852C52.5079 37.7852 52.2147 37.3494 52.2147 36.9137C52.2147 36.0422 52.0681 35.1707 51.9215 34.2993C51.3351 29.6514 47.5236 25.8749 42.9791 25.1487C42.2461 25.0035 41.5131 25.0035 40.9267 24.8582C40.4869 24.8582 39.9005 24.8582 39.7539 24.2772C39.6073 23.8415 40.0471 23.4057 40.4869 23.4057C40.6335 23.4057 40.7801 23.4057 40.7801 23.4057C41.0733 23.4057 46.7906 23.551 40.7801 23.4057C46.9372 23.551 52.0681 27.6179 53.0942 33.7183C53.2408 34.735 53.3874 35.7517 53.3874 36.9137C53.6806 37.3494 53.3874 37.7852 52.9476 37.7852Z"
-                    fill="white" />
-                </svg>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="connection" value="Telegram" class="cost__radio">
-                <span class="cost__card-item-mess">
-                  Telegram
-                </span>
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="80" height="79.8186" rx="39.9093" fill="#27A6E5" />
-                  <path
-                    d="M56 25.147L49.9892 56.456C49.9892 56.456 49.1481 58.6267 46.8378 57.5857L32.9692 46.599L32.9048 46.5666C34.7782 44.8286 49.3048 31.3338 49.9397 30.7222C50.9225 29.7748 50.3124 29.2108 49.1712 29.9264L27.7136 44.0057L19.4353 41.1278C19.4353 41.1278 18.1325 40.649 18.0072 39.6079C17.8802 38.5652 19.4782 38.0012 19.4782 38.0012L53.2263 24.3224C53.2263 24.3224 56 23.0632 56 25.147Z"
-                    fill="#FEFEFE" />
-                </svg>
-              </label>
-              <label class="cost__answer">
-                <input type="radio" name="connection" value="sms" class="cost__radio">
-                <span class="cost__card-item-mess">
-                  СМС на телефон
-                </span>
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="80" height="79.8186" rx="39.9093" fill="black" />
-                  <path
-                    d="M60 46.5613C60 47.7373 59.5317 48.8652 58.6983 49.6968C57.8648 50.5285 56.7343 50.9956 55.5556 50.9956H28.8889L20 59.8644V24.3894C20 23.2134 20.4683 22.0855 21.3017 21.2539C22.1352 20.4223 23.2657 19.9551 24.4444 19.9551H55.5556C56.7343 19.9551 57.8648 20.4223 58.6983 21.2539C59.5317 22.0855 60 23.2134 60 24.3894V46.5613Z"
-                    fill="white" />
-                </svg>
-              </label>
+          <div class="advantages__card">
+            <div class="advantage__img-container"><img src="img/advantages-5.png" alt="Мужчина" class="advantages__img">
+            </div>
+            <div class="advantages__info">
+              <h3 class="advantages__name">Нам нужно срочно!</h3>
+              <p class="advantages__text">Мы понимаем, если вам требуется изготовить мебель в срочном порядке, и идем
+                навстречу своим клиентам. Возможность срочного производства обсуждается заранее с заказчиком. Будьте
+                уверены – все сроки, прописанные в договоре, будут четко соблюдены.</p>
             </div>
           </div>
-          <div class="cost__card-end cost__card">
-            <h4 class="cost__name">6/<span class="cost__name-num">6 </span>Вам осталось добавить контактные данные</h4>
-            <div class="cost__block">
-              <span class="cost__card-end-text">Ваш город</span>
-              <div class="cost__card-inputs">
-                <label class="select__label">
-                  <input type="text" required="" placeholder="г. Владимир"
-                    class="pop-input search-input pop-consultation__input">
-                  <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 8.7L12 16.7L21 8.7" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                      stroke-linejoin="round"></path>
-                  </svg>
-                  <span class="select__options">
-                    <span class="select__option">г. Владимир</span>
-                    <span class="select__option">г. Карабаново</span>
-                    <span class="select__option">г. Собинка</span>
-                    <span class="select__option">г. Киржач</span>
-                    <span class="select__option">г. Александров</span>
-                    <span class="select__option">г. Судогда</span>
-                    <span class="select__option">г. Лакинск</span>
-                    <span class="select__option">г. Струнино</span>
-                    <span class="select__option">г. Вязники</span>
-                    <span class="select__option">г. Муром</span>
-                    <span class="select__option">г. Гороховец</span>
-                    <span class="select__option">г. Меленки</span>
-                    <span class="select__option">г. Юрьев-Польский</span>
-                    <span class="select__option">г. Кольчугино</span>
-                    <span class="select__option">г. Ковров</span>
-                    <span class="select__option">г. Петушки</span>
-                    <span class="select__option">г. Покров</span>
-                    <span class="select__option">г. Радужный</span>
-                    <span class="select__option">г. Гусь-Хрустальный</span>
-                  </span>
-                </label>
-                <input type="text" name="name" placeholder="Ваше имя*" class="pop-input cost__card-input">
-                <input type="tel" name="tel" placeholder="Ваш телефон*" class="pop-input cost__card-input">
-              </div>
-              <span class="cost__card-end-description">Нажимая на кнопку, вы даете согласие на обработку персональных
-                данных
-                и соглашаетесь c политикой конфиденциальности.</span>
-              <button type="submit" class="btn cost__card-submit">Отправить</button>
+          <div class="advantages__card">
+            <div class="advantage__img-container"><img src="img/advantages-6.png" alt="Расчет" class="advantages__img">
+            </div>
+            <div class="advantages__info">
+              <h3 class="advantages__name">Остаток суммы</h3>
+              <p class="advantages__text">Оставшуюся сумму клиент оплачивает только после того, как изделие будет
+                установлено, все детали прописываются в договоре.</p>
             </div>
           </div>
-          <div class="cost__load">
-            <div class="cost__load-line-b">
-              <div class="cost__load-line"></div>
+        </div>
+      </div>
+    </section>
+    <section class="connection">
+      <div class="container">
+        <form class="connection__form">
+          <div class="connection__block">
+            <div class="connection__text">
+              <h3 class="connection__title">Отправьте эскиз на расчет стоимости</h3>
+              <p class="connection__description">Если у вас уже есть свой эскиз или вы делали дизайн проект в другой
+                компании, пришлите нам эскиз или смету и мы предложим вам более выгодную стоимость.</p>
             </div>
-            <div class="cost__btns">
-              <button type="button" style="display: none;" class="cost__btn-prev"><svg width="26" height="8"
-                  viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="connection__line"></div>
+            <img src="img/notepad.png" alt="Эскиз" class="connection__img">
+          </div>
+          <div class="connection__inputs">
+            <input type="text" required placeholder="Ваше имя*" class="connection__input">
+            <input type="tel" required placeholder="Ваш телефон*" class="connection__input">
+            <input type="text" required placeholder="Ваш город*" class="connection__input">
+            <label class="connection__file">
+              <input type="file" class="connection__file-input">
+              <span class="connection__file-text">Прикрепить файл</span>
+              <svg class="connection__file-svg" width="20" height="21" viewBox="0 0 20 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_8024_1238)">
                   <path
-                    d="M0.646447 3.64645C0.451184 3.84171 0.451184 4.15829 0.646447 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646447 3.64645ZM1 4.5H26V3.5H1V4.5Z"
-                    fill="#A5A5A5" />
-                </svg>
-                <span class="cost__btn-text">Назад</span></button>
-              <button type="button" disabled class="cost__btn-next"><span class="cost__btn-text">Далее</span>
-                <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
-                    fill="black" />
-                </svg>
-              </button>
-            </div>
+                    d="M10 19.3166C14.6024 19.3166 18.3333 15.5856 18.3333 10.9833C18.3333 6.38088 14.6024 2.64992 10 2.64992C5.39763 2.64992 1.66667 6.38088 1.66667 10.9833C1.66667 15.5856 5.39763 19.3166 10 19.3166Z"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M10 7.64992V14.3166" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M6.66667 10.9832H13.3333" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_8024_1238">
+                    <rect width="20" height="20" fill="white" transform="translate(0 0.983246)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </label>
+            <button type="submit" class="btn connection__submit">Отправить</button>
+            <p class="connection__info">Нажимая на кнопку, вы даете согласие на обработку персональных данных и
+              соглашаетесь c политикой конфиденциальности.</p>
           </div>
         </form>
       </div>
@@ -1207,66 +1543,392 @@
         </div>
       </div>
     </section>
-    <section class="advantages">
+    <section class="team">
       <div class="container">
-        <h2 class="advantages__title">наши преимущества</h2>
-        <div class="advantages__block">
-          <div class="advantages__card">
-            <img src="img/advantages-1.png" alt="Мастер" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">Сервис под ключ </h3>
-              <ol class="advantages__list">
-                <li class="advantages__text">Точный замер помещения профессиональным инструментом.</li>
-                <li class="advantages__text">Создание дизайн-проекта в нашем фирменном салоне.</li>
-                <li class="advantages__text">Бережная доставка своим транспортом.</li>
-                <li class="advantages__text">Профессиональный монтаж и подъём на этаж нашими опытными сборщиками.</li>
-                <li class="advantages__text">Уборка после установки мебели - после нас всегда чисто.</li>
-              </ol>
+        <h2 class="team__title">Наша команда</h2>
+        <div class="team__swiper">
+          <div class="swiper-wrapper team__wrapper">
+            <div class="swiper-slide team__slide">
+              <img src="img/team-1.png" alt="Сотрудник" class="team__img">
+              <h3 class="team__name">Сергей</h3>
+              <p class="team__subtitle">Мастер по замерам, г. Владимир</p>
+              <div class="team__info">
+                <svg class="team__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.3351 14.0994V16.5994C18.3361 16.8315 18.2886 17.0612 18.1956 17.2739C18.1026 17.4865 17.9662 17.6774 17.7952 17.8343C17.6242 17.9912 17.4223 18.1107 17.2024 18.185C16.9826 18.2594 16.7496 18.287 16.5185 18.2661C13.9542 17.9875 11.491 17.1112 9.32682 15.7078C7.31334 14.4283 5.60626 12.7212 4.32682 10.7078C2.91846 8.53377 2.04202 6.05859 1.76848 3.48276C1.74766 3.25232 1.77505 3.02006 1.8489 2.80078C1.92275 2.5815 2.04146 2.38 2.19745 2.20911C2.35345 2.03822 2.54332 1.90169 2.75498 1.8082C2.96663 1.71471 3.19543 1.66631 3.42682 1.6661H5.92682C6.33124 1.66212 6.72331 1.80533 7.02995 2.06904C7.33659 2.33275 7.53688 2.69897 7.59348 3.09943C7.699 3.89949 7.89469 4.68504 8.17682 5.4411C8.28894 5.73937 8.3132 6.06353 8.24674 6.37516C8.18027 6.6868 8.02587 6.97286 7.80182 7.19943L6.74348 8.25776C7.92978 10.3441 9.65719 12.0715 11.7435 13.2578L12.8018 12.1994C13.0284 11.9754 13.3144 11.821 13.6261 11.7545C13.9377 11.688 14.2619 11.7123 14.5601 11.8244C15.3162 12.1066 16.1018 12.3022 16.9018 12.4078C17.3066 12.4649 17.6763 12.6688 17.9406 12.9807C18.2049 13.2926 18.3453 13.6907 18.3351 14.0994Z"
+                    fill="#4F4F4F" />
+                </svg>
+                <a href="tel:+79308300860" class="team__text">+ 7(930) 830-08-60</a>
+              </div>
+              <div class="team__info">
+                <svg class="team__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.33464 3.33398H16.668C17.5846 3.33398 18.3346 4.08398 18.3346 5.00065V15.0007C18.3346 15.9173 17.5846 16.6673 16.668 16.6673H3.33464C2.41797 16.6673 1.66797 15.9173 1.66797 15.0007V5.00065C1.66797 4.08398 2.41797 3.33398 3.33464 3.33398Z"
+                    fill="#4F4F4F" />
+                  <path d="M18.3346 5L10.0013 10.8333L1.66797 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <a href="mailto:modus-style@yandex.ru" target="_blank" class="team__text">modus-style@yandex.ru</a>
+              </div>
+            </div>
+            <div class="swiper-slide team__slide">
+              <img src="img/team-2.png" alt="Сотрудник" class="team__img">
+              <h3 class="team__name">Анастасия</h3>
+              <p class="team__subtitle">Дизайнер, г. Владимир</p>
+              <div class="team__info">
+                <svg class="team__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.3351 14.0994V16.5994C18.3361 16.8315 18.2886 17.0612 18.1956 17.2739C18.1026 17.4865 17.9662 17.6774 17.7952 17.8343C17.6242 17.9912 17.4223 18.1107 17.2024 18.185C16.9826 18.2594 16.7496 18.287 16.5185 18.2661C13.9542 17.9875 11.491 17.1112 9.32682 15.7078C7.31334 14.4283 5.60626 12.7212 4.32682 10.7078C2.91846 8.53377 2.04202 6.05859 1.76848 3.48276C1.74766 3.25232 1.77505 3.02006 1.8489 2.80078C1.92275 2.5815 2.04146 2.38 2.19745 2.20911C2.35345 2.03822 2.54332 1.90169 2.75498 1.8082C2.96663 1.71471 3.19543 1.66631 3.42682 1.6661H5.92682C6.33124 1.66212 6.72331 1.80533 7.02995 2.06904C7.33659 2.33275 7.53688 2.69897 7.59348 3.09943C7.699 3.89949 7.89469 4.68504 8.17682 5.4411C8.28894 5.73937 8.3132 6.06353 8.24674 6.37516C8.18027 6.6868 8.02587 6.97286 7.80182 7.19943L6.74348 8.25776C7.92978 10.3441 9.65719 12.0715 11.7435 13.2578L12.8018 12.1994C13.0284 11.9754 13.3144 11.821 13.6261 11.7545C13.9377 11.688 14.2619 11.7123 14.5601 11.8244C15.3162 12.1066 16.1018 12.3022 16.9018 12.4078C17.3066 12.4649 17.6763 12.6688 17.9406 12.9807C18.2049 13.2926 18.3453 13.6907 18.3351 14.0994Z"
+                    fill="#4F4F4F" />
+                </svg>
+                <a href="tel:+79308300860" class="team__text">+ 7(930) 830-08-60</a>
+              </div>
+              <div class="team__info">
+                <svg class="team__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.33464 3.33398H16.668C17.5846 3.33398 18.3346 4.08398 18.3346 5.00065V15.0007C18.3346 15.9173 17.5846 16.6673 16.668 16.6673H3.33464C2.41797 16.6673 1.66797 15.9173 1.66797 15.0007V5.00065C1.66797 4.08398 2.41797 3.33398 3.33464 3.33398Z"
+                    fill="#4F4F4F" />
+                  <path d="M18.3346 5L10.0013 10.8333L1.66797 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <a href="mailto:modus-style@yandex.ru" target="_blank" class="team__text">modus-style@yandex.ru</a>
+              </div>
+            </div>
+            <div class="swiper-slide team__slide">
+              <img src="img/team-3.png" alt="Сотрудник" class="team__img">
+              <h3 class="team__name">Кристина</h3>
+              <p class="team__subtitle">Дизайнер, г. Владимир</p>
+              <div class="team__info">
+                <svg class="team__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.3351 14.0994V16.5994C18.3361 16.8315 18.2886 17.0612 18.1956 17.2739C18.1026 17.4865 17.9662 17.6774 17.7952 17.8343C17.6242 17.9912 17.4223 18.1107 17.2024 18.185C16.9826 18.2594 16.7496 18.287 16.5185 18.2661C13.9542 17.9875 11.491 17.1112 9.32682 15.7078C7.31334 14.4283 5.60626 12.7212 4.32682 10.7078C2.91846 8.53377 2.04202 6.05859 1.76848 3.48276C1.74766 3.25232 1.77505 3.02006 1.8489 2.80078C1.92275 2.5815 2.04146 2.38 2.19745 2.20911C2.35345 2.03822 2.54332 1.90169 2.75498 1.8082C2.96663 1.71471 3.19543 1.66631 3.42682 1.6661H5.92682C6.33124 1.66212 6.72331 1.80533 7.02995 2.06904C7.33659 2.33275 7.53688 2.69897 7.59348 3.09943C7.699 3.89949 7.89469 4.68504 8.17682 5.4411C8.28894 5.73937 8.3132 6.06353 8.24674 6.37516C8.18027 6.6868 8.02587 6.97286 7.80182 7.19943L6.74348 8.25776C7.92978 10.3441 9.65719 12.0715 11.7435 13.2578L12.8018 12.1994C13.0284 11.9754 13.3144 11.821 13.6261 11.7545C13.9377 11.688 14.2619 11.7123 14.5601 11.8244C15.3162 12.1066 16.1018 12.3022 16.9018 12.4078C17.3066 12.4649 17.6763 12.6688 17.9406 12.9807C18.2049 13.2926 18.3453 13.6907 18.3351 14.0994Z"
+                    fill="#4F4F4F" />
+                </svg>
+                <a href="tel:+79308300860" class="team__text">+ 7(930) 830-08-60</a>
+              </div>
+              <div class="team__info">
+                <svg class="team__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.33464 3.33398H16.668C17.5846 3.33398 18.3346 4.08398 18.3346 5.00065V15.0007C18.3346 15.9173 17.5846 16.6673 16.668 16.6673H3.33464C2.41797 16.6673 1.66797 15.9173 1.66797 15.0007V5.00065C1.66797 4.08398 2.41797 3.33398 3.33464 3.33398Z"
+                    fill="#4F4F4F" />
+                  <path d="M18.3346 5L10.0013 10.8333L1.66797 5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <a href="mailto:modus-style@yandex.ru" target="_blank" class="team__text">modus-style@yandex.ru</a>
+              </div>
             </div>
           </div>
-          <div class="advantages__card">
-            <img src="img/advantages-2.png" alt="Дизайнер" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">Замер и 3D дизайн-проект бесплатно</h3>
-              <p class="advantages__text">Вы получаете замер, проект и визуализацию в подарок при заказе мебели в нашей
-                компании. Точный замер с учётом всех нюансов и грамотная планировка. Благодаря визуализации вы сможете
-                ознакомиться со своей новой мебелью в мельчайших деталях ещё до начала производства.</p>
+          <div class="swiper__btn-block team__btn-block">
+            <button class="team-button-prev swiper__btn">
+              <svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="11.3126" y1="2.21499" x2="1.41313" y2="12.1145" stroke-width="2" stroke-linecap="round" />
+                <line x1="10.9959" y1="22.3301" x2="1.49181" y2="12.826" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <button class="team-button-next swiper__btn">
+              <svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="-1" x2="15" y2="-1"
+                  transform="matrix(0.707107 0.707107 0.707107 -0.707107 11.6874 0.800781)" stroke-width="2"
+                  stroke-linecap="round" />
+                <line x1="1" y1="-1" x2="14.4409" y2="-1"
+                  transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 10.5898 22.3301)" stroke-width="2"
+                  stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <h2 class="questions__tilte">остались вопросы?</h2>
+        <div class="questions__block">
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Какая гарантия у вас?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Как оплатить аванс по договору?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Где можно посмотреть мебель "Вживую"?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Требуется ли предоплата?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Обнаружился брак, что делать?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Возможна ли доставка мебели в регионы?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Как заключить договор на поставку мебели?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Есть ли услуга по сборке мебели?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Можно ли заказать индивидуальные размеры?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Можно ли оформить заказ на юр. лицо?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+          <div class="questions__card">
+            <div class="questions__qust">
+              <span class="questions__text">Можно ли сразу заказать и дизайн-проект?</span>
+              <button type="button" class="questions__btn">
+                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <p class="questions__answer">2 года.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <img src="img/laptop.png" alt="Ноутбук" class="video__img">
+      <div class="container">
+        <h2 class="video__title">Видеогалерея</h2>
+        <div class="video__block">
+          <h3 class="video__banner">ЗАХОДИТЕ НА НАШ КАНАЛ в YOUTUBE</h3>
+          <div class="video__item">
+            <p class="video__text">Смотрите подробные обзоры наших объектов и отзывы клиентов!</p>
+            <svg class="video__svg" width="47" height="47" viewBox="0 0 47 47" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1259_7301)">
+                <path
+                  d="M38.1009 34.2615L33.1934 37.0948C32.9363 37.2433 32.5678 37.1445 32.4193 36.8874L29.586 31.9799C29.2041 31.3184 30.1918 30.7625 30.5675 31.4132L33.1175 35.83L37.5342 33.28C38.1624 32.9173 38.7526 33.8852 38.1009 34.2615ZM33.064 19.8298C35.2182 23.9555 35.7949 28.9187 34.2771 33.6882C34.0534 34.3592 32.9677 34.0451 33.2092 33.3233C36.0572 24.3727 31.0281 14.8348 22.0738 11.9825C17.5192 10.5356 12.5475 11.0636 8.4056 13.4549L7.92761 13.7309C7.25627 14.1185 6.72592 13.116 7.36095 12.7494L7.83894 12.4734C12.2557 9.9234 17.5606 9.33791 22.4218 10.8852C27.1881 12.3996 30.9111 15.702 33.0659 19.8287L33.064 19.8298Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1259_7301">
+                  <rect width="34" height="34" fill="white" transform="translate(29.4449) rotate(60)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <button class="btn video__btn" type="button">Смотреть видео</button>
+        </div>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="container">
+        <h2 class="articles__title">Статьи</h2>
+        <div class="articles__block">
+          <div class="articles__card">
+            <a href="#"><img src="img/article-1.png" alt="Квартира" class="articles__img"></a>
+            <a href="#" class="articles__name">СТИЛИ ИНТЕРЬЕРА В ДИЗАЙНЕ КВАРТИР</a>
+            <p class="articles__text">Убранство и отделка в помещении создаются соответствующей меблировкой
+              декорированием, использованием декора, освещения и материалов. </p>
+            <a href="#" class="articles__full">Читать статью</a>
+          </div>
+          <div class="articles__card">
+            <a href="#"><img src="img/article-2.png" alt="Пленка" class="articles__img"></a>
+            <a href="#" class="articles__name">ПЛЕНКА ДЛЯ ФАСАДОВ ADILET из мдф плит</a>
+            <p class="articles__text">Фасады из пленки поражают разнообразием расцветок и текстур. Могут имитировать
+              ценные породы дерева, мрамор, текстильные материалы, </p>
+            <a href="#" class="articles__full">Читать статью</a>
+          </div>
+          <div class="articles__card">
+            <a href="#"><img src="img/article-3.png" alt="Гардероб" class="articles__img"></a>
+            <a href="#" class="articles__name">ВНУТРЕННЕЕ НАПОЛНЕНИЕ ШКАФА</a>
+            <p class="articles__text">Шкаф заслуженно занимает особое место среди всей мебели в доме. Наша фирма
+              разрабатывает грамотное индивидуальное внутреннее наполнение </p>
+            <a href="#" class="articles__full">Читать статью</a>
+          </div>
+        </div>
+        <a href="#" class="articles__more">
+          <span class="articles__more-text">Смотреть еще</span>
+          <svg class="articles__svg" width="26" height="8" viewBox="0 0 26 8" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25.8536 4.35355C26.0488 4.15829 26.0488 3.84171 25.8536 3.64645L22.6716 0.464466C22.4763 0.269204 22.1597 0.269204 21.9645 0.464466C21.7692 0.659728 21.7692 0.976311 21.9645 1.17157L24.7929 4L21.9645 6.82843C21.7692 7.02369 21.7692 7.34027 21.9645 7.53553C22.1597 7.7308 22.4763 7.7308 22.6716 7.53553L25.8536 4.35355ZM0.5 4.5H25.5V3.5H0.5V4.5Z"
+              fill="black" />
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="review">
+      <div class="container">
+        <h2 class="review__title">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+        <div class="review__swiper">
+          <div class="swiper-wrapper review__wrapper">
+            <div class="swiper-slide review__slide">
+              <img src="img/review-flat.png" alt="Квартира" class="review__img">
+              <div class="review__block">
+                <div class="review__header">
+                  <h4 class="review__name">людмила</h4>
+                  <img src="img/yandex.png" alt="Яндекс" class="review__logo">
+                </div>
+                <p class="review__date">15.12.2022</p>
+                <p class="review__text">Обратилась в компанию по поводу изготовления дверей купе в прихожую. Дизайнер
+                  Виталия помогла с выбором материалов и фурнитуры, выбирать было из чего, что порадовало. Результатом
+                  осталась довольна. Сборщики работали быстро, аккуратно. Дали гарантию на работы на 1 год. Рекомендую
+                  Modus Style.</p>
+                <a href="#" class="review__then">Читать далее</a>
+                <a href="#" class="btn review__btn">Посмотреть оригинал отзыва</a>
+              </div>
+            </div>
+            <div class="swiper-slide review__slide">
+              <img src="img/review-flat.png" alt="Квартира" class="review__img">
+              <div class="review__block">
+                <div class="review__header">
+                  <h4 class="review__name">людмила</h4>
+                  <img src="img/yandex.png" alt="Яндекс" class="review__logo">
+                </div>
+                <p class="review__date">15.12.2022</p>
+                <p class="review__text">Обратилась в компанию по поводу изготовления дверей купе в прихожую. Дизайнер
+                  Виталия помогла с выбором материалов и фурнитуры, выбирать было из чего, что порадовало. Результатом
+                  осталась довольна. Сборщики работали быстро, аккуратно. Дали гарантию на работы на 1 год. Рекомендую
+                  Modus Style.</p>
+                <a href="#" class="review__then">Читать далее</a>
+                <a href="#" class="btn review__btn">Посмотреть оригинал отзыва</a>
+              </div>
+            </div>
+            <div class="swiper-slide review__slide">
+              <img src="img/review-flat.png" alt="Квартира" class="review__img">
+              <div class="review__block">
+                <div class="review__header">
+                  <h4 class="review__name">людмила</h4>
+                  <img src="img/yandex.png" alt="Яндекс" class="review__logo">
+                </div>
+                <p class="review__date">15.12.2022</p>
+                <p class="review__text">Обратилась в компанию по поводу изготовления дверей купе в прихожую. Дизайнер
+                  Виталия помогла с выбором материалов и фурнитуры, выбирать было из чего, что порадовало. Результатом
+                  осталась довольна. Сборщики работали быстро, аккуратно. Дали гарантию на работы на 1 год. Рекомендую
+                  Modus Style.</p>
+                <a href="#" class="review__then">Читать далее</a>
+                <a href="#" class="btn review__btn">Посмотреть оригинал отзыва</a>
+              </div>
             </div>
           </div>
-          <div class="advantages__card">
-            <img src="img/advantages-3.png" alt="Проект" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">На замер выезжает Дизайнер</h3>
-              <p class="advantages__text">В "случае необходимости" на замер, выезжает профессиональный Дизайнер, а не
-                просто замерщик. Для того, чтобы с самого начала понимать, что хочет клиент, и какую мы можем предложить
-                реализацию идей.</p>
-            </div>
-          </div>
-          <div class="advantages__card">
-            <img src="img/advantages-4.png" alt="Девушка" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">акции и Скидки</h3>
-              <p class="advantages__text">Для клиентов у нас предусмотрена гибкая система скидок, которая дарит нашим
-                заказчикам дополнительную выгоду при заказе мебели. Все актуальные акции уточняйте у наших менеджеров.
-              </p>
-            </div>
-          </div>
-          <div class="advantages__card">
-            <img src="img/advantages-5.png" alt="Мужчина" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">Нам нужно срочно!</h3>
-              <p class="advantages__text">Мы понимаем, если вам требуется изготовить мебель в срочном порядке, и идем
-                навстречу своим клиентам. Возможность срочного производства обсуждается заранее с заказчиком. Будьте
-                уверены – все сроки, прописанные в договоре, будут четко соблюдены.</p>
-            </div>
-          </div>
-          <div class="advantages__card">
-            <img src="img/advantages-6.png" alt="Расчет" class="advantages__img">
-            <div class="advantages__info">
-              <h3 class="advantages__name">Остаток суммы</h3>
-              <p class="advantages__text">Оставшуюся сумму клиент оплачивает только после того, как изделие будет
-                установлено, все детали прописываются в договоре.</p>
-            </div>
+          <div class="swiper__btn-block">
+            <button class="review-button-prev swiper__btn">
+              <svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="11.3126" y1="2.21499" x2="1.41313" y2="12.1145" stroke-width="2" stroke-linecap="round" />
+                <line x1="10.9959" y1="22.3301" x2="1.49181" y2="12.826" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+            <button class="review-button-next swiper__btn">
+              <svg width="23" height="24" viewBox="0 0 23 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="-1" x2="15" y2="-1"
+                  transform="matrix(0.707107 0.707107 0.707107 -0.707107 11.6874 0.800781)" stroke-width="2"
+                  stroke-linecap="round" />
+                <line x1="1" y1="-1" x2="14.4409" y2="-1"
+                  transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 10.5898 22.3301)" stroke-width="2"
+                  stroke-linecap="round" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
