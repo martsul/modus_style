@@ -623,12 +623,12 @@ if (cards[0]) {
   document
     .querySelector(".product__pagination")
     .addEventListener("click", (event) => {
-      if (event.target.getAttribute("count")) {
-        let curCount = +event.target.getAttribute("count");
+      if (event.target.getAttribute("data-count")) {
+        let curCount = +event.target.getAttribute("data-count");
 
         cards[i].classList.remove("active");
         document
-          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .querySelectorAll(`.product__img-mini[data-count='${i}']`)
           .forEach((e) => {
             e.classList.remove("active");
           });
@@ -636,7 +636,7 @@ if (cards[0]) {
 
         cards[i].classList.add("active");
         document
-          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .querySelectorAll(`.product__img-mini[data-count='${i}']`)
           .forEach((e) => {
             e.classList.add("active");
           });
@@ -649,7 +649,7 @@ if (cards[0]) {
       if (event.target.getAttribute("aria-label") === "Next slide") {
         cards[i].classList.remove("active");
         document
-          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .querySelectorAll(`.product__img-mini[data-count='${i}']`)
           .forEach((e) => {
             e.classList.remove("active");
           });
@@ -660,14 +660,14 @@ if (cards[0]) {
         }
         cards[i].classList.add("active");
         document
-          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .querySelectorAll(`.product__img-mini[data-count='${i}']`)
           .forEach((e) => {
             e.classList.add("active");
           });
       } else if (event.target.getAttribute("aria-label") === "Previous slide") {
         cards[i].classList.remove("active");
         document
-          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .querySelectorAll(`.product__img-mini[data-count='${i}']`)
           .forEach((e) => {
             e.classList.remove("active");
           });
@@ -678,7 +678,7 @@ if (cards[0]) {
         }
         cards[i].classList.add("active");
         document
-          .querySelectorAll(`.product__img-mini[count='${i}']`)
+          .querySelectorAll(`.product__img-mini[data-count='${i}']`)
           .forEach((e) => {
             e.classList.add("active");
           });
@@ -732,7 +732,7 @@ if (volumeCards[0]) {
       
       volumeCards[i].classList.remove("active");
       volumeCardsMini[i].classList.remove("active");
-      i = e.getAttribute("count") - 1;
+      i = e.getAttribute("data-count") - 1;
       volumeCards[i].classList.add("active");
       volumeCardsMini[i].classList.add("active");
     });
