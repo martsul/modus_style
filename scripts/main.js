@@ -147,11 +147,11 @@ document.querySelectorAll(".menu__mini-block").forEach((e) => {
   });
 });
 
-// Aside
+// // Aside
 
-document.querySelector(".aside__btn").addEventListener("click", () => {
-  document.querySelector(".aside").classList.toggle("aside-on");
-});
+// document.querySelector(".aside__btn").addEventListener("click", () => {
+//   document.querySelector(".aside").classList.toggle("aside-on");
+// });
 
 // POP-ON
 

@@ -1723,47 +1723,20 @@ div.preview__advantage-item:nth-child(3) {
 
 .aside {
   position: fixed;
-  top: 357px;
-  right: -55px;
-  display: flex;
-  transition: right .2s ease;
-  z-index: 100;
-}
-
-.aside-on {
+  top: 285px;
   right: 0;
-}
-
-.aside__btn {
-  background: var(--btn-o-nor);
-  width: 12px;
-  height: 52px;
-  border-radius: 22.36px 0 0 22.36px;
-  position: relative;
-  top: 25px;
-}
-
-.aside__btn::before {
-  content: "";
-  display: inline-block;
-  height: 32.5px;
-  border-right: 1px solid var(--white);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.aside__links {
   display: flex;
+  z-index: 20000;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 55px;
-  height: 315px;
-  /* background: var(--btn-o-nor); */
-  gap: 20px;
-  border-radius: 20px 0 0 20px;
+  padding: 10px 5px;
+  background: #ffffff87;
+  gap: 30px;
+  box-shadow: 0px 0px 5px #58585888;
+}
+
+.aside__img {
+  width: 40px;
+  height: 40px;
 }
 
 .footer {
