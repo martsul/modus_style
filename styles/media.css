@@ -287,6 +287,36 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .calculation__block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calculation__inputs {
+    max-width: 100%;
+  }
+
+  .calculation__form {
+    padding-top: 199px;
+  }
+
+  .calculation__img-block {
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 620px;
+    gap: 27px;
+  }
+
+  .calculation__flag {
+    width: 104px;
+  }
+
+  .calculation__flag:nth-child(2) {
+    width: 116px;
+  }
+}
+
 @media (max-width: 966px) {
   :root {
     --font-title: 400 32px/38.4px "Tenor Sans", sans-serif;
@@ -987,6 +1017,84 @@
   .payment__table {
     grid-template-columns: 1fr 1fr;
   }  
+
+  .preview__install {
+    padding: 34px 20px 42px;
+  }
+
+  .preview__install::before {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 37.97%, #FFFFFF 53.2%, #FFFFFF 100%);
+
+  }
+
+  .preview__install__title {
+    max-width: 364px;
+  }
+
+  .preview__install__info {
+    max-width: 250px;
+    margin-bottom: 17px;
+  }
+  
+  .preview__install__arr {
+    width: 37px;
+    height: 37px;
+  }
+
+  .preview__install__btn {
+    height: 40px;
+    max-width: 260px;
+  }
+
+  .installment p.descriptions__text:nth-child(4) {
+    margin-bottom: 10px;
+  }
+
+  .achievements {
+    padding: 0 20px 80px;
+  }
+
+  .achievements__title {
+    max-width: 593px;
+    margin-bottom: 40px;
+  }
+
+  .achievements__card-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .achievements__description {
+    padding: 22px 20px;
+  }
+
+  .achievements__description__title, p.achievements__description__text:nth-child(2) {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .calculation  {
+    margin: 118px 0 80px;
+    padding: 52px 20px;
+  }
+
+  .calculation__title {
+    bottom: calc(100% + 40px);
+  }
+
+  .calculation__block {
+    padding: 30px 21px;
+  }
+
+  .calculation__img-block {
+    top: 532px;
+  }
+
+  .calculation__range {
+    top: 62px;
+  }
+
 }
 
 @media (max-width: 870px) {
@@ -2260,6 +2368,169 @@
     width: 100%;
     justify-content: center;
   }
+  
+  .link__up {
+    bottom: 65px;
+  }
+
+  .preview__install {
+    padding: 340px 20px 41px;
+    background-size: 100% auto;
+    background-position: top center;
+  }
+
+  .preview__install::before {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 420px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 15.14%, #FFFFFF 100%);
+  }
+
+  .preview__install__title {
+    font: 400 26px/36.4px var(--font-T);
+    margin-bottom: 30px;
+  }
+
+  .preview__install__info {
+    margin-bottom: 15px;
+  }
+
+  .preview__install__btn {
+    max-width: 244px;
+  }
+
+  .installment .description .container {
+    grid-template-columns: 1fr;
+  }
+
+  .achievements {
+    padding: 0 20px 60px;
+  }
+
+  .achievements__title {
+    margin-bottom: 30px;
+  }
+
+  .achievements__card-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 15px;
+  }
+
+  .achievements__description {
+    position: relative;
+    padding: 17px 13px;
+  }
+
+  .achievements__description__info {
+    max-width: none;
+  }
+
+  .achievements__description__title {
+    padding-bottom: 7px;
+    margin-bottom: 0;
+  }
+
+  .achievements__description__img {
+    display: none;
+  }
+
+  .achievements__header {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .achievements__description__img-mini {
+    display: inline-block;
+    width: 100%;
+    max-width: 124px;
+  }
+
+  .calculation  {
+    margin: 127px 0 60px;
+    padding: 25px 20px;
+  }
+
+  .calculation__title {
+    bottom: calc(100% + 30px);
+  }
+
+  .calculation__block {
+    padding: 20px 11px 29px;
+    gap: 0;
+  }
+
+  .calculation__inputs {
+    gap: 15px;
+  }
+
+  .calculation__form {
+    padding-top: 191px;
+  }
+
+  .calculation__img-block {
+    gap: 12px;
+    top: 386px;
+  }
+
+  .calculation__flag {
+    width: 99px;
+  }
+
+  .calculation__flag:nth-child(2) {
+    width: 110px;
+  }
+
+  .calculation__form-description {
+    margin-bottom: 10px;
+  }
+
+  .calculation__form-sbm {
+    height: 36px;
+    max-width: 154px;
+  }
+
+  .calculation__range {
+    top: 47px;
+  }
+
+  .calculation__range-custom {
+    width: 15px;
+    height: 15px;
+    border: 3.5px solid var(--btn-o-nor);
+  }
+
+  .calculation__range-custom::before {
+    border: 2px solid var(--btn-o-nor);
+  }
+
+  .calculation__name, .calculation__number {
+    font: var(--font-s2);
+  }
+
+  .calculation__number {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .calculation__positon {
+    font: 400 10px/14px var(--font-M);
+  }
+
+  .calculation__form-input {
+    height: 40px;
+    gap: 10px;
+  }
+
+  .calculation__form-title {
+    margin-bottom: 15px;
+  }
+
+  .calculation__img-block {
+    transform: translate(-48%, 0);
+  }
 }
 
 @media (max-width: 620px) {
@@ -2305,6 +2576,10 @@
   .example__play {
     height: 42px;
     width: 42px;
+  }
+
+  .preview__install {
+    background-size: auto 290px;
   }
 }
 

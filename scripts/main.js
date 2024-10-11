@@ -729,7 +729,7 @@ if (volumeCards[0]) {
   volumeCardsMini.forEach((e) => {
     e.addEventListener("click", () => {
       console.log(e);
-      
+
       volumeCards[i].classList.remove("active");
       volumeCardsMini[i].classList.remove("active");
       i = e.getAttribute("data-count") - 1;
@@ -760,3 +760,22 @@ if (volumeCards[0]) {
     volumeCardsMini[i].classList.add("active");
   });
 }
+
+// Slider
+
+let a = document.querySelector(".div");
+let inputRange = document.querySelector("#asdasd");
+let min = inputRange.min;
+let value = inputRange.value - min;
+let max = inputRange.max - min;
+let position = (value * 100) / max
+console.log(min, max, value, position);
+
+a.setAttribute("style", `left: ${position}%`)
+
+inputRange.addEventListener("input", event => {
+  value = inputRange.value - min;   
+  max = inputRange.max - min;
+  position = (value * 100) / max
+  a.setAttribute("style", `left: ${position}%`)
+})
