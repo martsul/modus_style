@@ -613,7 +613,7 @@
         <a href="installment.html" class="bread-crumbs__link bread-crumbs__text">Рассрочка</a>
       </div>
     </section>
-    <section class="description">
+    <section class="description first">
       <h2 class="description__title">Этапы покупки</h2>
       <div class="container">
         <div class="description__block">
@@ -682,17 +682,17 @@
       <h2 class="calculation__title">Расчет ежемесячного платежа по кредиту / рассрочке:</h2>
       <div class="container">
         <div class="calculation__block">
-          <div class="calculation__img-block">
+          <div class="calculation__img-block ">
             <img src="img/installment/flag-1.png" alt="Флаг" class="calculation__flag">
             <img src="img/installment/flag-2.png" alt="Флаг" class="calculation__flag">
             <img src="img/installment/flag-3.png" alt="Флаг" class="calculation__flag">
           </div>
           <div class="calculation__inputs">
-            <div class="calculation__input">
+            <div class="calculation__input with-range">
               <h4 class="calculation__name">сумма рассрочки</h4>
-              <input value="275000 ₽" type="text" class="input calculation__number">
+              <input id="sum" value="275000 ₽" type="text" class="input calculation__number">
               <div class="calculation__range">
-                <input min="10000" max="500000" step="100" type="range" class="calculation__range-input">
+                <input value="275000" min="10000" max="500000" step="500" type="range" class="calculation__range-input">
                 <div class="calculation__range-custom"></div>
               </div>
               <div class="calculation__positions">
@@ -701,23 +701,23 @@
                 <span class="calculation__positon">500 000 ₽</span>
               </div>
             </div>
-            <div class="calculation__input">
+            <div class="calculation__input with-range">
               <h4 class="calculation__name">срок</h4>
-              <input value="10 месяцев" type="text" class="input calculation__number">
+              <input id="time" value="10 месяцев" type="text" class="input calculation__number">
               <div class="calculation__range">
                 <input value="10" min="6" max="24" step="1" type="range" class="calculation__range-input">
                 <div class="calculation__range-custom"></div>
               </div>
               <div class="calculation__positions">
                 <span class="calculation__positon">6 месяцев</span>
-                <span class="calculation__positon">10 месяцев</span>
                 <span class="calculation__positon">12 месяцев</span>
+                <span class="calculation__positon">18 месяцев</span>
                 <span class="calculation__positon">24 месяца</span>
               </div>
             </div>
-            <div class="calculation__input">
+            <div class="calculation__input with-range">
               <h4 class="calculation__name">первоначальный взнос</h4>
-              <input value="0 %" type="text" class="input calculation__number">
+              <input id="precent" value="0 %" type="text" class="input calculation__number">
               <div class="calculation__range">
                 <input value="0" min="0" max="100" step="1" type="range" class="calculation__range-input">
                 <div class="calculation__range-custom"></div>
@@ -726,12 +726,13 @@
                 <span class="calculation__positon">0 %</span>
                 <span class="calculation__positon">25 %</span>
                 <span class="calculation__positon">50%</span>
+                <span class="calculation__positon">75%</span>
                 <span class="calculation__positon">100 %</span>
               </div>
             </div>
             <div class="calculation__input">
               <h4 class="calculation__name">ваш ежемесячный платеж составит:</h4>
-              <input value="27 500 ₽" type="text" readonly class="calculation__number">
+              <input value="27 500 ₽" type="text" readonly class="calculation__number all-sum">
             </div>
           </div>
           <form class="calculation__form">
@@ -745,6 +746,371 @@
               данных и соглашаетесь c политикой конфиденциальности.</p>
             <button type="submit" class="calculation__form-sbm btn">Отправить</button>
           </form>
+        </div>
+      </div>
+    </section>
+    <section class="description second">
+      <h2 class="description__title">Каталог мебели в рассрочку </h2>
+      <div class="container">
+        <div class="description__block">
+          <h3 class="descriptions__title">Планируя взять мебель в рассрочку, прежде всего следует ознакомиться с
+            ассортиментом</h3>
+          <p class="descriptions__text">Прямо не выходя из дома, вы сможете выбрать из нашего портфолио модели и цены,
+            обсудить в семейном кругу, какому варианту отдать предпочтение. 
+          </p>
+          <div class="descriptions__text">
+            <span class="descriptions__text-info">В нашем каталоге мебели в рассрочку есть всё, чтобы превратить
+              квартиру в обитель комфорта и уюта:</span>
+            <ul class="descriptions__list">
+              <li class="descriptions__item">корпусные гарнитуры для кухни;</li>
+              <li class="descriptions__item">комплекты для прихожей;</li>
+              <li class="descriptions__item">детские комнаты;</li>
+              <li class="descriptions__item">шкафы купе, распашные шкафы;</li>
+              <li class="descriptions__item">мебель для гостиной и др.</li>
+            </ul>
+          </div>
+          <p class="descriptions__text">Весь каталог мебели для покупки в рассрочку рассчитан на покупателей с разными
+            финансовыми и практическими запросами. </p>
+          <p class="descriptions__text">Мы всегда готовы прийти на помощь! Если вы затрудняетесь с выбором, задайте
+            вопросы нашему опытному продавцу-консультанту и получите подробную информацию об используемых материалах и
+            эксплуатационных характеристиках товара. </p>
+        </div>
+        <div class="description__block">
+          <div class="description__img-container"><img src="img/installment/room.jpeg" alt="Комната"
+              class="descriptions__img"></div>
+          <a href="#" class="descriptions__link btn">Перейти в каталог</a>
+        </div>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="container">
+        <h2 class="popular__title">Популярное</h2>
+        <div class="popular__block">
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1833)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1833">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-1.jpg" alt="Шкаф" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Шкаф купе Леон</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">45 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1839)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1839">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-2.jpg" alt="Гарнитур" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Кухонный гарнитур Витторе</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">55 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1837)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1837">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-3.jpg" alt="Шкаф" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Шкаф купе Дарио</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">35 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1836)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1836">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-4.jpg" alt="Гарнитур" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Кухонный гарнитур Валерио</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">55 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1835)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1835">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-5.jpg" alt="Шкаф" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Шкаф купе Луиджи</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">33 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <div class="popular__header">
+              <span class="popular__banner">Рассрочка без % и переплат</span>
+              <div class="popular__active">
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_8024_1834)">
+                      <path d="M20.5 5.83337L15.5 10L20.5 14.1667V5.83337Z" fill="#F3F3F3" fill-opacity="0.5" />
+                      <path
+                        d="M13.5 2.5H2.5C1.39543 2.5 0.5 3.45939 0.5 4.64286V15.3571C0.5 16.5406 1.39543 17.5 2.5 17.5H13.5C14.6046 17.5 15.5 16.5406 15.5 15.3571V4.64286C15.5 3.45939 14.6046 2.5 13.5 2.5Z"
+                        fill="#F3F3F3" fill-opacity="0.5" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_8024_1834">
+                        <rect width="20" height="20" fill="white" transform="translate(0.5)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button type="button" class="popular__header-btn">
+                  <svg class="popular__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.3651 3.84124C16.9395 3.41541 16.4341 3.07761 15.8779 2.84714C15.3217 2.61667 14.7255 2.49805 14.1235 2.49805C13.5214 2.49805 12.9252 2.61667 12.369 2.84714C11.8128 3.07761 11.3074 3.41541 10.8818 3.84124L9.99847 4.72457L9.11514 3.84124C8.25539 2.98149 7.08933 2.49849 5.87347 2.49849C4.65761 2.49849 3.49155 2.98149 2.6318 3.84124C1.77206 4.70098 1.28906 5.86704 1.28906 7.0829C1.28906 8.29876 1.77206 9.46483 2.6318 10.3246L3.51514 11.2079L9.99847 17.6912L16.4818 11.2079L17.3651 10.3246C17.791 9.89894 18.1288 9.39358 18.3592 8.83736C18.5897 8.28115 18.7083 7.68497 18.7083 7.0829C18.7083 6.48083 18.5897 5.88465 18.3592 5.32844C18.1288 4.77222 17.791 4.26687 17.3651 3.84124Z"
+                      fill="#F3F3F3" fill-opacity="0.5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#"><img src="img/popular-6.jpg" alt="Детская" class="popular__img"></a>
+            <div class="popular__text">
+              <a href="#" class="popular__name">Детская Эннио</a>
+              <div class="popular__info">
+                <ol class="popular__params">
+                  <li class="popular__param">Любые размеры и форма</li>
+                  <li class="popular__param">Любой цвет</li>
+                </ol>
+                <div class="popular__price">
+                  <span class="popular__price-text">цена за п/м от </span>
+                  <strong class="popular__price-cost">45 000 ₽</strong>
+                </div>
+              </div>
+              <div class="popular__buttons">
+                <button class="btn popular__btn" type="button">Заказать</button>
+                <button class="empty-btn popular__btn" type="button">В избранное</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="popular__more">
+          <span class="popular__more-text">Показать еще</span>
+          <svg class="popular__more-svg" width="26" height="8" viewBox="0 0 26 8" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25.8536 4.35355C26.0488 4.15829 26.0488 3.84171 25.8536 3.64645L22.6716 0.464466C22.4763 0.269204 22.1597 0.269204 21.9645 0.464466C21.7692 0.659728 21.7692 0.976311 21.9645 1.17157L24.7929 4L21.9645 6.82843C21.7692 7.02369 21.7692 7.34027 21.9645 7.53553C22.1597 7.7308 22.4763 7.7308 22.6716 7.53553L25.8536 4.35355ZM0.5 4.5H25.5V3.5H0.5V4.5Z"
+              fill="black" />
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="description third">
+      <h2 class="description__title">Где можно купить мебель в рассрочку?</h2>
+      <div class="container">
+        <div class="description__block">
+          <h3 class="descriptions__title">Доверие клиентов – наше главное достижение </h3>
+          <p class="descriptions__text">Если вы ищете, где заказать мебель в рассрочку по цене производителя без
+            накруток, обращайтесь. С удовольствием включим вас в нашу базу клиентов.</p>
+          <p class="descriptions__text">Мы гордимся нашей репутацией, которая честно заработана и подтверждена отзывами
+            клиентов. Они ценят нашу ответственность и профессионализм.</p>
+          <p class="descriptions__text">У нас можно заказать изготовление по индивидуальным размерам. </p>
+          <div class="description__img-container"><img src="img/installment/kitchen.jpeg" alt="Комната"
+              class="descriptions__img"></div>
+        </div>
+        <div class="description__block">
+          <div class="description__img-container"><img src="img/installment/living-room.jpeg" alt="Комната"
+              class="descriptions__img"></div>
+          <p class="descriptions__text">После обработки заявки клиента квалифицированные мастера сразу приступают к выполнению заказа. </p>
+          <p class="descriptions__text">В работе мы используем износостойкую фурнитуру и долговечные безвредные для здоровья материалы –  шпон, ЛДСП, МДФ нового поколения. </p>
+          <p class="descriptions__text">Время изготовления от 14 рабочих дней. Сроки зависят от того, какую мебель вы хотите купить у нас в рассрочку. </p>
         </div>
       </div>
     </section>

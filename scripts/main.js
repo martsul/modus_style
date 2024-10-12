@@ -763,19 +763,180 @@ if (volumeCards[0]) {
 
 // Slider
 
-let a = document.querySelector(".div");
-let inputRange = document.querySelector("#asdasd");
-let min = inputRange.min;
-let value = inputRange.value - min;
-let max = inputRange.max - min;
-let position = (value * 100) / max
-console.log(min, max, value, position);
+let blockWithRange = document.querySelectorAll(".with-range");
 
-a.setAttribute("style", `left: ${position}%`)
+if (blockWithRange[0]) {
+  function changeDivPosition(min, max, value, div) {
+    let maxPercent, minPercent;
+    let windowWidth = window.innerWidth;
 
-inputRange.addEventListener("input", event => {
-  value = inputRange.value - min;   
-  max = inputRange.max - min;
-  position = (value * 100) / max
-  a.setAttribute("style", `left: ${position}%`)
-})
+    if (windowWidth >= 1123) {
+      maxPercent = 94.4;
+      minPercent = 5.6;
+    } else if (windowWidth >= 1001) {
+      maxPercent = 92.7;
+      minPercent = 7.3;
+    } else if (windowWidth >= 900) {
+      maxPercent = 96.3;
+      minPercent = 3.7;
+    } else if (windowWidth >= 800) {
+      maxPercent = 95.7;
+      minPercent = 4.3;
+    } else if (windowWidth >= 695) {
+      maxPercent = 95;
+      minPercent = 5;
+    } else if (windowWidth >= 600) {
+      maxPercent = 97.3;
+      minPercent = 2.7;
+    } else if (windowWidth >= 500) {
+      maxPercent = 96.6;
+      minPercent = 3.4;
+    } else if (windowWidth >= 376) {
+      maxPercent = 95.4;
+      minPercent = 4.6;
+    }
+
+    let percent = ((value - min) * maxPercent) / max + minPercent;
+    div.setAttribute("style", `left: ${percent}%;`);
+  }
+
+  blockWithRange.forEach((e) => {
+    let currInput = e.querySelector(".calculation__range-input");
+    let currDiv = e.querySelector(".calculation__range-custom");
+    let currInputText = e.querySelector(".calculation__number");
+    let currMin = currInput.min;
+    let currMax = currInput.max - currMin;
+    let currValue = currInput.value;
+    let startFocus;
+
+    changeDivPosition(currMin, currMax, currValue, currDiv);
+
+    currInput.addEventListener("input", () => {
+      currValue = currInput.value;
+      changeDivPosition(currMin, currMax, currValue, currDiv);
+
+      if (currInputText.id === "sum") {
+        currInputText.value = currValue + " ₽";
+      } else if (currInputText.id === "time") {
+        if (currValue == 21) {
+          currInputText.value = currValue + " месяц";
+        } else if (currValue > 21 && currValue < 25) {
+          currInputText.value = currValue + " месяца";
+        } else {
+          currInputText.value = currValue + " месяцев";
+        }
+      } else if (currInputText.id === "precent") {
+        currInputText.value = currValue + " %";
+      }
+
+      let allSum = blockWithRange[0].querySelector(
+        ".calculation__range-input"
+      ).value;
+      let allTime = blockWithRange[1].querySelector(
+        ".calculation__range-input"
+      ).value;
+      let allPercent = blockWithRange[2].querySelector(
+        ".calculation__range-input"
+      ).value;
+
+      let paySum = Math.round((allSum * ((100 - allPercent) / 100)) / allTime);
+      let tempSum = "";
+      let spaceInd = 0;
+
+      for (let i = `${paySum}`.length - 1; i >= 0; i--) {
+        if (spaceInd === 3) {
+          tempSum += " ";
+          spaceInd = 0;
+          i++;
+        } else {
+          tempSum += `${paySum}`[i];
+          spaceInd++;
+        }
+      }
+      paySum = tempSum.split("").reverse().join("");
+
+      document.querySelector(".calculation__number.all-sum").value =
+        paySum + " ₽";
+    });
+
+    currInputText.addEventListener("focus", () => {
+      startFocus = currInputText.value;
+      currInputText.value = startFocus.match("[0-9]*");
+    });
+    currInputText.addEventListener("blur", () => {
+      if (currInputText.value === "") {
+        currInputText.value = startFocus;
+      } else {
+        if (currInputText.id === "sum") {
+          if (currInputText.value >= 10000 && currInputText.value <= 500000) {
+            currInputText.value = currInputText.value + " ₽";
+          } else {
+            currInputText.value = startFocus;
+          }
+        } else if (currInputText.id === "time") {
+          if (currInputText.value == 21) {
+            currInputText.value = currInputText.value + " месяц";
+          } else if (currInputText.value > 21 && currInputText.value < 25) {
+            currInputText.value = currInputText.value + " месяца";
+          } else if (currInputText.value > 5 && currInputText.value < 21) {
+            currInputText.value = currInputText.value + " месяцев";
+          } else {
+            currInputText.value = startFocus;
+          }
+        } else if (currInputText.id === "precent") {
+          if (currInputText.value >= 0 && currInputText.value <= 100) {
+            currInputText.value = currInputText.value + " %";
+          } else {
+            currInputText.value = startFocus;
+          }
+        }
+      }
+
+      if (currInputText.value != startFocus) {
+        currValue = currInputText.value.match("[0-9]*");
+        currInput.value = currValue;
+        changeDivPosition(currMin, currMax, currValue, currDiv);
+
+        let allSum = blockWithRange[0].querySelector(
+          ".calculation__range-input"
+        ).value;
+        let allTime = blockWithRange[1].querySelector(
+          ".calculation__range-input"
+        ).value;
+        let allPercent = blockWithRange[2].querySelector(
+          ".calculation__range-input"
+        ).value;
+
+        let paySum = Math.round(
+          (allSum * ((100 - allPercent) / 100)) / allTime
+        );
+        let tempSum = "";
+        let spaceInd = 0;
+
+        for (let i = `${paySum}`.length - 1; i >= 0; i--) {
+          if (spaceInd === 3) {
+            tempSum += " ";
+            spaceInd = 0;
+            i++;
+          } else {
+            tempSum += `${paySum}`[i];
+            spaceInd++;
+          }
+        }
+        paySum = tempSum.split("").reverse().join("");
+
+        document.querySelector(".calculation__number.all-sum").value =
+          paySum + " ₽";
+      }
+    });
+
+    currInputText.addEventListener("keydown", (event) => {
+      if (
+        Number.isNaN(+event.key) &&
+        event.key != "Backspace" &&
+        event.key != "Delete"
+      )
+        event.preventDefault();
+    });
+  });
+}
