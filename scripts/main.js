@@ -97,13 +97,13 @@ const productionSwiper = new Swiper(".gallery__swiper", {
     695: {
       width: 376,
       slidesPerView: 3,
-    }
+    },
   },
   navigation: {
     nextEl: ".gallery__button-next",
     prevEl: ".gallery__button-prev",
   },
-})
+});
 
 // Questions
 
@@ -968,21 +968,21 @@ let productCards = document.querySelectorAll(".gallery__card");
 
 if (productCards[0]) {
   let imgPop = document.querySelector(".pop-img__img");
-  let popOn = document.querySelector(".pop-img")
+  let popOn = document.querySelector(".pop-img");
 
-  productCards.forEach(e => {
+  productCards.forEach((e) => {
     e.addEventListener("click", () => {
       imgPop.setAttribute("src", e.querySelector("img").getAttribute("src"));
       popOn.classList.add("pop-on-full");
       document.body.classList.add("body-hidden");
-    })
-  })
-  popOn.addEventListener("click", event => {
+    });
+  });
+  popOn.addEventListener("click", (event) => {
     if (event.target == popOn) {
       popOn.classList.remove("pop-on-full");
       document.body.classList.remove("body-hidden");
     }
-  })
+  });
 
   document.addEventListener("keyup", (event) => {
     if (event.key === "Escape") {
@@ -990,4 +990,34 @@ if (productCards[0]) {
       document.body.classList.remove("body-hidden");
     }
   });
+}
+
+// Band
+
+let bandCards = document.querySelectorAll(".band__card");
+
+if (bandCards[0]) {
+  let filterButtons = document.querySelectorAll(".band__label");
+  let cardsContainer = document.querySelector(".band__container");
+  let innerCards = cardsContainer.innerHTML;
+
+  filterButtons.forEach(e => {
+    e.addEventListener("click", () => {
+      let currRange = e.querySelector("input");
+      if (!currRange.checked) {
+        let currCity = currRange.value;
+        cardsContainer.innerHTML = "";
+        
+        if (currCity == "Все") {
+          cardsContainer.innerHTML = innerCards;
+        } else {
+          bandCards.forEach(e => {
+            if (e.querySelector(".band__subtitle").innerText.match(`${currCity}`)) {
+              cardsContainer.appendChild(e);
+            }
+          })
+        }
+      }
+    })
+  })
 }

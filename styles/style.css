@@ -1335,17 +1335,17 @@ div.preview__advantage-item:nth-child(3) {
   overflow: hidden;
 }
 
-.team__slide {
+.team__slide, band__card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.team__img {
+.team__img, .band__img {
   width: 100%;
 }
 
-.team__name {
+.team__name, .band__name {
   text-align: center;
   text-transform: uppercase;
   font: var(--font-s1);
@@ -1353,7 +1353,7 @@ div.preview__advantage-item:nth-child(3) {
   margin-bottom: 10px;
 }
 
-.team__subtitle {
+.team__subtitle, .band__subtitle {
   text-align: center;
   font: var(--font-t14);
   padding-bottom: 10px;
@@ -1362,7 +1362,7 @@ div.preview__advantage-item:nth-child(3) {
   border-bottom: .5px solid var(--gray);
 }
 
-.team__info {
+.team__info, .band__info {
   display: flex;
   gap: 6px;
   align-items: center;
@@ -1370,7 +1370,7 @@ div.preview__advantage-item:nth-child(3) {
   width: 100%;
 }
 
-.team__text {
+.team__text, .band__text {
   font: var(--font-t14);
 }
 
@@ -5144,4 +5144,90 @@ section.text-img:nth-child(9) .text-img__img-container {
   max-height: 720px;
   width: 100%;
   max-width: 455px;
+}
+
+.squad .preview__company  {
+  background: url("../img/squad/preview-background.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-top: 100px;
+}
+
+.squad .preview__company::before {
+  width: 48%;
+}
+
+.squad .preview__company__title {
+  max-width: 295px;
+}
+
+.squad .preview__company__info {
+  position: relative;
+  max-width: 218px;
+  padding-bottom: 16.5px;
+}
+
+.squad .preview__company__arr {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.band {
+  padding: 0 20px 120px;
+  overflow: hidden;
+}
+
+.band__title {
+  font: var(--font-h2);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.band__header {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.band__header::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100vw;
+  border: .5px solid var(--inactive-grey);
+}
+
+.band__radio {
+  display: none;
+}
+
+.band__filter {
+  padding-bottom: 14px;
+  font: var(--font-t20);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: color .1s ease;
+}
+
+.band__filter:hover {
+  color: var(--btn-o-hov);
+}
+
+.band__radio:checked + .band__filter  {
+  border-bottom: 2px solid var(--btn-o-nor);
+  color: var(--btn-o-nor);
+}
+
+.band__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
