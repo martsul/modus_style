@@ -1001,23 +1001,54 @@ if (bandCards[0]) {
   let cardsContainer = document.querySelector(".band__container");
   let innerCards = cardsContainer.innerHTML;
 
-  filterButtons.forEach(e => {
+  filterButtons.forEach((e) => {
     e.addEventListener("click", () => {
       let currRange = e.querySelector("input");
       if (!currRange.checked) {
         let currCity = currRange.value;
         cardsContainer.innerHTML = "";
-        
+
         if (currCity == "Все") {
           cardsContainer.innerHTML = innerCards;
         } else {
-          bandCards.forEach(e => {
-            if (e.querySelector(".band__subtitle").innerText.match(`${currCity}`)) {
+          bandCards.forEach((e) => {
+            if (
+              e.querySelector(".band__subtitle").innerText.match(`${currCity}`)
+            ) {
               cardsContainer.appendChild(e);
+            }
+          });
+        }
+      }
+    });
+  });
+}
+
+// Partners
+
+let partnersCards = document.querySelectorAll(".mates__card");
+
+if (partnersCards[0]) {
+  let filters = document.querySelectorAll(".mates__label");
+  let container = document.querySelector(".mates__container");
+  let allInnerCards = container.innerHTML;
+
+  filters.forEach((e) => {
+    let currData = e.getAttribute("data-sort");
+    e.addEventListener("click", () => {
+      if (!e.querySelector("input").checked) {
+        container.innerHTML = "";
+
+        if (currData == "all") {
+          container.innerHTML = allInnerCards;
+        } else {
+          partnersCards.forEach(e => {
+            if (e.getAttribute("data-sort").match(`${currData}`) || e.getAttribute("data-sort") == "m f") {
+              container.appendChild(e);
             }
           })
         }
       }
-    })
-  })
+    });
+  });
 }

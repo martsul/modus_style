@@ -1034,7 +1034,7 @@
     padding: 34px 20px 42px;
   }
 
-  .preview__install::before, .preview__company::before, .squad .preview__company::before {
+  .preview__install::before, .preview__company::before, .squad .preview__company::before, .partners .preview__company::before {
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 37.97%, #FFFFFF 53.2%, #FFFFFF 100%);
   }
 
@@ -1361,7 +1361,7 @@
     margin: 0 auto;
   }
 
-  .squad .preview__company {
+  .squad .preview__company, .partners .preview__company {
     padding-top: 52px;
   }
 
@@ -1370,32 +1370,38 @@
     background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 37.97%, #FFFFFF 53.2%, #FFFFFF 100%);
   }
 
-  .squad .preview__company__info {
+  .partners .preview__company::before {
+    width: 82%;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 37.97%, #FFFFFF 53.2%, #FFFFFF 100%);
+
+  }
+
+  .squad .preview__company__info, .partners .preview__company__info {
     max-width: 194px;
   }
 
-  .squad .preview__company__arr {
+  .squad .preview__company__arr, .partners .preview__company__arr {
     right: 30px;
   }
 
-  .squad .preview__company__btn {
+  .squad .preview__company__btn, .partners .preview__company__btn {
     max-width: 225px;
   }
 
-  .band {
+  .band, .mates {
     padding: 0 20px 80px;
   }
 
-  .band__title {
+  .band__title, .mates__title {
     margin-bottom: 40px;
   }
 
-  .band__header {
+  .band__header, .mates__header {
     gap: 63px;
     margin-bottom: 40px;
   }
 
-  .band__container {
+  .band__container, .mates__container {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
@@ -2699,7 +2705,7 @@
     background-position: top center;
   }
 
-  .preview__install::before, .squad .preview__company::before {
+  .preview__install::before, .squad .preview__company::before, .partners .preview__company::before {
     top: auto;
     bottom: 0;
     width: 100%;
@@ -2864,7 +2870,7 @@
     padding-top: 0;
   }
 
-  .preview__company, .production .preview__company, .squad .preview__company {
+  .preview__company, .production .preview__company, .squad .preview__company, .partners .preview__company {
     height: auto;
     padding: 315px 20px 42px;
     background-position: top center;
@@ -3083,28 +3089,28 @@
     height: 360px;
   }
 
-  .squad .preview__company::before {
+  .squad .preview__company::before, .partners .preview__company::before {
     height: 305px;
   }
 
-  .band {
+  .band, .mates {
     padding: 0 20px 60px;
   }
 
-  .band__title {
+  .band__title, .mates__title {
     margin-bottom: 30px;
   }
 
-  .band__header {
+  .band__header, .mates__header {
     margin-bottom: 30px;
     gap: 20px;
   }
 
-  .band__filter {
+  .band__filter, .mates__filter {
     font: 400 12px/16.8px var(--font-M);
   }
 
-  .band__container {
+  .band__container, .mates__container {
     grid-template-columns: 1fr;
     gap: 40px;
   }
@@ -3211,11 +3217,13 @@
 @media (max-width: 470px) {
   .production .preview__company {
     background-size: auto 318px;
-  }
-
-  .production .preview__company {
     background-position: -244px top;
   }
+
+  .partners .preview__company {
+    background-size: auto 318px;
+  }
+
 }
 
 @media (max-width: 440px) {
