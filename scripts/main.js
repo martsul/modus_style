@@ -84,6 +84,27 @@ const products = new Swiper(".product__pagination", {
   },
 });
 
+const productionSwiper = new Swiper(".gallery__swiper", {
+  loop: true,
+  slidesPerView: 1,
+  width: 270,
+  spaceBetween: 40,
+  breakpoints: {
+    966: {
+      width: null,
+      slidesPerView: 3,
+    },
+    695: {
+      width: 376,
+      slidesPerView: 3,
+    }
+  },
+  navigation: {
+    nextEl: ".gallery__button-next",
+    prevEl: ".gallery__button-prev",
+  },
+})
+
 // Questions
 
 let questionsCard = document.querySelectorAll(".questions__card");
@@ -938,5 +959,35 @@ if (blockWithRange[0]) {
       )
         event.preventDefault();
     });
+  });
+}
+
+// Production Img
+
+let productCards = document.querySelectorAll(".gallery__card");
+
+if (productCards[0]) {
+  let imgPop = document.querySelector(".pop-img__img");
+  let popOn = document.querySelector(".pop-img")
+
+  productCards.forEach(e => {
+    e.addEventListener("click", () => {
+      imgPop.setAttribute("src", e.querySelector("img").getAttribute("src"));
+      popOn.classList.add("pop-on-full");
+      document.body.classList.add("body-hidden");
+    })
+  })
+  popOn.addEventListener("click", event => {
+    if (event.target == popOn) {
+      popOn.classList.remove("pop-on-full");
+      document.body.classList.remove("body-hidden");
+    }
+  })
+
+  document.addEventListener("keyup", (event) => {
+    if (event.key === "Escape") {
+      popOn.classList.remove("pop-on-full");
+      document.body.classList.remove("body-hidden");
+    }
   });
 }
