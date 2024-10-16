@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="styles/swiper.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
-  <link rel="stylesheet" href="styles/swiper.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/media.css">
 </head>
 
-<body class="interior">
+<body class="reviews">
   <header class="header">
     <div class="header__top">
       <div class="header__container">
@@ -579,27 +579,20 @@
     </div>
   </header>
   <main class="content">
-    <section class="preview-i">
-      <img src="img/interior/lamps.png" class="preview-i__lamps" alt="Лампы">
+    <section class="preview-review">
       <div class="container">
-        <p class="preview-i__subtitle">Добро пожаловать в студию дизайна интерьеров</p>
-        <h1 class="preview-i__title">Реализуем ваши самые смелые идеи</h1>
-        <div class="preview-i__point">
-          <span class="preview-i__text">Закажите дизайн интерьера прямо сейчас!</span>
-          <svg class="preview-i__arrow" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_1260_7323)">
-              <path
-                d="M38.1022 34.2615L33.1947 37.0948C32.9376 37.2433 32.5691 37.1445 32.4207 36.8874L29.5873 31.9799C29.2054 31.3184 30.1931 30.7625 30.5688 31.4132L33.1188 35.83L37.5355 33.28C38.1637 32.9173 38.7539 33.8852 38.1022 34.2615ZM33.0653 19.8298C35.2195 23.9555 35.7962 28.9187 34.2784 33.6882C34.0547 34.3592 32.969 34.0451 33.2106 33.3233C36.0585 24.3727 31.0295 14.8348 22.0751 11.9825C17.5205 10.5356 12.5488 11.0636 8.40691 13.4549L7.92892 13.7309C7.25758 14.1185 6.72723 13.116 7.36226 12.7494L7.84025 12.4734C12.257 9.9234 17.5619 9.33791 22.4231 10.8852C27.1894 12.3996 30.9124 15.702 33.0672 19.8287L33.0653 19.8298Z"
-                fill="black" />
-            </g>
-            <defs>
-              <clipPath id="clip0_1260_7323">
-                <rect width="34" height="34" fill="white" transform="translate(29.4453) rotate(60)" />
-              </clipPath>
-            </defs>
+        <h1 class="preview-review__title">Отзывы о нашей работе</h1>
+        <p class="preview-review__subtitle">здесь Вы можете ознакомиться с отзывами наших клиентов или оставить свой
+          отзыв о сотрудничестве с нашей компанией</p>
+        <div class="preview-review__info">
+          <span class="preview-review__text">Поделитесь впечатлениями от покупки</span>
+          <svg class="preview-review__svg" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M31.1012 24.261L26.1938 27.0943C25.9366 27.2428 25.5681 27.1441 25.4197 26.8869L22.5863 21.9794C22.2044 21.3179 23.1921 20.762 23.5678 21.4128L26.1178 25.8295L30.5346 23.2795C31.1627 22.9168 31.7529 23.8847 31.1012 24.261ZM26.0643 9.8293C28.2186 13.955 28.7952 18.9182 27.2775 23.6877C27.0537 24.3587 25.9681 24.0446 26.2096 23.3228C29.0575 14.3723 24.0285 4.83435 15.0741 1.98205C10.5196 0.535156 5.54785 1.06308 1.40594 3.45441L0.927948 3.73038C0.256605 4.11798 -0.273747 3.11552 0.361281 2.74888L0.839271 2.47292C5.256 -0.0770839 10.5609 -0.662579 15.4221 0.884724C20.1884 2.39913 23.9114 5.70151 26.0663 9.82817L26.0643 9.8293Z"
+              fill="black" />
           </svg>
         </div>
-        <button type="button" class="preview-i__btn btn">Заказать дизайн</button>
+        <button type="button" class="preview-review__btn btn">Оставить отзыв</button>
       </div>
     </section>
     <section class="bread-crumbs">
@@ -612,268 +605,514 @@
             <path d="M7.5 18.3333V10H12.5V18.3333" stroke="#4F4F4F" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </a>
-        <a href="catalog.html" class="bread-crumbs__link bread-crumbs__text">Дизайн интерьера</a>
+        <a href="company.html" class="bread-crumbs__link bread-crumbs__text">О компании</a>
+        <a href="reviews.html" class="bread-crumbs__link bread-crumbs__text">Отзывы</a>
       </div>
     </section>
-    <section class="description">
+    <section class="mates">
       <div class="container">
-        <div class="description__block">
-          <h3 class="descriptions__title">Предлагаем услуги Дизайнера интерьера для ВАШЕГО дома или квартиры "под ключ".
-          </h3>
-          <p class="descriptions__text">Наши дизайнеры помогут ВАМ создать уютное и функциональное пространство для
-            жизни. Мы продумаем для вас удобную планировку, эргономичную расстановку мебели и визуальное оформление с
-            учетом ваших предпочтений.</p>
-          <p class="descriptions__text">Дизайнер интерьера разработает для ВАС актуальный интерьер на основе современных
-            тенденций.</p>
-          <img src="img/interior/room.jpeg" alt="Детская" class="descriptions__img">
+        <h2 class="mates__title">реальные Отзывы наших клиентов</h2>
+        <div class="mates__header">
+          <label data-sort="all" class="mates__label">
+            <input checked type="radio" class="mates__radio" name="mates-filter">
+            <span class="mates__filter">Все</span>
+          </label>
+          <label data-sort="m" class="mates__label">
+            <input type="radio" class="mates__radio" name="mates-filter">
+            <span class="mates__filter">Яндекс</span>
+          </label>
+          <label data-sort="f" class="mates__label">
+            <input type="radio" class="mates__radio" name="mates-filter">
+            <span class="mates__filter">Отзовик</span>
+          </label>
+          <label data-sort="f" class="mates__label">
+            <input type="radio" class="mates__radio" name="mates-filter">
+            <span class="mates__filter">Другие</span>
+          </label>
         </div>
-        <div class="description__block">
-          <img src="img/interior/room-1.jpeg" alt="Спальня" class="descriptions__img">
-          <p class="descriptions__text">Дизайн-проект создается с учетом инженерных условий и проектов.</p>
-          <p class="descriptions__text">Взаимное сотрудничество дизайнера, ремонтных бригад и мебельного производства,
-            позволяют Вам сэкономить не только время, но и до 15% затрат на приобретении мебели и отделочных материалов.
-          </p>
-          <p class="descriptions__text">Мы поможем Вам не только создать дизайн-проект, но и воплотить его в реальность!
-          </p>
+        <div class="mates__container">
+          <div class="mates__card">
+            <div class="mates__head">
+              <h4 class="mates__name">Людмила</h4>
+              <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
+            </div>
+            <div class="mates__info">
+              <span class="mates__date">15.12.2022</span>
+              <div class="mates__stars">
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+              </div>
+            </div>
+            <div class="mates__content">
+              <p class="mates__text">Обратилась в компанию по поводу изготовления дверей купе в прихожую. Дизайнер
+                Виталия помогла с выбором материалов и фурнитуры, выбирать было из чего, что порадовало. Результатом
+                осталась довольна. Сборщики работали быстро, аккуратно. Дали гарантию на работы на 1 год. Рекомендую
+                Modus Style.</p>
+              <div class="mates__img-container">
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-1.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-2.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-3.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+              </div>
+            </div>
+            <a href="#" class="mates__link">
+              <span class="mates__link-text">Посмотреть оригинал отзыва</span>
+              <svg class="mates__arr" width="26" height="8" viewBox="0 0 26 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
+                  fill="#4F4F4F" />
+              </svg>
+            </a>
+          </div>
+          <div class="mates__card">
+            <div class="mates__head">
+              <h4 class="mates__name">Roman P.</h4>
+              <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
+            </div>
+            <div class="mates__info">
+              <span class="mates__date">20.11.2022</span>
+              <div class="mates__stars">
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+              </div>
+            </div>
+            <div class="mates__content">
+              <p class="mates__text">Заказали шкаф-купе, нашли нужные нам цвета и фактуры, помогли сэкономить на
+                материале, использовав тот же материал, что в дверях на полки. Добавили компьютерный стол внутри шкафа и
+                эргономика на высоте, полки не задеваю, удобно. Сроки выдержали, собрали аккуратно. Очень рекомендую!
+              </p>
+              <div class="mates__img-container">
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-4.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-5.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-6.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+              </div>
+            </div>
+            <a href="#" class="mates__link">
+              <span class="mates__link-text">Посмотреть оригинал отзыва</span>
+              <svg class="mates__arr" width="26" height="8" viewBox="0 0 26 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
+                  fill="#4F4F4F" />
+              </svg>
+            </a>
+          </div>
+          <div class="mates__card">
+            <div class="mates__head">
+              <h4 class="mates__name">Елена</h4>
+              <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
+            </div>
+            <div class="mates__info">
+              <span class="mates__date">20.11.2022</span>
+              <div class="mates__stars">
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+              </div>
+            </div>
+            <div class="mates__content">
+              <p class="mates__text">Прихожую хотели итересную, и открытые вешала и пуфы, и шкаф, также надо было
+                спрятать электрощит (он в шкафу с зеркалом). Все получилось, интересный цвет, много мест хранения.
+                Спасибо Ольге, она много с нами рассмотрела вариантов. После заключения договора приезжал специалист и
+                на месте все размеры и соответствия сверил. Изготовление в срок. Собрали аккуратно. Огромное спасибо!
+              </p>
+              <div class="mates__img-container">
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-7.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-8.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-9.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+              </div>
+            </div>
+            <a href="#" class="mates__link">
+              <span class="mates__link-text">Посмотреть оригинал отзыва</span>
+              <svg class="mates__arr" width="26" height="8" viewBox="0 0 26 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
+                  fill="#4F4F4F" />
+              </svg>
+            </a>
+          </div>
+          <div class="mates__card">
+            <div class="mates__head">
+              <h4 class="mates__name">Olga Baklanova</h4>
+              <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
+            </div>
+            <div class="mates__info">
+              <span class="mates__date">17.10.2022</span>
+              <div class="mates__stars">
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+              </div>
+            </div>
+            <div class="mates__content">
+              <p class="mates__text">Очень довольны! Все в срок, адекватные цены, внимание к мелочам, отличный сервис,
+                хорошее качество. К доставке и сборке также нет претензий. Полгода уже стоят шкафы в квартире (в том
+                числе в санузле), никаких претензий. Молодцы!!!</p>
+              <div class="mates__img-container">
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-10.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-11.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-12.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+              </div>
+            </div>
+            <a href="#" class="mates__link">
+              <span class="mates__link-text">Посмотреть оригинал отзыва</span>
+              <svg class="mates__arr" width="26" height="8" viewBox="0 0 26 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
+                  fill="#4F4F4F" />
+              </svg>
+            </a>
+          </div>
+          <div class="mates__card">
+            <div class="mates__head">
+              <h4 class="mates__name">Ксения Каширка</h4>
+              <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
+            </div>
+            <div class="mates__info">
+              <span class="mates__date">17.11.2019</span>
+              <div class="mates__stars">
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+                <svg class="mates__star" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.00065 1.33301L10.0607 5.50634L14.6673 6.17968L11.334 9.42634L12.1207 14.013L8.00065 11.8463L3.88065 14.013L4.66732 9.42634L1.33398 6.17968L5.94065 5.50634L8.00065 1.33301Z"
+                    fill="#FFD600" />
+                </svg>
+              </div>
+            </div>
+            <div class="mates__content">
+              <p class="mates__text">Два года пользуемся кухней. Одно удовольствие! У нас очень маленькая кухня.
+                Необходимо было рассчитывать с точностью до миллиметра, чтобы все вощло, все выдвигалось, и можно было
+                передвигаться не спотыкаясь о мебель. И у них все получилось великолепно!</p>
+              <div class="mates__img-container">
+                <div class="mates__img-item">
+                  <div class="mates__img-zoom">
+                    <svg class="mates__img-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M21.0004 21.0004L16.6504 16.6504" stroke="#4F4F4F" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M11 8V14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M8 11H14" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <img src="img/reviews/review-13.png" alt="Фотография покупателя" class="mates__img">
+                </div>
+              </div>
+            </div>
+            <a href="#" class="mates__link">
+              <span class="mates__link-text">Посмотреть оригинал отзыва</span>
+              <svg class="mates__arr" width="26" height="8" viewBox="0 0 26 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
+                  fill="#4F4F4F" />
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="services">
-      <div class="container">
-        <h2 class="services__title">услуги</h2>
-        <div class="services__container">
-          <div class="services__card active">
-            <span class="services__num">1</span>
-            <h4 class="services__card-name">Визуализация планировки мебели в цветовом решении интерьера</h4>
-            <ol class="services__list">
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Дизайнеры предложат варианты планировки мебели для конкретного
-                  помещения.</span>
-              </li>
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Создадут визуализацию мебели в интерьере в предложенном цветовом решением в
-                  соответствии с предпочтениями заказчика. </span>
-              </li>
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">На этом этапе можно будет внести изменения в план помещения. К примеру,
-                  сместить дверной проем, сделать дополнительную перегородку и так далее.</span>
-              </li>
-            </ol>
-          </div>
-          <div class="services__card">
-            <span class="services__num">2</span>
-            <h4 class="services__card-name">3D визуализация</h4>
-            <ol class="services__list">
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Дизайнеры создадут фотореалистичные изображения помещения. </span>
-              </li>
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">3D визуализация позволяет получить видение будущего интерьера, реально
-                  покажет все плюсы и минусы планировочных решений, поможет подкорректировать цветовую гамму и выбрать
-                  подходящие к дизайн-проекту аксессуары.</span>
-              </li>
-            </ol>
-          </div>
-          <div class="services__card">
-            <span class="services__num">3</span>
-            <h4 class="services__card-name">Комплект чертежей</h4>
-            <ol class="services__list">
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Рабочие чертежи — это основной план производимых робот по строительству и
-                  отделки помещения.</span>
-              </li>
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">В него входят планы и привязки коммуникаций, перегородок, мебели, развертка
-                  всех помещений по стенам. </span>
-              </li>
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">В течение всего ремонта им будут пользоваться прораб, строители,
-                  отделочники и т.д.</span>
-              </li>
-            </ol>
-          </div>
-          <div class="services__card">
-            <span class="services__num">4</span>
-            <h4 class="services__card-name">Рекомендованная строительная бригада</h4>
-            <ol class="services__list">
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Очень часто дизайнеры пересекаются с разными бригадами отделочников и
-                  строителей и отмечают для себя более ответственных и добросовестных подрядчиков.</span>
-              </li>
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Согласованность между бригадами и дизайнерами — залог успешной реализации
-                  дизайн проекта. Для реализации вашего проекта мы порекомендуем вам проверенную временем строительную
-                  бригаду.</span>
-              </li>
-            </ol>
-          </div>
-          <div class="services__card">
-            <span class="services__num">5</span>
-            <h4 class="services__card-name">Рекомендованные поставщики мебели и элементов интерьера</h4>
-            <ol class="services__list">
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Мы помогаем найти поставщиков мебели и элементов интерьера, которые
-                  идеально впишутся в ваш дизайн-проект.</span>
-              </li>
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Мы сотрудничаем с надёжными производителями, у которых есть всё необходимое
-                  оборудование и опыт для изготовления мебели на заказ. Это позволяет нам гарантировать точное
-                  соответствие мебели вашему дизайн-проекту.</span>
-              </li>
-            </ol>
-          </div>
-          <div class="services__card">
-            <span class="services__num">6</span>
-            <h4 class="services__card-name">Авторский надзор</h4>
-            <ol class="services__list">
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Авторский надзор — это контроль дизайнера над проектом. Только автор может
-                  вносить изменения, не нарушая связи элементов дизайна. </span>
-              </li>
-              <li class="services__item">
-                <svg class="services__list-style" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M27.5 13.8503V15.0003C27.4985 17.6958 26.6256 20.3187 25.0117 22.4776C23.3977 24.6365 21.1291 26.2159 18.5442 26.9802C15.9593 27.7445 13.1966 27.6527 10.6681 26.7186C8.1396 25.7844 5.98082 24.0579 4.5137 21.7967C3.04658 19.5354 2.34974 16.8604 2.5271 14.1707C2.70445 11.481 3.74651 8.92073 5.49785 6.87166C7.24919 4.82259 9.61598 3.39455 12.2452 2.8005C14.8745 2.20646 17.6253 2.47824 20.0875 3.57532"
-                    stroke="#FE3C00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M27.5 5L15 17.5125L11.25 13.7625" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-                <span class="services__text">Присутствие дизайнера при выполнении работ гарантирует реализацию проекта в
-                  задуманном виде.</span>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="service-cost">
-      <div class="container">
-        <h2 class="service-cost__title">СТОИМОСТЬ УСЛУГ</h2>
-        <div class="service-cost__container">
-          <div class="service-cost__card">
-            <div class="service-cost__info">
-              <span class="service-cost__text">визуализация с планировкой мебели в цветовом решении интерьера</span>
-              <strong class="service-cost__price">от 500 ₽ / м2</strong>
-            </div>
-            <div class="service-cost__img-container"><img src="img/interior/cost-1.jpeg" class="service-cost__img"
-                alt="визуализация"></div>
-          </div>
-          <div class="service-cost__card">
-            <div class="service-cost__info">
-              <span class="service-cost__text">создание 3D реалистичной визуализации</span>
-              <strong class="service-cost__price">от 2000 ₽ / м2</strong>
-            </div>
-            <div class="service-cost__img-container"><img src="img/interior/cost-2.jpeg" class="service-cost__img"
-                alt="3D"></div>
-          </div>
-          <div class="service-cost__card">
-            <div class="service-cost__info">
-              <span class="service-cost__text">подготовка комплекта чертежей</span>
-              <strong class="service-cost__price">от 4000 ₽ / м2</strong>
-            </div>
-            <div class="service-cost__img-container"><img src="img/interior/cost-3.jpeg" class="service-cost__img"
-                alt="подготовка"></div>
-          </div>
-          <div class="service-cost__card">
-            <div class="service-cost__info">
-              <span class="service-cost__text">авторский надзор</span>
-              <strong class="service-cost__price">от 10 000 ₽ / м2</strong>
-            </div>
-            <div class="service-cost__img-container"><img src="img/interior/cost-4.jpeg" class="service-cost__img"
-                alt="надзор"></div>
-          </div>
-        </div>
+        <button type="button" class="mates__more">
+          <span class="mates__more-text">Показать еще</span>
+          <svg width="26" height="8" class="mates__more-arr" viewBox="0 0 26 8" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25.3536 4.35355C25.5488 4.15829 25.5488 3.84171 25.3536 3.64645L22.1716 0.464466C21.9763 0.269204 21.6597 0.269204 21.4645 0.464466C21.2692 0.659728 21.2692 0.976311 21.4645 1.17157L24.2929 4L21.4645 6.82843C21.2692 7.02369 21.2692 7.34027 21.4645 7.53553C21.6597 7.7308 21.9763 7.7308 22.1716 7.53553L25.3536 4.35355ZM0 4.5H25V3.5H0V4.5Z"
+              fill="black" />
+          </svg>
+        </button>
       </div>
     </section>
     <section class="correction">
@@ -908,144 +1147,26 @@
         </form>
       </div>
     </section>
-    <section class="example">
-      <div class="container">
-        <h2 class="example__title">ПРИМЕР ИНТЕРЬЕРА</h2>
-        <a href="#" class="example__video">
-          <img src="img/video.png" class="example__img" alt="Видео">
-          <svg class="example__play" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.15" filter="url(#filter0_f_1874_17525)">
-              <path
-                d="M96 50C96 75.4051 75.4051 96 50 96C24.5949 96 4 75.4051 4 50C4 24.5949 24.5949 4 50 4C75.4051 4 96 24.5949 96 50Z"
-                fill="white" />
-            </g>
-            <path
-              d="M63.0605 49.1339C63.7272 49.5188 63.7272 50.4811 63.0605 50.866L44.2205 61.7432C43.5539 62.1281 42.7205 61.647 42.7205 60.8772L42.7205 39.1227C42.7205 38.3529 43.5539 37.8717 44.2205 38.2566L63.0605 49.1339Z"
-              fill="white" stroke="white" stroke-width="2" />
-            <circle cx="49.9989" cy="50" r="31.62" stroke="white" stroke-width="3" />
-            <defs>
-              <filter id="filter0_f_1874_17525" x="0" y="0" width="100" height="100" filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_1874_17525" />
-              </filter>
-            </defs>
-          </svg>
-        </a>
-      </div>
+    <section class="pop-img">
+      <img src="img/production/worker-1.jpeg" alt="Работник" class="pop-img__img">
     </section>
-    <section class="volume">
-      <div class="container">
-        <h2 class="volume__title">примеры 3D визуализации</h2>
-        <p class="volume__text">Мы поможем создать красоту и уют в вашем доме: сделаем его особенным, комфортным и
-          стильным.</p>
-        <div class="volume__container">
-          <img src="img/interior/3d-1.jpeg" class="active volume__img" alt="Дизайн">
-          <img src="img/interior/3d-2.jpg" class="volume__img" alt="Дизайн">
-          <img src="img/interior/3d-3.jpg" class="volume__img" alt="Дизайн">
-          <img src="img/interior/3d-4.jpg" class="volume__img" alt="Дизайн">
-          <img src="img/interior/3d-5.jpg" class="volume__img" alt="Дизайн">
-        </div>
-        <div class="volume-pagination">
-          <button type="button" class="volume__btn volume__btn-prev">
-            <svg class="volume__arrow" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="11.3125" y1="2.21512" x2="1.413" y2="12.1146" stroke-width="2" stroke-linecap="round" />
-              <line x1="10.9959" y1="22.3301" x2="1.49181" y2="12.826" stroke-width="2" stroke-linecap="round" />
-            </svg>
-          </button>
-          <div class="volume-pagination__container">
-            <img data-count="1" src="img/interior/3d-1.jpeg" class="volume__img-mini active" alt="Дизайн">
-            <img data-count="2" src="img/interior/3d-2.jpg" class="volume__img-mini" alt="Дизайн">
-            <img data-count="3" src="img/interior/3d-3.jpg" class="volume__img-mini" alt="Дизайн">
-            <img data-count="4" src="img/interior/3d-4.jpg" class="volume__img-mini" alt="Дизайн">
-            <img data-count="5" src="img/interior/3d-5.jpg" class="volume__img-mini" alt="Дизайн">
-          </div>
-          <button type="button" class="volume__btn volume__btn-next">
-            <svg class="volume__arrow" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line x1="1" y1="-1" x2="15" y2="-1"
-                transform="matrix(0.707107 0.707107 0.707107 -0.707107 11.6875 0.800903)" stroke="white"
-                stroke-width="2" stroke-linecap="round" />
-              <line x1="1" y1="-1" x2="14.4409" y2="-1"
-                transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 10.5898 22.3301)" stroke="white"
-                stroke-width="2" stroke-linecap="round" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="questions">
-      <div class="container">
-        <h2 class="questions__tilte">остались вопросы?</h2>
-        <div class="questions__block">
-          <div class="questions__card">
-            <div class="questions__qust">
-              <span class="questions__text">Для чего нужен дизайн-проект дома?</span>
-              <button type="button" class="questions__btn">
-                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <p class="questions__answer">Дизайн-проект поможет вам четко понимать, как будет выглядеть ваша квартира еще
-              до начала отделочных работ. Дизайнер с нуля нарисует модель квартиры на основании ваших пожеланий. В нем
-              будет отражаться все — цветовое решение, расстановка мебели, раскладка плитки, светильников и т.п.
-              Дизайн-проект дает четкое понимание того, каким будет ваш интерьер..</p>
-          </div>
-          <div class="questions__card">
-            <div class="questions__qust">
-              <span class="questions__text">Если мне не понравится работа дизайнера?</span>
-              <button type="button" class="questions__btn">
-                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <p class="questions__answer">Дизайн-проект поможет вам четко понимать, как будет выглядеть ваша квартира еще
-              до начала отделочных работ. Дизайнер с нуля нарисует модель квартиры на основании ваших пожеланий. В нем
-              будет отражаться все — цветовое решение, расстановка мебели, раскладка плитки, светильников и т.п.
-              Дизайн-проект дает четкое понимание того, каким будет ваш интерьер.</p>
-          </div>
-          <div class="questions__card">
-            <div class="questions__qust">
-              <span class="questions__text">Можно ли самому вносить изменения в дизайн проект?</span>
-              <button type="button" class="questions__btn">
-                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <p class="questions__answer">Дизайн-проект поможет вам четко понимать, как будет выглядеть ваша квартира еще
-              до начала отделочных работ. Дизайнер с нуля нарисует модель квартиры на основании ваших пожеланий. В нем
-              будет отражаться все — цветовое решение, расстановка мебели, раскладка плитки, светильников и т.п.
-              Дизайн-проект дает четкое понимание того, каким будет ваш интерьер.</p>
-          </div>
-          <div class="questions__card">
-            <div class="questions__qust">
-              <span class="questions__text">Делаете ли вы ремонт помещения? Есть ли у вас проверенная ремонтная
-                бригада?</span>
-              <button type="button" class="questions__btn">
-                <svg class="questions__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 8.69995L12 16.7L21 8.69995" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-            <p class="questions__answer">Дизайн-проект поможет вам четко понимать, как будет выглядеть ваша квартира еще
-              до начала отделочных работ. Дизайнер с нуля нарисует модель квартиры на основании ваших пожеланий. В нем
-              будет отражаться все — цветовое решение, расстановка мебели, раскладка плитки, светильников и т.п.
-              Дизайн-проект дает четкое понимание того, каким будет ваш интерьер.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <aside class="aside">
+      <a class="aside__link" href="#">
+        <img class="aside__img" src="img/1490889687-whats-app_82529.png" alt="WhatsApp">
+      </a>
+      <a class="aside__link" href="#">
+        <img class="aside__img" src="img/phone_icon-icons.com_66151.png" alt="Viber">
+      </a>
+      <a class="aside__link" href="#">
+        <img class="aside__img" src="img/telegram_icon-icons.com_72055.png" alt="Telegram">
+      </a>
+      <a class="aside__link" href="#">
+        <img class="aside__img" src="img/phone_23732.png" alt="Звонок">
+      </a>
+      <a class="aside__link" href="#">
+        <img class="aside__img" src="img/chat-icon.png" alt="Сообщение">
+      </a>
+    </aside>
     <section class="pop-on pop-consultation">
       <form class="pop-on__form pop-consultation__form">
         <button type="button" class="pop-on__close pop-consultation__close">
@@ -1097,23 +1218,6 @@
         <button type="submit" class="btn pop-btn pop-consultation__btn">Отправить</button>
       </form>
     </section>
-    <aside class="aside">
-      <a class="aside__link" href="#">
-        <img class="aside__img" src="img/1490889687-whats-app_82529.png" alt="WhatsApp">
-      </a>
-      <a class="aside__link" href="#">
-        <img class="aside__img" src="img/phone_icon-icons.com_66151.png" alt="Viber">
-      </a>
-      <a class="aside__link" href="#">
-        <img class="aside__img" src="img/telegram_icon-icons.com_72055.png" alt="Telegram">
-      </a>
-      <a class="aside__link" href="#">
-        <img class="aside__img" src="img/phone_23732.png" alt="Звонок">
-      </a>
-      <a class="aside__link" href="#">
-        <img class="aside__img" src="img/chat-icon.png" alt="Сообщение">
-      </a>
-    </aside>
   </main>
   <a href="#" class="link__up">
     <svg class="link__up-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1127,8 +1231,7 @@
   <footer class="footer">
     <div class="footer__header">
       <a href="#" class="footer__top">
-        <svg class="footer__top-svg"  viewBox="0 0 60 60" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg class="footer__top-svg" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z"
             stroke="#4F4F4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />

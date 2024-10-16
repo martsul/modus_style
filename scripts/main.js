@@ -111,7 +111,7 @@ let questionsCard = document.querySelectorAll(".questions__card");
 
 if (questionsCard) {
   questionsCard.forEach((e) => {
-    e.querySelector(".questions__btn").addEventListener("click", () => {
+    e.querySelector(".questions__qust").addEventListener("click", () => {
       e.querySelector(".questions__answer").classList.toggle(
         "questions__answer-active"
       );
@@ -1026,9 +1026,8 @@ if (bandCards[0]) {
 
 // Partners
 
-let partnersCards = document.querySelectorAll(".mates__card");
-
-if (partnersCards[0]) {
+if (document.body.classList.contains("partners")) {
+  let partnersCards = document.querySelectorAll(".mates__card");
   let filters = document.querySelectorAll(".mates__label");
   let container = document.querySelector(".mates__container");
   let allInnerCards = container.innerHTML;
@@ -1042,12 +1041,44 @@ if (partnersCards[0]) {
         if (currData == "all") {
           container.innerHTML = allInnerCards;
         } else {
-          partnersCards.forEach(e => {
-            if (e.getAttribute("data-sort").match(`${currData}`) || e.getAttribute("data-sort") == "m f") {
+          partnersCards.forEach((e) => {
+            if (
+              e.getAttribute("data-sort").match(`${currData}`) ||
+              e.getAttribute("data-sort") == "m f"
+            ) {
               container.appendChild(e);
             }
-          })
+          });
         }
+      }
+    });
+  });
+}
+
+// Reviews IMG
+
+if (document.body.classList.contains("reviews")) {
+  let clickCards = document.querySelectorAll(".mates__img-item");
+  let popOn = document.querySelector(".pop-img");
+  let imgPop = popOn.querySelector(".pop-img__img");
+
+  clickCards.forEach((e) => {
+    e.addEventListener("click", () => {
+      let currImg = e.querySelector(".mates__img").getAttribute("src");
+      imgPop.setAttribute("src", currImg);
+      popOn.classList.add("pop-on-full");
+      document.body.classList.add("body-hidden");
+    });
+    popOn.addEventListener("click", (event) => {
+      if (event.target == popOn) {
+        popOn.classList.remove("pop-on-full");
+        document.body.classList.remove("body-hidden");
+      }
+    });
+    document.addEventListener("keyup", (event) => {
+      if (event.key === "Escape") {
+        popOn.classList.remove("pop-on-full");
+        document.body.classList.remove("body-hidden");
       }
     });
   });
