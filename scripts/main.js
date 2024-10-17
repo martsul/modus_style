@@ -1055,9 +1055,11 @@ if (document.body.classList.contains("partners")) {
   });
 }
 
-// Reviews IMG
+// Reviews
 
 if (document.body.classList.contains("reviews")) {
+  // img
+
   let clickCards = document.querySelectorAll(".mates__img-item");
   let popOn = document.querySelector(".pop-img");
   let imgPop = popOn.querySelector(".pop-img__img");
@@ -1079,6 +1081,40 @@ if (document.body.classList.contains("reviews")) {
       if (event.key === "Escape") {
         popOn.classList.remove("pop-on-full");
         document.body.classList.remove("body-hidden");
+      }
+    });
+  });
+
+  // pop-on
+
+  let popBtn = document.querySelectorAll(".preview-review__btn");
+  let currPop = document.querySelector(".pop-review");
+  let currClose = document.querySelector(".pop-review__close");
+
+  callPop(popBtn, currPop, currClose);
+
+  // filters
+
+  let filtersBtn = document.querySelectorAll(".mates__label");
+  let cardsContainer = document.querySelector(".mates__container");
+  let startCards = cardsContainer.innerHTML;
+  let allCards = document.querySelectorAll(".mates__card");
+
+  filtersBtn.forEach((e) => {
+    e.addEventListener("click", () => {
+      if (!e.querySelector("input").checked) {
+        cardsContainer.innerHTML = "";
+        if (e.getAttribute("data-sort") == "all") {
+          cardsContainer.innerHTML = startCards;
+        } else {
+          allCards.forEach((element) => {
+            if (
+              e.getAttribute("data-sort") == element.getAttribute("data-sort")
+            ) {
+              cardsContainer.appendChild(element);
+            }
+          });
+        }
       }
     });
   });

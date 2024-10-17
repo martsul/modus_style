@@ -617,21 +617,21 @@
             <input checked type="radio" class="mates__radio" name="mates-filter">
             <span class="mates__filter">Все</span>
           </label>
-          <label data-sort="m" class="mates__label">
+          <label data-sort="y" class="mates__label">
             <input type="radio" class="mates__radio" name="mates-filter">
             <span class="mates__filter">Яндекс</span>
           </label>
-          <label data-sort="f" class="mates__label">
+          <label data-sort="o" class="mates__label">
             <input type="radio" class="mates__radio" name="mates-filter">
             <span class="mates__filter">Отзовик</span>
           </label>
-          <label data-sort="f" class="mates__label">
+          <label data-sort="a" class="mates__label">
             <input type="radio" class="mates__radio" name="mates-filter">
             <span class="mates__filter">Другие</span>
           </label>
         </div>
         <div class="mates__container">
-          <div class="mates__card">
+          <div data-sort="y" class="mates__card">
             <div class="mates__head">
               <h4 class="mates__name">Людмила</h4>
               <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
@@ -732,7 +732,7 @@
               </svg>
             </a>
           </div>
-          <div class="mates__card">
+          <div data-sort="y" class="mates__card">
             <div class="mates__head">
               <h4 class="mates__name">Roman P.</h4>
               <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
@@ -833,7 +833,7 @@
               </svg>
             </a>
           </div>
-          <div class="mates__card">
+          <div data-sort="y" class="mates__card">
             <div class="mates__head">
               <h4 class="mates__name">Елена</h4>
               <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
@@ -935,7 +935,7 @@
               </svg>
             </a>
           </div>
-          <div class="mates__card">
+          <div data-sort="y" class="mates__card">
             <div class="mates__head">
               <h4 class="mates__name">Olga Baklanova</h4>
               <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
@@ -1035,7 +1035,7 @@
               </svg>
             </a>
           </div>
-          <div class="mates__card">
+          <div data-sort="y" class="mates__card">
             <div class="mates__head">
               <h4 class="mates__name">Ксения Каширка</h4>
               <img src="img/reviews/yandex.png" alt="Яндекс" class="mates__company">
@@ -1145,6 +1145,31 @@
             соглашаетесь c политикой конфиденциальности.</p>
           <button type="submit" class="btn correction__submit">Отправить</button>
         </form>
+      </div>
+    </section>
+    <section class="pop-review">
+      <div class="pop-review__block">
+        <button type="button" class="pop-review__close">
+          <svg class="pop-review__close-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <h4 class="pop-review__title">Поделитесь впечатлениями от покупки</h4>
+        <p class="pop-review__subtitle">Оставьте отзыв о нашей компании на сайтах:</p>
+        <a href="#" class="pop-review__yandex">
+          <img src="img/reviews/yandex.png" alt="Яндекс" class="pop-review__img">
+        </a>
+        <div class="pop-review__cities">
+          <p class="pop-review__headline">Выберите салон Modus Style:</p>
+          <a href="#" class="pop-review__city active">Modus Style г. Владимир</a>
+          <a href="#" class="pop-review__city">Modus Style г. Иваново</a>
+          <a href="#" class="pop-review__city">Modus Style г. Балашиха</a>
+          <a href="#" class="pop-review__city">Modus Style г. Реутов</a>
+        </div>
+        <a href="#" class="pop-review__yandex">
+          <img src="img/reviews/otzovik-logo.png" alt="Отзовик" class="pop-review__img">
+        </a>
       </div>
     </section>
     <section class="pop-img">

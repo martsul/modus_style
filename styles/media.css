@@ -2769,11 +2769,11 @@
 
   .preview__install {
     padding: 340px 20px 41px;
-    background-size: 100% auto;
+    background-size: 100% 340px;
     background-position: top center;
   }
 
-  .preview__install::before, .squad .preview__company::before, .partners .preview__company::before {
+  .preview__install::before,  .production .preview__company::before, .company .preview__company::before, .squad .preview__company::before, .partners .preview__company::before {
     top: auto;
     bottom: 0;
     width: 100%;
@@ -3315,7 +3315,7 @@
   }
 
   .preview__install {
-    background-size: auto 290px;
+    background-size: auto 340px;
   }
 }
 
