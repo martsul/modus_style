@@ -433,6 +433,7 @@ document.querySelectorAll(".select__label").forEach((element) => {
   element.querySelectorAll(".select__option").forEach((e) => {
     e.addEventListener("click", (event) => {
       element.querySelector(".search-input").value = event.target.innerText;
+      element.querySelector(".select__options").classList.remove("select__options-on");
     });
   });
 });
@@ -442,14 +443,22 @@ document.querySelectorAll(".select__label").forEach((element) => {
 let selectLabels = document.querySelectorAll(".select__label");
 
 selectLabels.forEach((e) => {
-  e.querySelector("input").addEventListener("keydown", (event) => {
-    event.preventDefault();
-  });
-});
-
-selectLabels.forEach((e) => {
-  e.querySelector("input").addEventListener("click", () => {
-    e.querySelector(".select__options").classList.toggle("select__options-on");
+  let currInput = e.querySelector("input");
+  let currOptions = e.querySelector(".select__options");
+  currInput.addEventListener("click", event => {
+    let thereIsOptions = document.querySelector(".select__options-on"); 
+    console.log(event.target);
+    
+    if (thereIsOptions) {
+      if (currOptions == thereIsOptions) {
+        currOptions.classList.remove("select__options-on")
+      } else {
+        thereIsOptions.classList.remove("select__options-on")
+        currOptions.classList.add("select__options-on")
+      }
+    } else {
+      currOptions.classList.add("select__options-on")
+    }
   });
 });
 
