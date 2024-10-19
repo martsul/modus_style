@@ -105,6 +105,27 @@ const productionSwiper = new Swiper(".gallery__swiper", {
   },
 });
 
+const clauseSwiper = new Swiper(".readalso__swiper", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    966: {
+      spaceBetween: 40,
+      slidesPerView: 3,
+    },
+    695: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+  },
+
+  navigation: {
+    nextEl: ".readalso-button-next",
+    prevEl: ".readalso-button-prev",
+  },
+}) 
+
 // Questions
 
 let questionsCard = document.querySelectorAll(".questions__card");
