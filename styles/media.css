@@ -1631,6 +1631,11 @@
   .article__date {
     margin-bottom: 40px;
   }
+
+  .useful .mates__info-card {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 @media (max-width: 870px) {
@@ -3621,6 +3626,18 @@
 
   .article__content {
     margin-bottom: 30px;
+  }
+
+  .useful .mates__info-card {
+    display: none;
+  }
+
+  .useful .mates__img, .useful .mates__text, .useful .mates__headline {
+    margin-bottom: 10px;
+  }
+
+  .useful .mates__headline {
+    font: 500 12px/18px var(--font-M);
   }
 }
 

@@ -1143,11 +1143,12 @@ if (document.body.classList.contains("reviews")) {
 
 // Mates Pagination
 
-let mateContainers = document.querySelectorAll(".mates__container");
+let matesNavigation = document.querySelector(".mates__navigation");
 
-if (mateContainers[0]) {
+if (matesNavigation) {
   let index = 0;
   let navigationNum = document.querySelector(".mates__navigation-pages");
+  let mateContainers = document.querySelectorAll(".mates__container");
 
   for (let i = 0; i < mateContainers.length; i++) {
     navigationNum.insertAdjacentHTML(
@@ -1229,5 +1230,35 @@ if (mateContainers[0]) {
         }
       });
     }
+  });
+}
+
+// Useful
+
+if (document.body.classList.contains("useful")) {
+  let filtersBtn = document.querySelectorAll(".mates__label");
+  let cardsContainer = document.querySelector(".mates__container");
+  let startCards = cardsContainer.innerHTML;
+  let allCards = document.querySelectorAll(".mates__card");
+
+  filtersBtn.forEach((e) => {
+    e.addEventListener("click", () => {
+      if (!e.querySelector("input").checked) {
+        cardsContainer.innerHTML = "";
+        if (e.getAttribute("data-sort") == "all") {
+          cardsContainer.innerHTML = startCards;
+        } else {
+          allCards.forEach((element) => {
+            if (
+              e.getAttribute("data-sort") ==
+                element.getAttribute("data-sort") ||
+                element.getAttribute("data-sort") == "a"
+            ) {
+              cardsContainer.appendChild(element);
+            }
+          });
+        }
+      }
+    });
   });
 }
