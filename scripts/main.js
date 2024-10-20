@@ -480,7 +480,6 @@ selectLabels.forEach((e) => {
   let currOptions = e.querySelector(".select__options");
   currInput.addEventListener("click", (event) => {
     let thereIsOptions = document.querySelector(".select__options-on");
-    console.log(event.target);
 
     if (thereIsOptions) {
       if (currOptions == thereIsOptions) {
@@ -642,7 +641,6 @@ if (caseBlock) {
       paginationAll.classList.add("active");
       currIndexGroup = caseGroups[currGroup - 1].innerHTML;
       indexGroups.push(currIndexGroup);
-      console.log(indexGroups);
 
       caseGroups.forEach((e, ind) => {
         if (ind != currGroup - 1) {
@@ -791,7 +789,6 @@ if (volumeCards[0]) {
 
   volumeCardsMini.forEach((e) => {
     e.addEventListener("click", () => {
-      console.log(e);
 
       volumeCards[i].classList.remove("active");
       volumeCardsMini[i].classList.remove("active");
