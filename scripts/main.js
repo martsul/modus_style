@@ -124,7 +124,7 @@ const clauseSwiper = new Swiper(".readalso__swiper", {
     nextEl: ".readalso-button-next",
     prevEl: ".readalso-button-prev",
   },
-}) 
+});
 
 // Questions
 
@@ -1273,13 +1273,25 @@ if (document.body.classList.contains("useful")) {
             if (
               e.getAttribute("data-sort") ==
                 element.getAttribute("data-sort") ||
-                element.getAttribute("data-sort") == "a"
+              element.getAttribute("data-sort") == "a"
             ) {
               cardsContainer.appendChild(element);
             }
           });
         }
       }
+    });
+  });
+}
+
+// Copy Info
+
+let btnCopy = document.querySelectorAll(".copy-btn");
+
+if (btnCopy[0]) {
+  btnCopy.forEach((e) => {
+    e.addEventListener("click", () => {
+      navigator.clipboard.writeText(e.innerText);
     });
   });
 }

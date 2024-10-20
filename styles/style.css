@@ -6364,3 +6364,49 @@ div.tender__line:nth-child(5) .tender__list {
 .readalso__wrapper {
   align-items: stretch;
 }
+
+.essential {
+  padding: 0 20px;
+}
+
+.essential__title {
+  text-transform: uppercase;
+  text-align: center;
+  font: var(--font-h2);
+  margin-bottom: 60px;
+}
+
+.essential__table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+}
+
+.essential__name, .essential__button {
+  padding: 10px 12px;
+  font: var(--font-t14);
+}
+
+.essential__name {
+  border-right: 1px solid #B9B9B9;
+  border-bottom: 1px solid #B9B9B9;
+}
+
+span.essential__name:nth-child(21) {
+  border-bottom: 0;
+}
+
+.essential__button {
+  border-bottom: 1px solid #B9B9B9;
+  text-align: left;
+  transition: background .2s ease;
+}
+
+button.essential__button:nth-child(22) {
+  border-bottom: 0;
+}
+
+.essential__button:hover {
+  background: #0000000F;
+}

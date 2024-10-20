@@ -1656,6 +1656,10 @@
   .readalso__title {
     margin-bottom: 40px;
   }
+
+  .essential__title {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -3699,6 +3703,10 @@
 
   .readalso__text {
     line-height: 14px;
+  }
+
+  .essential__title {
+    margin-bottom: 30px;
   }
 }
 
