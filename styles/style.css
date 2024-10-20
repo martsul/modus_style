@@ -319,7 +319,7 @@ html {
 .menu__mini {
   width: 100vw;
   max-height: 100vh;
-  background: var(--white);
+  background: var(--clear-grey);
   position: fixed;
   top: 0;
   right: 100%;
@@ -350,6 +350,7 @@ html {
   flex-direction: column;
   gap: 20px;
   margin-bottom: 26px;
+  background: #fff;
 }
 
 .menu__mini-block {
@@ -927,7 +928,7 @@ div.preview__advantage-item:nth-child(3) {
   position: relative;
 }
 
-.popular__card, .cases__card, .interesting__slider {
+.popular__card, .chosen__card, .cases__card, .interesting__slider {
   padding: 15px;
   border-radius: 20px;
   box-shadow: 0px 2px 5px 0px #00000033;
@@ -943,7 +944,7 @@ div.preview__advantage-item:nth-child(3) {
   height: 100%;
 }
 
-.popular__header, .cases__header, .interesting__header {
+.popular__header, .chosen__header, .cases__header, .interesting__header {
   position: absolute;
   left: 15px;
   top: 30px;
@@ -955,7 +956,7 @@ div.preview__advantage-item:nth-child(3) {
   gap: 10px;
 }
 
-.popular__banner, .cases__banner, .interesting__banner {
+.popular__banner, .chosen__banner, .cases__banner, .interesting__banner {
   padding: 6px 10px;
   background: #F3F3F380;
   border-radius: 0 30px 30px 0;
@@ -963,60 +964,61 @@ div.preview__advantage-item:nth-child(3) {
   text-transform: uppercase;
 }
 
-.popular__active, .cases__active, .interesting__active {
+.popular__active, .chosen__active, .cases__active, .interesting__active {
   display: flex;
   gap: 25px;
 }
 
-.popular__img, .cases__img, .interesting__img {
+.popular__img, .chosen__img, .cases__img, .interesting__img {
   max-width: 346px;
   margin-bottom: 9px;
+  width: 100%;
 }
 
-.popular__name, .cases__name, .interesting__name {
+.popular__name, .chosen__name, .cases__name, .interesting__name {
   text-transform: uppercase;
   font: var(--font-s2);
   margin-bottom: 9px;
   height: 100%;
 }
 
-.popular__info, .cases__info, .interesting__info {
+.popular__info, .chosen__info, .cases__info, .interesting__info {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.popular__params, .cases__params, .interesting__params {
+.popular__params, .chosen__params, .cases__params, .interesting__params {
   list-style: disc;
   padding-left: 15px;
   margin-bottom: 9px;
 }
 
-.popular__param, .cases__param, .interesting__param {
+.popular__param, .chosen__param, .cases__param, .interesting__param {
   font: var(--font-t12);
 }
 
-.popular__price, .cases__price, .interesting__price {
+.popular__price, .chosen__price, .cases__price, .interesting__price {
   display: flex;
   flex-direction: column;
   gap: 1px;
 }
 
-.popular__price-text, .cases__price-text, .interesting__price-text {
+.popular__price-text, .chosen__price-text, .cases__price-text, .interesting__price-text {
   font: var(--font-t12);
 }
 
-.popular__price-cost, .cases__price-cost, .interesting__price-cost {
+.popular__price-cost, .chosen__price-cost, .cases__price-cost, .interesting__price-cost {
   font: var(--font-s2);
 }
 
-.popular__buttons, .cases__buttons, .interesting__buttons {
+.popular__buttons, .chosen__buttons, .cases__buttons, .interesting__buttons {
   display: flex;
   gap: 10px;
   justify-content: space-between;
 }
 
-.popular__btn, .cases__btn, .interesting__btn {
+.popular__btn, .chosen__btn, .cases__btn, .interesting__btn {
   font: var(--font-s12);
   max-width: 154px;
   width: 100%;
@@ -6674,4 +6676,33 @@ div.conditions__line:nth-child(3) {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.chosen {
+  padding: 0 20px 120px;
+}
+
+.chosen__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 69px;
+  align-items: center;
+}
+
+.chosen__title {
+  text-transform: uppercase;
+  font: var(--font-h2);
+}
+
+.favorites button.chosen__head-button {
+  font: var(--font-s16);
+  height: 50px;
+  padding: 0 25px;
+  max-width: none;
+}
+
+.chosen__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
