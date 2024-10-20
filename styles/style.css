@@ -6637,3 +6637,41 @@ p.information__text {
   height: 50px;
   padding: 0 40px;
 }
+
+.conditions {
+  padding: 0 20px;
+}
+
+.conditions__title {
+  text-align: center;
+  margin: 0 auto 60px;
+  max-width: 695px;
+  font: var(--font-h2);
+  text-transform: uppercase;
+}
+
+.conditions__headline {
+  font: var(--font-s1);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.conditions__line {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+div.conditions__line:nth-child(3) {
+  margin-bottom: 60px;
+}
+
+.conditions__text {
+  font: var(--font-t14);
+}
+
+.conditions__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
