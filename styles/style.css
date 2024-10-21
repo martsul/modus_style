@@ -4179,21 +4179,21 @@ span.stages-sequels__description {
   margin-bottom: 60px;
 }
 
-.conditions .description .container {
+.facility .description .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.conditions .description__block {
+.facility .description__block {
   max-width: none;
 }
 
-.conditions p.descriptions__text:nth-child(4) {
+.facility p.descriptions__text:nth-child(4) {
   padding-bottom: 20px;
   border-bottom: 1px solid var(--gray);
 }
 
-.conditions .payment {
+.facility .payment {
   padding: 0 20px;
 }
 
