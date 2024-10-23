@@ -106,6 +106,14 @@
   .preview-i::before {
     width: 36.35%;
   }
+
+  .preview-coop {
+    background-position: 580px;
+  }
+  
+  .preview-coop::before {
+    width: 740px;
+  }
 }
 
 @media (max-width: 1160px) {
@@ -299,6 +307,15 @@
   .description__img-container {
     height: 350px;
   }
+
+  .preview-coop {
+    background-position: 500px;
+  }
+
+  .preview-coop::before {
+    width: 660px;
+  }
+  
 }
 
 @media (max-width: 1000px) {
@@ -1792,6 +1809,104 @@
   .favorites button.chosen__head-button {
     height: 40px;
   }
+
+  .preview-coop {
+    height: 382px;
+    padding: 40px 20px 0;
+    background-image: url("../img/cooperation/preview-mini.jpg");
+    background-position: right;
+  }
+
+  .preview-coop::before {
+    width: 73%;
+  }
+
+  .preview-coop__title {
+    max-width: 335px;
+    margin-bottom: 20px;
+  }
+
+  .preview-coop__subtitle {
+    margin-bottom: 73px;
+  }
+
+  .preview-coop__info {
+    max-width: 159px;
+  }
+
+  .preview-coop__svg {
+    width: 23px;
+    height: 20px;
+    left: 115px;
+    bottom: -8px;
+  }
+
+  .preview-coop__btn {
+    height: 40px;
+    padding: 0 30px;
+  }
+
+  .lines {
+    padding: 0 20px 80px;
+  }
+
+  .lines__content {
+    gap: 0 20px;
+  }
+
+  .lines__text {
+    padding: 10px 0;
+  }
+
+  p.lines__text:nth-child(5) {
+    display: none;
+  }
+
+  .lines__img {
+    margin-bottom: 32px;
+  }
+
+  div.lines__block:nth-child(2) > p:nth-child(2) {
+    display: block;
+  }
+
+  .benefit {
+    margin-bottom: 80px;
+  }
+
+  .benefit__title {
+    max-width: 643px;
+    margin-bottom: 40px;
+  }
+
+  .benefit__content {
+    padding: 32px 20px;
+  }
+
+  .benefit__text {
+    font: 500 16px/24px var(--font-M);
+  }
+
+  .privilege {
+    padding-bottom: 80px;
+  }
+
+  .privilege__title {
+    margin-bottom: 40px;
+  }
+
+  .privilege__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .privilege__card {
+    padding: 7px 20px 33px;
+  }
+
+  .privilege__num {
+    font: 400 90px/1 var(--font-M);
+  }
 }
 
 @media (max-width: 870px) {
@@ -1959,6 +2074,10 @@
 
   .readalso__slide {
     min-height: 325px;
+  }
+
+  .preview-coop::before {
+    width: 62%;
   }
 }
 
@@ -3911,6 +4030,112 @@
   .chosen__content {
     gap: 30px;
   }
+
+  .preview-coop {
+    padding: 400px 20px 35px;
+    height: auto;
+    background-size: 100% auto;
+    background-position: 0 -30px;
+  }
+
+  .preview-coop::before {
+    width: 100%;
+    height: 388px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 15.14%, #FFFFFF 100%);
+    top: auto;
+    bottom: 0;
+  }
+
+  .preview-coop__title {
+    max-width: 285px;
+    margin-bottom: 15px;
+  }
+
+  .preview-coop__subtitle {
+    margin-bottom: 66px;
+  }
+
+  .preview-coop__info {
+    max-width: 209px;
+    margin-bottom: 22px;
+  }
+
+  .preview-coop__svg {
+    left: 62px;
+  }
+
+  .lines {
+    padding: 0 20px 60px;
+  }
+
+  .lines__content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  div.lines__block:nth-child(2) > p:nth-child(2) {
+    display: none;
+  }
+
+  p.lines__text:nth-child(5) {
+    display: block;
+  }
+
+  .lines__img {
+    margin-bottom: 0;
+  }
+
+  h6.lines__headline {
+    margin-bottom: 20px;
+  }
+
+  .benefit {
+    margin-bottom: 60px;
+  }
+
+  .benefit__title {
+    margin-bottom: 30px;
+  }
+
+  .benefit__content {
+    padding: 31px 20px;
+    gap: 30px;
+  }
+
+  .benefit__list {
+    gap: 20px;
+  }
+
+  .benefit__item {
+    gap: 10px;
+  }
+
+  .benefit__svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .benefit__text {
+    font: 500 12px/18px var(--font-M);
+  }
+
+  .benefit__content::before {
+    width: calc(100% + 54px);
+  }
+
+  .privilege {
+    padding-bottom: 60px;
+  }
+
+  .privilege__title {
+    margin-bottom: 30px;
+  }
+
+  .privilege__content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 
 @media (max-width: 620px) {
@@ -3999,6 +4224,12 @@
 
   .news .mates__name {
     font: var(--font-s1);
+  }
+}
+
+@media (max-width: 580px) {
+  .preview-coop {
+    padding-top: 300px;
   }
 }
 
@@ -4102,7 +4333,20 @@
     width: 276px;
   }
 
+  .benefit__list {
+    max-width: 261px;
+  }
 
+  .benefit__btn {
+    height: 40px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 420px) {
+  .preview-coop {
+    background-position: top center;
+  }
 }
 
 @media (max-width: 400px) {
