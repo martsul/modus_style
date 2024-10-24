@@ -496,15 +496,14 @@ selectLabels.forEach((e) => {
 
 // Add file
 
-let filesLabel = document.querySelector(".connection__file");
+let filesLabel = document.querySelectorAll(".file");
 
-if (filesLabel) {
-  filesLabel
-    .querySelector(".connection__file-input")
-    .addEventListener("change", function () {
-      filesLabel.querySelector(".connection__file-text").innerText =
-        this.files[0].name;
+if (filesLabel[0]) {
+  filesLabel.forEach((e) => {
+    e.querySelector(".file-input").addEventListener("change", function () {
+      e.querySelector(".file-text").innerText = this.files[0].name;
     });
+  });
 }
 
 // Filters
@@ -789,7 +788,6 @@ if (volumeCards[0]) {
 
   volumeCardsMini.forEach((e) => {
     e.addEventListener("click", () => {
-
       volumeCards[i].classList.remove("active");
       volumeCardsMini[i].classList.remove("active");
       i = e.getAttribute("data-count") - 1;
