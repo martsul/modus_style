@@ -236,7 +236,7 @@ function callPop(callingButton, callingPop, closePop) {
 }
 
 // Call
-let callCurrBtn = document.querySelectorAll(".header__btn");
+let callCurrBtn = document.querySelectorAll(".bell");
 let callCurrPop = document.querySelector(".pop-consultation");
 let callCurrClose = document.querySelector(".pop-consultation__close");
 
@@ -1290,3 +1290,13 @@ if (btnCopy[0]) {
     });
   });
 }
+
+// Sizer pop-on 
+
+let popBtn = document.querySelectorAll(".sizer");
+let currPop = document.querySelector(".pop-sizer");
+let currClose = document.querySelector(".pop-sizer__close");
+
+if (popBtn[0]) callPop(popBtn, currPop, currClose);
+
+console.log(Array.from(document.querySelectorAll("input")).filter(e => !e.hasAttribute("name")).map(e => e.getAttribute("class")).join("\n") );

@@ -183,7 +183,7 @@
             </svg>
           </a>
         </div>
-        <button class="header__btn btn">Заказать звонок</button>
+        <button class="header__btn btn bell">Заказать звонок</button>
         <button type="button" class="header__all-menu">
           <svg viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1H41" stroke="black" stroke-width="2" stroke-linecap="round" />
@@ -390,7 +390,7 @@
                 </svg>
               </a>
             </div>
-            <button class="btn header__btn">Заказать звонок</button>
+            <button class="btn header__btn bell">Заказать звонок</button>
           </div>
         </div>
       </div>
@@ -1315,10 +1315,10 @@
         <h2 class="pop-on__title pop-consultation__title">консультация специалиста</h2>
         <p class="pop-on__text pop-consultation__text">Выбрать салон</p>
         <div class="pop-on__inputs pop-consultation__inputs">
-          <input type="text" required placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
-          <input type="text" required placeholder="Ваше имя*" class="pop-input pop-consultation__input">
+          <input name="tel" type="text" required placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
+          <input name="name" type="text" required placeholder="Ваше имя*" class="pop-input pop-consultation__input">
           <div class="select__label">
-            <input readonly type="text" required placeholder="г. Владимир"
+            <input name="city" readonly type="text" required placeholder="г. Владимир"
               class="pop-input search-input pop-consultation__input">
             <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -1438,6 +1438,8 @@
             <a href="#" class="footer__link">Запись в салон</a>
             <a href="#" class="footer__link">Замер</a>
             <a href="#" class="footer__link">Прислать эскиз</a>
+            <a href="#" class="footer__link">Рассчитать кухню</a>
+            <a href="#" class="footer__link">Расчитать шкаф</a>
           </div>
           <div class="footer__group">
             <h4 class="footer__name">информация</h4>
@@ -1450,7 +1452,7 @@
           </div>
           <div class="footer__group">
             <form class="footer__label">
-              <input type="text" class="footer__search input" placeholder="Поиск">
+              <input name="search" type="text" class="footer__search input" placeholder="Поиск">
               <button class="footer__label-svg" type=button>
                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1524,7 +1526,6 @@
         </div>
       </div>
       <p class="footer__description">
-        <span>Политика конфиденциальности</span>
         <span>2008-2024 @Modus Style все права защищены</span>
       </p>
     </div>

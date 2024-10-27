@@ -184,7 +184,7 @@
             </svg>
           </a>
         </div>
-        <button class="header__btn btn">Заказать звонок</button>
+        <button class="bell header__btn btn">Заказать звонок</button>
         <button type="button" class="header__all-menu">
           <svg viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1H41" stroke="black" stroke-width="2" stroke-linecap="round" />
@@ -391,7 +391,7 @@
                 </svg>
               </a>
             </div>
-            <button class="btn header__btn">Заказать звонок</button>
+            <button class="bell btn header__btn">Заказать звонок</button>
           </div>
         </div>
       </div>
@@ -613,7 +613,7 @@
             </defs>
           </svg>
         </div>
-        <button type="button" class="preview__install__btn btn">Записаться на консультацию</button>
+        <button type="button" class="bell preview__install__btn btn">Записаться на консультацию</button>
       </div>
     </section>
     <section class="bread-crumbs">
@@ -706,9 +706,9 @@
           <div class="calculation__inputs">
             <div class="calculation__input with-range">
               <h4 class="calculation__name">сумма рассрочки</h4>
-              <input id="sum" value="275000 ₽" type="text" class="input calculation__number">
+              <input id="sum" value="275000 ₽" name="sum-text" type="text" class="input calculation__number">
               <div class="calculation__range">
-                <input value="275000" min="10000" max="500000" step="500" type="range" class="calculation__range-input">
+                <input value="275000" min="10000" name="sum" max="500000" step="500" type="range" class="calculation__range-input">
                 <div class="calculation__range-custom"></div>
               </div>
               <div class="calculation__positions">
@@ -719,9 +719,9 @@
             </div>
             <div class="calculation__input with-range">
               <h4 class="calculation__name">срок</h4>
-              <input id="time" value="10 месяцев" type="text" class="input calculation__number">
+              <input id="time" value="10 месяцев" type="text" name="time-text" class="input calculation__number">
               <div class="calculation__range">
-                <input value="10" min="6" max="24" step="1" type="range" class="calculation__range-input">
+                <input value="10" min="6" max="24" step="1" type="range" name="time" class="calculation__range-input">
                 <div class="calculation__range-custom"></div>
               </div>
               <div class="calculation__positions">
@@ -733,9 +733,9 @@
             </div>
             <div class="calculation__input with-range">
               <h4 class="calculation__name">первоначальный взнос</h4>
-              <input id="precent" value="0 %" type="text" class="input calculation__number">
+              <input id="precent" value="0 %" type="text" name="precent-text" class="input calculation__number">
               <div class="calculation__range">
-                <input value="0" min="0" max="100" step="1" type="range" class="calculation__range-input">
+                <input value="0" min="0" max="100" name="precent" step="1" type="range" class="calculation__range-input">
                 <div class="calculation__range-custom"></div>
               </div>
               <div class="calculation__positions">
@@ -748,7 +748,7 @@
             </div>
             <div class="calculation__input">
               <h4 class="calculation__name">ваш ежемесячный платеж составит:</h4>
-              <input value="27 500 ₽" type="text" readonly class="calculation__number all-sum">
+              <input name="end-sum" value="27 500 ₽" type="text" readonly class="calculation__number all-sum">
             </div>
           </div>
           <form class="calculation__form">
@@ -1159,10 +1159,10 @@
         <h2 class="pop-on__title pop-consultation__title">консультация специалиста</h2>
         <p class="pop-on__text pop-consultation__text">Выбрать салон</p>
         <div class="pop-on__inputs pop-consultation__inputs">
-          <input type="text" required placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
-          <input type="text" required placeholder="Ваше имя*" class="pop-input pop-consultation__input">
+          <input type="text" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-consultation__input">
+          <input type="text" required placeholder="Ваше имя*" name="name" class="pop-input pop-consultation__input">
           <div class="select__label">
-            <input readonly type="text" required placeholder="г. Владимир"
+            <input readonly type="text" required name="city" placeholder="г. Владимир"
               class="pop-input search-input pop-consultation__input">
             <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -1282,6 +1282,8 @@
             <a href="#" class="footer__link">Запись в салон</a>
             <a href="#" class="footer__link">Замер</a>
             <a href="#" class="footer__link">Прислать эскиз</a>
+            <a href="#" class="footer__link">Рассчитать кухню</a>
+            <a href="#" class="footer__link">Расчитать шкаф</a>
           </div>
           <div class="footer__group">
             <h4 class="footer__name">информация</h4>
@@ -1294,7 +1296,7 @@
           </div>
           <div class="footer__group">
             <form class="footer__label">
-              <input type="text" class="footer__search input" placeholder="Поиск">
+              <input type="text" name="search" class="footer__search input" placeholder="Поиск">
               <button class="footer__label-svg" type=button>
                 <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -1368,7 +1370,6 @@
         </div>
       </div>
       <p class="footer__description">
-        <span>Политика конфиденциальности</span>
         <span>2008-2024 @Modus Style все права защищены</span>
       </p>
     </div>
