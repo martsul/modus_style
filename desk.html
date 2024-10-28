@@ -613,7 +613,7 @@
             </defs>
           </svg>
         </div>
-        <button type="button" class="preview-d__btn btn">Записаться в салон</button>
+        <button type="button" class="preview-d__btn btn salon">Записаться в салон</button>
       </div>
     </section>
     <section class="bread-crumbs">
@@ -776,6 +776,73 @@
           соглашаетесь c политикой конфиденциальности.</p>
         <button type="submit" class="btn pop-btn pop-consultation__btn">Отправить</button>
       </form>
+    </section>
+    <section class="pop-on pop-salon">
+      <form class="pop-on__form pop-salon__form">
+        <button type="button" class="pop-on__close pop-salon__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <h2 class="pop-on__title pop-salon__title">запись в салон</h2>
+        <p class="pop-on__text pop-salon__text">Выбрать салон</p>
+        <div class="pop-on__inputs pop-salon__inputs">
+          <div class="pop-salon__date-container">
+            <img src="img/calendar.jpg" class="pop-salon__date-img" alt="Календарь">
+            <input type="date"  required name="date" class="pop-salon__date pop-input pop-salon__input">
+          </div>
+          <input type="text" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-salon__input">
+          <input type="text" required placeholder="Ваше имя*" name="name" class="pop-input pop-salon__input">
+          <div class="select__label">
+            <input name="city" readonly type="text" required placeholder="г. Владимир"
+              class="pop-input search-input pop-salon__input">
+            <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8.7L12 16.7L21 8.7" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="select__options">
+              <span class="select__option">г. Владимир</span>
+              <span class="select__option">г. Карабаново</span>
+              <span class="select__option">г. Собинка</span>
+              <span class="select__option">г. Киржач</span>
+              <span class="select__option">г. Александров</span>
+              <span class="select__option">г. Судогда</span>
+              <span class="select__option">г. Лакинск</span>
+              <span class="select__option">г. Струнино</span>
+              <span class="select__option">г. Вязники</span>
+              <span class="select__option">г. Муром</span>
+              <span class="select__option">г. Гороховец</span>
+              <span class="select__option">г. Меленки</span>
+              <span class="select__option">г. Юрьев-Польский</span>
+              <span class="select__option">г. Кольчугино</span>
+              <span class="select__option">г. Ковров</span>
+              <span class="select__option">г. Петушки</span>
+              <span class="select__option">г. Покров</span>
+              <span class="select__option">г. Радужный</span>
+              <span class="select__option">г. Гусь-Хрустальный</span>
+            </span>
+          </div>
+        </div>
+        <p class="pop-on-description pop-salon__description">Нажимая на кнопку, вы даете согласие на обработку
+          персональных данных и
+          соглашаетесь c политикой конфиденциальности.</p>
+        <button type="submit" class="btn pop-btn pop-salon__btn">Отправить</button>
+      </form>
+    </section>
+    <section class="pop-on pop-end">
+      <div class="pop-on__form pop-end__form">
+        <button type="button" class="pop-on__close pop-end__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <p class="pop-end__text">Ваше обращение отправлено, оно не останется без внимания и будет рассмотрено в ближайшее время.</p>
+      </div>
     </section>
     <aside class="aside">
       <a class="aside__link" href="#">

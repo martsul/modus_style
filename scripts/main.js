@@ -96,7 +96,6 @@ const productionSwiper = new Swiper(".gallery__swiper", {
     },
     695: {
       width: 376,
-      slidesPerView: 3,
     },
   },
   navigation: {
@@ -334,36 +333,36 @@ if (document.querySelector(".present")) {
 
   let firstSecondBlock = new Clock(
     document.querySelector(
-      "div.present__time-piece:nth-child(7) > div:nth-child(1) > div:nth-child(2)"
+      ".present__time-piece:nth-child(7) > span:nth-child(1) > span:nth-child(2)"
     )
   );
   let secondSecondBlock = new Clock(
     document.querySelector(
-      "div.present__time-piece:nth-child(7) > div:nth-child(1) > div:nth-child(1)"
+      ".present__time-piece:nth-child(7) > span:nth-child(1) > span:nth-child(1)"
     ),
     3
   );
   let firstMinuteBlock = new Clock(
     document.querySelector(
-      "div.present__time-piece:nth-child(5) > div:nth-child(1) > div:nth-child(2)"
+      ".present__time-piece:nth-child(5) > span:nth-child(1) > span:nth-child(2)"
     ),
     3
   );
   let secondMinuteBlock = new Clock(
     document.querySelector(
-      "div.present__time-piece:nth-child(5) > div:nth-child(1) > div:nth-child(1)"
+      ".present__time-piece:nth-child(5) > span:nth-child(1) > span:nth-child(1)"
     ),
     2
   );
   let firstHourBlock = new Clock(
     document.querySelector(
-      "div.present__time-piece:nth-child(3) > div:nth-child(1) > div:nth-child(2)"
+      ".present__time-piece:nth-child(3) > span:nth-child(1) > span:nth-child(2)"
     ),
     3
   );
   let firstDayBlock = new Clock(
     document.querySelector(
-      "div.present__time-piece:nth-child(1) > div:nth-child(1) > div:nth-child(2)"
+      ".present__time-piece:nth-child(1) > span:nth-child(1) > span:nth-child(2)"
     ),
     4
   );
@@ -1291,12 +1290,141 @@ if (btnCopy[0]) {
   });
 }
 
-// Sizer pop-on 
+// Sizer pop-on
 
-let popBtn = document.querySelectorAll(".sizer");
-let currPop = document.querySelector(".pop-sizer");
-let currClose = document.querySelector(".pop-sizer__close");
+let sizerBtn = document.querySelectorAll(".sizer");
+let sizerCurrPop = document.querySelector(".pop-sizer");
+let sizerCurrClose = document.querySelector(".pop-sizer__close");
 
-if (popBtn[0]) callPop(popBtn, currPop, currClose);
+if (sizerBtn[0]) callPop(sizerBtn, sizerCurrPop, sizerCurrClose);
 
-console.log(Array.from(document.querySelectorAll("input")).filter(e => !e.hasAttribute("name")).map(e => e.getAttribute("class")).join("\n") );
+// Present pop-on
+
+let presentBtn = document.querySelectorAll(".discount");
+let presentCurrPop = document.querySelector(".pop-present");
+let presentCurrClose = document.querySelector(".pop-present__close");
+
+if (presentBtn[0]) callPop(presentBtn, presentCurrPop, presentCurrClose);
+
+// Order pop-on
+
+let orderBtn = document.querySelectorAll(".order");
+let orderCurrPop = document.querySelector(".pop-order");
+let orderCurrClose = document.querySelector(".pop-order__close");
+
+if (orderBtn[0]) callPop(orderBtn, orderCurrPop, orderCurrClose);
+
+// Salon pop-on
+
+let salonBtn = document.querySelectorAll(".salon");
+let salonCurrPop = document.querySelector(".pop-salon");
+let salonCurrClose = document.querySelector(".pop-salon__close");
+
+if (salonBtn[0]) callPop(salonBtn, salonCurrPop, salonCurrClose);
+
+// Design pop-on
+
+let designBtn = document.querySelectorAll(".design");
+let designCurrPop = document.querySelector(".pop-design");
+let designCurrClose = document.querySelector(".pop-design__close");
+
+if (designBtn[0]) callPop(designBtn, designCurrPop, designCurrClose);
+
+// Send pop-on
+
+let sendBtn = document.querySelectorAll(".send");
+let sendCurrPop = document.querySelector(".pop-send");
+let sendCurrClose = document.querySelector(".pop-send__close");
+
+if (sendBtn[0]) callPop(sendBtn, sendCurrPop, sendCurrClose);
+
+// Director pop-on
+
+let directorBtn = document.querySelectorAll(".director");
+let directorCurrPop = document.querySelector(".pop-director");
+let directorCurrClose = document.querySelector(".pop-director__close");
+
+if (directorBtn[0]) callPop(directorBtn, directorCurrPop, directorCurrClose);
+
+// Registration pop-on
+
+let registrationBtn = document.querySelectorAll(".registr");
+let registrationCurrPop = document.querySelector(".pop-registr");
+let registrationCurrClose = document.querySelector(".pop-registr__close");
+
+if (registrationBtn[0]) callPop(registrationBtn, registrationCurrPop, registrationCurrClose);
+
+// Product curtain
+
+if (document.body.classList.contains("goods")) {
+  console.log(123);
+  
+  let block = document.querySelectorAll(".product__block");
+  block.forEach((e) => {
+    e.querySelector(".product__item").addEventListener("click", () => {      
+      e.querySelector(".product-curtain").classList.toggle(
+        "product-curtain-on"
+      );
+    });
+  });
+}
+
+// File label
+
+let labelsWithFile = document.querySelectorAll(".file-label");
+
+if (labelsWithFile[0]) {
+  labelsWithFile.forEach(e => {
+    let fileInput = e.querySelector("input[type=file]");
+    let fileText = e.querySelector(".file-name")
+
+    fileInput.addEventListener("change", function() {
+      if (this.files[0]) {
+        e.classList.add("active");
+        fileText.innerHTML = this.files[0].name
+      }      
+    })
+  })
+}
+
+// Submit pop
+
+let submitForms = document.querySelectorAll("form")
+let endPop = document.querySelector(".pop-end")
+
+if (submitForms[0]) {
+  submitForms.forEach(e => {
+    e.addEventListener("submit", event => {
+      event.preventDefault();
+      document.querySelector(".pop-on-full").classList.remove("pop-on-full")
+      document.body.classList.add("body-hidden")
+      endPop.classList.add("pop-on-full")
+      let timeOutPop = setTimeout(() => {
+        document.body.classList.remove("body-hidden")
+        endPop.classList.remove("pop-on-full")
+      }, 1500)
+
+      document.querySelector(".pop-end__close").addEventListener("click", () => {        
+        clearTimeout(timeOutPop);
+        document.body.classList.remove("body-hidden")
+        endPop.classList.remove("pop-on-full")
+      })
+
+      endPop.addEventListener("click", event => {
+        if (event.target.classList.contains("pop-end")) {
+          clearTimeout(timeOutPop);
+          document.body.classList.remove("body-hidden")
+          endPop.classList.remove("pop-on-full")
+        }
+      })
+
+      document.addEventListener("keydown", event => {
+        if (event.key = "Escape") {
+          clearTimeout(timeOutPop);
+          document.body.classList.remove("body-hidden")
+          endPop.classList.remove("pop-on-full")
+        }
+      })
+    })
+  })
+}

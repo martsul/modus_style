@@ -622,65 +622,65 @@
               <img src="img/present.png" class="present__img" alt="Подарок">
               <div class="present__block">
                 <div class="present__time">
-                  <div class="present__time-piece">
-                    <div class="present__time-hours">
-                      <div class="present__time-num">
+                  <span class="present__time-piece">
+                    <span class="present__time-hours">
+                      <span class="present__time-num">
                         <span class="present__time-num-first">0</span>
                         <span class="present__time-num-second">0</span>
-                      </div>
-                      <div class="present__time-num">
+                      </span>
+                      <span class="present__time-num">
                         <span class="present__time-num-first">4</span>
                         <span class="present__time-num-second">3</span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                     <span class="present__time-text">дня</span>
-                  </div>
+                  </span>
                   <span class="present__dot">:</span>
-                  <div class="present__time-piece">
-                    <div class="present__time-hours">
-                      <div class="present__time-num">
+                  <span class="present__time-piece">
+                    <span class="present__time-hours">
+                      <span class="present__time-num">
                         <span class="present__time-num-first">0</span>
                         <span class="present__time-num-second">0</span>
-                      </div>
-                      <div class="present__time-num">
+                      </span>
+                      <span class="present__time-num">
                         <span class="present__time-num-first">3</span>
                         <span class="present__time-num-second">2</span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                     <span class="present__time-text">часа</span>
-                  </div>
+                  </span>
                   <span class="present__dot">:</span>
-                  <div class="present__time-piece">
-                    <div class="present__time-hours">
-                      <div class="present__time-num">
+                  <span class="present__time-piece">
+                    <span class="present__time-hours">
+                      <span class="present__time-num">
                         <span class="present__time-num-first">2</span>
                         <span class="present__time-num-second">1</span>
-                      </div>
-                      <div class="present__time-num">
+                      </span>
+                      <span class="present__time-num">
                         <span class="present__time-num-first">3</span>
                         <span class="present__time-num-second">2</span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                     <span class="present__time-text">минут</span>
-                  </div>
+                  </span>
                   <span class="present__dot">:</span>
-                  <div class="present__time-piece">
-                    <div class="present__time-hours">
-                      <div class="present__time-num">
+                  <span class="present__time-piece">
+                    <span class="present__time-hours">
+                      <span class="present__time-num">
                         <span class="present__time-num-first">3</span>
                         <span class="present__time-num-second">2</span>
-                      </div>
-                      <div class="present__time-num">
+                      </span>
+                      <span class="present__time-num">
                         <span class="present__time-num-first">1</span>
                         <span class="present__time-num-second">0</span>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                     <span class="present__time-text">секунд</span>
-                  </div>
+                  </span>
                 </div>
               </div>
             </a>
-            <button type="button" class="btn preview-c__btn">Хочу скидку!</button>
+            <button type="button" class="btn preview-c__btn discount">Хочу скидку!</button>
           </div>
         </div>
       </div>
@@ -1303,6 +1303,76 @@
         <img class="aside__img" src="img/chat-icon.png" alt="Сообщение">
       </a>
     </aside>
+    <section class="pop-on pop-present">
+      <form class="pop-on__form pop-present__form">
+        <button type="button" class="pop-on__close pop-present__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div class="pop-present__head">
+          <div class="pop-present__bigint">
+            <span class="pop-present__bigint-num">10%</span>
+            <svg class="pop-present__bigint-svg" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M47.9495 26.1563C47.9103 26.0549 47.8479 25.9642 47.7673 25.8913L45.6638 23.7713L24.4804 2.63752C24.3802 2.53245 24.2531 2.45684 24.1129 2.41888C23.9728 2.38092 23.8249 2.38207 23.6854 2.42221L6.75852 6.64564C6.61208 6.68603 6.47863 6.76374 6.37121 6.87115C6.2638 6.97856 6.18609 7.11202 6.1457 7.25846L5.30102 10.6703C5.04945 10.439 4.84184 10.164 4.6882 9.85877C4.16253 8.79374 4.05613 7.57011 4.39008 6.43033C4.72133 4.64158 5.0857 2.60439 1.19352 0.583768C1.00406 0.511794 0.794793 0.511791 0.605338 0.583759C0.415882 0.655728 0.259395 0.794671 0.16551 0.974278C0.0716247 1.15388 0.0468606 1.36168 0.095907 1.55832C0.144953 1.75496 0.264405 1.92679 0.431641 2.04127C3.2307 3.51533 3.04852 4.49252 2.76695 6.13221C2.36615 7.63853 2.52503 9.23907 3.21414 10.6372C3.58813 11.3809 4.16158 12.006 4.87039 12.4425L1.92227 24.1853C1.88213 24.3249 1.88098 24.4727 1.91894 24.6129C1.9569 24.753 2.03251 24.8801 2.13758 24.9803L23.3045 46.1638L25.4245 48.2672C25.4973 48.3478 25.5881 48.4102 25.6895 48.4494C25.793 48.4729 25.9006 48.4729 26.0041 48.4494C26.1076 48.474 26.2154 48.474 26.3188 48.4494C26.4253 48.4108 26.5216 48.3485 26.6004 48.2672L47.7673 27.1003C47.8486 27.0215 47.9109 26.9252 47.9495 26.8188C47.9951 26.7143 48.0186 26.6015 48.0186 26.4875C48.0186 26.3735 47.9951 26.2607 47.9495 26.1563ZM6.39414 13.0885C6.87162 13.2017 7.36094 13.2573 7.85164 13.2541C8.0777 13.2705 8.30465 13.2705 8.5307 13.2541C8.74308 13.6387 9.0357 13.9732 9.38871 14.2348C9.74172 14.4964 10.1469 14.679 10.5767 14.7703C11.0065 14.8615 11.4508 14.8593 11.8797 14.7637C12.3086 14.6681 12.7118 14.4814 13.0622 14.2162C13.4125 13.9511 13.7017 13.6136 13.9102 13.2269C14.1187 12.8401 14.2416 12.413 14.2705 11.9746C14.2994 11.5362 14.2337 11.0967 14.0778 10.6859C13.9219 10.2751 13.6795 9.90263 13.367 9.59377C12.9496 9.17337 12.4193 8.88297 11.8404 8.75772C11.2614 8.63246 10.6585 8.67772 10.1047 8.88803C9.55091 9.09833 9.06995 9.46465 8.72005 9.94264C8.37015 10.4206 8.16631 10.9898 8.1332 11.5813C7.68822 11.6094 7.24154 11.5703 6.8082 11.4653L7.63633 8.15283L23.6357 4.12814L43.8751 24.4006L23.9007 44.375L3.6282 24.1356L6.39414 13.0885ZM11.777 11.101L10.982 10.306H11.1807C11.4599 10.3079 11.7325 10.392 11.9643 10.5476C12.1962 10.7032 12.3772 10.9235 12.4849 11.1812C12.5925 11.4388 12.6221 11.7225 12.5698 11.9968C12.5176 12.2711 12.3858 12.524 12.191 12.7241C11.9588 12.9487 11.6578 13.0888 11.3365 13.1219C11.0151 13.1549 10.6919 13.079 10.4188 12.9063C10.799 12.8045 11.1702 12.6716 11.5285 12.5088C11.6511 12.4541 11.7586 12.3704 11.8417 12.2649C11.9248 12.1594 11.9809 12.0353 12.0054 11.9033C12.0298 11.7713 12.0218 11.6353 11.982 11.5071C11.9422 11.3788 11.8718 11.2622 11.777 11.1672V11.101ZM26.0041 46.5116L25.0601 45.5675L45.0676 25.56L46.0116 26.5041L26.0041 46.5116Z"
+                fill="black" />
+              <path
+                d="M24.1163 31.3403H24.3481C24.4525 31.3099 24.5499 31.2592 24.6347 31.1911C24.7195 31.123 24.7901 31.0389 24.8424 30.9435C24.8947 30.8482 24.9277 30.7434 24.9395 30.6353C24.9513 30.5272 24.9417 30.4178 24.9113 30.3134L20.2572 13.8006C20.2278 13.6919 20.1773 13.59 20.1086 13.5007C20.0398 13.4115 19.9542 13.3367 19.8565 13.2805C19.7589 13.2244 19.6511 13.1881 19.5394 13.1736C19.4277 13.1591 19.3142 13.1667 19.2055 13.1961C19.0967 13.2255 18.9948 13.276 18.9056 13.3447C18.8164 13.4134 18.7415 13.4991 18.6854 13.5968C18.6293 13.6944 18.5929 13.8022 18.5784 13.9139C18.5639 14.0256 18.5716 14.1391 18.6009 14.2478L23.2716 30.8103C23.3333 30.9801 23.4499 31.1244 23.6029 31.2204C23.7559 31.3164 23.9366 31.3586 24.1163 31.3403Z"
+                fill="black" />
+              <path
+                d="M13.6819 20.7403C13.1453 21.2748 12.7793 21.9565 12.6304 22.699C12.4814 23.4416 12.5563 24.2117 12.8454 24.9118C13.1345 25.6118 13.6248 26.2103 14.2544 26.6314C14.8839 27.0525 15.6242 27.2773 16.3816 27.2773C17.139 27.2773 17.8793 27.0525 18.5088 26.6314C19.1384 26.2103 19.6287 25.6118 19.9178 24.9118C20.2069 24.2117 20.2818 23.4416 20.1329 22.699C19.9839 21.9565 19.618 21.2748 19.0813 20.7403C18.358 20.0381 17.3897 19.6454 16.3816 19.6454C15.3736 19.6454 14.4052 20.0381 13.6819 20.7403ZM17.9219 24.9638C17.6708 25.2184 17.3606 25.4069 17.019 25.5127C16.6774 25.6184 16.3149 25.6381 15.9638 25.5699C15.6128 25.5018 15.284 25.3479 15.0068 25.122C14.7296 24.8961 14.5125 24.6052 14.3748 24.2752C14.2372 23.9451 14.1832 23.5861 14.2178 23.2302C14.2524 22.8743 14.3744 22.5324 14.573 22.235C14.7717 21.9376 15.0407 21.6939 15.3562 21.5256C15.6718 21.3573 16.024 21.2696 16.3816 21.2703C16.9572 21.2724 17.5095 21.4981 17.9219 21.8997C18.3196 22.3106 18.5419 22.8599 18.5419 23.4317C18.5419 24.0035 18.3196 24.5529 17.9219 24.9638Z"
+                fill="black" />
+              <path
+                d="M27.1638 24.9306C27.7955 24.9352 28.4184 24.7833 28.9771 24.4885C29.5357 24.1937 30.0127 23.7651 30.3654 23.2411C30.7181 22.7171 30.9356 22.1139 30.9984 21.4854C31.0612 20.8568 30.9675 20.2225 30.7255 19.639C30.4835 19.0556 30.1008 18.5411 29.6115 18.1415C29.1223 17.742 28.5417 17.4698 27.9217 17.3492C27.3016 17.2286 26.6614 17.2635 26.0581 17.4506C25.4547 17.6377 24.9071 17.9713 24.4641 18.4216C24.102 18.7838 23.817 19.2156 23.6262 19.691C23.4355 20.1664 23.3431 20.6754 23.3545 21.1875C23.3566 22.198 23.7551 23.1673 24.4641 23.8872C25.1907 24.5782 26.1614 24.9534 27.1638 24.9306ZM25.6566 19.5313C26.062 19.1292 26.6094 18.903 27.1804 18.9019C27.7564 18.9022 28.3093 19.1282 28.7207 19.5313C29.1336 19.9376 29.3682 20.4913 29.3729 21.0706C29.3775 21.6499 29.1519 22.2073 28.7455 22.6202C28.3392 23.0331 27.7855 23.2677 27.2062 23.2723C26.627 23.277 26.0695 23.0513 25.6566 22.645C25.4538 22.4471 25.2933 22.2099 25.1851 21.9479C25.0769 21.686 25.0232 21.4047 25.0273 21.1213C25.018 20.8273 25.0691 20.5346 25.1773 20.2611C25.2856 19.9876 25.4487 19.7393 25.6566 19.5313Z"
+                fill="black" />
+            </svg>
+          </div>
+          <h3 class="pop-present__title">Честная скидка на всю мебель</h3>
+        </div>
+        <p class="pop-on__text pop-present__text">Ваш город</p>
+        <div class="pop-on__inputs pop-present__inputs">
+          <input type="text" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-present__input">
+          <input type="text" required placeholder="Ваше имя*" name="name" class="pop-input pop-present__input">
+          <div class="select__label">
+            <input readonly type="text" name="search" required placeholder="г. Владимир"
+              class="pop-input search-input pop-present__input">
+            <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8.7L12 16.7L21 8.7" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="select__options">
+              <span class="select__option">г. Владимир</span>
+              <span class="select__option">г. Карабаново</span>
+              <span class="select__option">г. Собинка</span>
+              <span class="select__option">г. Киржач</span>
+              <span class="select__option">г. Александров</span>
+              <span class="select__option">г. Судогда</span>
+              <span class="select__option">г. Лакинск</span>
+              <span class="select__option">г. Струнино</span>
+              <span class="select__option">г. Вязники</span>
+              <span class="select__option">г. Муром</span>
+              <span class="select__option">г. Гороховец</span>
+              <span class="select__option">г. Меленки</span>
+              <span class="select__option">г. Юрьев-Польский</span>
+              <span class="select__option">г. Кольчугино</span>
+              <span class="select__option">г. Ковров</span>
+              <span class="select__option">г. Петушки</span>
+              <span class="select__option">г. Покров</span>
+              <span class="select__option">г. Радужный</span>
+              <span class="select__option">г. Гусь-Хрустальный</span>
+            </span>
+          </div>
+        </div>
+        <p class="pop-on-description pop-present__description">Нажимая на кнопку, вы даете согласие на обработку
+          персональных данных и
+          соглашаетесь c политикой конфиденциальности.</p>
+        <button type="submit" class="btn pop-btn pop-present__btn">Отправить</button>
+      </form>
+    </section>
     <section class="pop-on pop-consultation">
       <form class="pop-on__form pop-consultation__form">
         <button type="button" class="pop-on__close pop-consultation__close">
@@ -1353,6 +1423,18 @@
           соглашаетесь c политикой конфиденциальности.</p>
         <button type="submit" class="btn pop-btn pop-consultation__btn">Отправить</button>
       </form>
+    </section>
+    <section class="pop-on pop-end">
+      <div class="pop-on__form pop-end__form">
+        <button type="button" class="pop-on__close pop-end__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <p class="pop-end__text">Ваше обращение отправлено, оно не останется без внимания и будет рассмотрено в ближайшее время.</p>
+      </div>
     </section>
   </main>
   <a href="#" class="link__up">

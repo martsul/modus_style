@@ -606,7 +606,7 @@
               fill="black" />
           </svg>
         </div>
-        <button class="preview-coop__btn btn" type="button">Хочу сотрудничать!</button>
+        <button class="preview-coop__btn btn send" type="button">Хочу сотрудничать!</button>
       </div>
     </section>
     <section class="bread-crumbs">
@@ -817,7 +817,7 @@
             <span class="benefit__text">Индивидуальный подход к каждому клиенту</span>
           </li>
         </ul>
-        <button type="button" class="btn benefit__btn">Оставить заявку</button>
+        <button type="button" class="btn registr benefit__btn">Оставить заявку</button>
       </div>
     </section>
     <section class="privilege">
@@ -968,6 +968,18 @@
         <img class="aside__img" src="img/chat-icon.png" alt="Сообщение">
       </a>
     </aside>
+    <section class="pop-on pop-end">
+      <div class="pop-on__form pop-end__form">
+        <button type="button" class="pop-on__close pop-end__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <p class="pop-end__text">Ваше обращение отправлено, оно не останется без внимания и будет рассмотрено в ближайшее время.</p>
+      </div>
+    </section>
     <section class="pop-on pop-consultation">
       <form class="pop-on__form pop-consultation__form">
         <button type="button" class="pop-on__close pop-consultation__close">
@@ -1017,6 +1029,203 @@
           персональных данных и
           соглашаетесь c политикой конфиденциальности.</p>
         <button type="submit" class="btn pop-btn pop-consultation__btn">Отправить</button>
+      </form>
+    </section>
+    <section class="pop-on pop-registr">
+      <form class="pop-on__form pop-registr__form">
+        <button type="button" class="pop-on__close pop-registr__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <h3 class="pop-on__title pop-registr__title">зарегистрируйтесь как дизайнер</h3>
+        <div class="pop-on__inputs pop-registr__inputs">
+          <input type="text" required placeholder="Ссылка на портфолио" name="link" class="pop-input pop-send__input">
+          <input type="text" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-registr__input">
+          <input type="text" required placeholder="Ваше имя*" name="name" class="pop-input pop-registr__input">
+          <div class="select__label">
+            <p class="pop-on__text pop-registr__text">Ваш город</p>
+            <input readonly type="text" name="city" required placeholder="г. Владимир"
+              class="pop-input search-input pop-registr__input">
+            <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8.7L12 16.7L21 8.7" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="select__options">
+              <span class="select__option">г. Владимир</span>
+              <span class="select__option">г. Карабаново</span>
+              <span class="select__option">г. Собинка</span>
+              <span class="select__option">г. Киржач</span>
+              <span class="select__option">г. Александров</span>
+              <span class="select__option">г. Судогда</span>
+              <span class="select__option">г. Лакинск</span>
+              <span class="select__option">г. Струнино</span>
+              <span class="select__option">г. Вязники</span>
+              <span class="select__option">г. Муром</span>
+              <span class="select__option">г. Гороховец</span>
+              <span class="select__option">г. Меленки</span>
+              <span class="select__option">г. Юрьев-Польский</span>
+              <span class="select__option">г. Кольчугино</span>
+              <span class="select__option">г. Ковров</span>
+              <span class="select__option">г. Петушки</span>
+              <span class="select__option">г. Покров</span>
+              <span class="select__option">г. Радужный</span>
+              <span class="select__option">г. Гусь-Хрустальный</span>
+            </span>
+          </div>
+        </div>
+        <p class="pop-on-description pop-registr__description">Нажимая на кнопку, вы даете согласие на обработку
+          персональных данных и
+          соглашаетесь c политикой конфиденциальности.</p>
+        <div class="pop-buttons pop-registr__buttons">
+          <label class="pop-file-label file-label pop-registr__file-label">
+            <input type="file" name="file" class="pop-file pop-registr__file">
+            <span class="pop-file-text pop-registr__file-text">Прикрепить файл</span>
+            <svg class="pop-file-add pop-registr__file-add" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1803_16537)">
+                <path
+                  d="M10.0003 18.3334C14.6027 18.3334 18.3337 14.6024 18.3337 10C18.3337 5.39765 14.6027 1.66669 10.0003 1.66669C5.39795 1.66669 1.66699 5.39765 1.66699 10C1.66699 14.6024 5.39795 18.3334 10.0003 18.3334Z"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 6.66669V13.3334" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.66699 10H13.3337" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1803_16537">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg class="pop-file-has pop-registr__file-has" viewBox="0 0 24 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 7.5L9 17.51L6 14.51" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="pop-file-footer pop-registr__file-footer">
+              <svg class="pop-file-footer-svg pop-registr__file-footer-svg" viewBox="0 0 20 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1179_8502)">
+                  <path
+                    d="M17.8666 9.70835L10.2082 17.3667C9.27005 18.3049 7.99757 18.832 6.67075 18.832C5.34393 18.832 4.07145 18.3049 3.13325 17.3667C2.19505 16.4285 1.66797 15.156 1.66797 13.8292C1.66797 12.5024 2.19505 11.2299 3.13325 10.2917L10.7916 2.63335C11.4171 2.00788 12.2654 1.65649 13.1499 1.65649C14.0345 1.65649 14.8828 2.00788 15.5082 2.63335C16.1337 3.25882 16.4851 4.10713 16.4851 4.99168C16.4851 5.87623 16.1337 6.72455 15.5082 7.35002L7.84158 15.0083C7.52885 15.3211 7.10469 15.4968 6.66242 15.4968C6.22014 15.4968 5.79598 15.3211 5.48325 15.0083C5.17051 14.6956 4.99482 14.2715 4.99482 13.8292C4.99482 13.3869 5.17051 12.9627 5.48325 12.65L12.5582 5.58335"
+                    stroke="#A5A5A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1179_8502">
+                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="pop-file-name file-name pop-registr__file-name">Эскзиз Ивана.jpg</span>
+            </span>
+          </label>
+          <p class="pop-on-description pop-registr__description">Нажимая на кнопку, вы даете согласие на обработку
+            персональных данных и
+            соглашаетесь c политикой конфиденциальности.</p>
+          <button type="submit" class="btn pop-btn pop-registr__btn">Отправить</button>
+        </div>
+      </form>
+    </section>
+    <section class="pop-on pop-send">
+      <form class="pop-on__form pop-send__form">
+        <button type="button" class="pop-on__close pop-send__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <h3 class="pop-on__title pop-send__title">отправить эскиз</h3>
+        <div class="pop-on__inputs pop-send__inputs">
+          <input type="text" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-send__input">
+          <input type="text" required placeholder="Ваше имя*" name="name" class="pop-input pop-send__input">
+          <div class="select__label">
+            <p class="pop-on__text pop-send__text">Ваш город</p>
+            <input readonly type="text" name="city" required placeholder="г. Владимир"
+              class="pop-input search-input pop-send__input">
+            <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8.7L12 16.7L21 8.7" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="select__options">
+              <span class="select__option">г. Владимир</span>
+              <span class="select__option">г. Карабаново</span>
+              <span class="select__option">г. Собинка</span>
+              <span class="select__option">г. Киржач</span>
+              <span class="select__option">г. Александров</span>
+              <span class="select__option">г. Судогда</span>
+              <span class="select__option">г. Лакинск</span>
+              <span class="select__option">г. Струнино</span>
+              <span class="select__option">г. Вязники</span>
+              <span class="select__option">г. Муром</span>
+              <span class="select__option">г. Гороховец</span>
+              <span class="select__option">г. Меленки</span>
+              <span class="select__option">г. Юрьев-Польский</span>
+              <span class="select__option">г. Кольчугино</span>
+              <span class="select__option">г. Ковров</span>
+              <span class="select__option">г. Петушки</span>
+              <span class="select__option">г. Покров</span>
+              <span class="select__option">г. Радужный</span>
+              <span class="select__option">г. Гусь-Хрустальный</span>
+            </span>
+          </div>
+        </div>
+        <p class="pop-on-description pop-send__description">Нажимая на кнопку, вы даете согласие на обработку
+          персональных данных и
+          соглашаетесь c политикой конфиденциальности.</p>
+        <div class="pop-buttons pop-send__buttons">
+          <label class="pop-file-label file-label pop-send__file-label">
+            <input type="file" name="file" class="pop-file pop-send__file">
+            <span class="pop-file-text pop-send__file-text">Прикрепить файл</span>
+            <svg class="pop-file-add pop-send__file-add" viewBox="0 0 20 20" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1803_16537)">
+                <path
+                  d="M10.0003 18.3334C14.6027 18.3334 18.3337 14.6024 18.3337 10C18.3337 5.39765 14.6027 1.66669 10.0003 1.66669C5.39795 1.66669 1.66699 5.39765 1.66699 10C1.66699 14.6024 5.39795 18.3334 10.0003 18.3334Z"
+                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 6.66669V13.3334" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M6.66699 10H13.3337" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1803_16537">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg class="pop-file-has pop-send__file-has" viewBox="0 0 24 25" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 7.5L9 17.51L6 14.51" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <span class="pop-file-footer pop-send__file-footer">
+              <svg class="pop-file-footer-svg pop-send__file-footer-svg" viewBox="0 0 20 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1179_8502)">
+                  <path
+                    d="M17.8666 9.70835L10.2082 17.3667C9.27005 18.3049 7.99757 18.832 6.67075 18.832C5.34393 18.832 4.07145 18.3049 3.13325 17.3667C2.19505 16.4285 1.66797 15.156 1.66797 13.8292C1.66797 12.5024 2.19505 11.2299 3.13325 10.2917L10.7916 2.63335C11.4171 2.00788 12.2654 1.65649 13.1499 1.65649C14.0345 1.65649 14.8828 2.00788 15.5082 2.63335C16.1337 3.25882 16.4851 4.10713 16.4851 4.99168C16.4851 5.87623 16.1337 6.72455 15.5082 7.35002L7.84158 15.0083C7.52885 15.3211 7.10469 15.4968 6.66242 15.4968C6.22014 15.4968 5.79598 15.3211 5.48325 15.0083C5.17051 14.6956 4.99482 14.2715 4.99482 13.8292C4.99482 13.3869 5.17051 12.9627 5.48325 12.65L12.5582 5.58335"
+                    stroke="#A5A5A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1179_8502">
+                    <rect width="20" height="20" fill="white" transform="translate(0 0.5)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span class="pop-file-name file-name pop-send__file-name">Эскзиз Ивана.jpg</span>
+            </span>
+          </label>
+          <p class="pop-on-description pop-send__description">Нажимая на кнопку, вы даете согласие на обработку
+            персональных данных и
+            соглашаетесь c политикой конфиденциальности.</p>
+          <button type="submit" class="btn pop-btn pop-send__btn">Отправить</button>
+        </div>
       </form>
     </section>
   </main>

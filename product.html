@@ -176,8 +176,7 @@
             </svg>
           </a>
           <a href="#" class="header__link">
-            <svg class="header__love" viewBox="0 0 21 20" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+            <svg class="header__love" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.6895 3.84124C17.2638 3.41541 16.7585 3.07761 16.2023 2.84714C15.6461 2.61667 15.0499 2.49805 14.4478 2.49805C13.8457 2.49805 13.2496 2.61667 12.6933 2.84714C12.1371 3.07761 11.6318 3.41541 11.2061 3.84124L10.3228 4.72457L9.43948 3.84124C8.57974 2.98149 7.41367 2.49849 6.19781 2.49849C4.98195 2.49849 3.81589 2.98149 2.95615 3.84124C2.0964 4.70098 1.6134 5.86704 1.6134 7.0829C1.6134 8.29876 2.0964 9.46483 2.95615 10.3246L3.83948 11.2079L10.3228 17.6912L16.8061 11.2079L17.6895 10.3246C18.1153 9.89894 18.4531 9.39358 18.6836 8.83736C18.914 8.28115 19.0327 7.68497 19.0327 7.0829C19.0327 6.48083 18.914 5.88465 18.6836 5.32844C18.4531 4.77222 18.1153 4.26687 17.6895 3.84124Z"
                 fill="#4F4F4F" />
@@ -735,7 +734,7 @@
                   <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </div>
-              <p class="product__text">Витторе - шоколадная, встроенная, параллельная кухня без ручек, под потолок,
+              <p class="product__text product-curtain">Витторе - шоколадная, встроенная, параллельная кухня без ручек, под потолок,
                 фасад -
                 МДФ эмаль, на заказ в наших салонах.</p>
             </div>
@@ -746,7 +745,7 @@
                   <path d="M3.5 5.25L7 8.75L10.5 5.25" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
               </div>
-              <div class="product__specifications">
+              <div class="product__specifications product-curtain">
                 <div class="product__param-block">
                   <span class="product__text gray">Цвет:</span>
                   <span class="product__text gray">Форма:</span>
@@ -786,13 +785,13 @@
               </div>
             </div>
             <div class="product__buttons">
-              <button type="button" class="btn product__btn">Заказать</button>
+              <button type="button" class="btn product__btn order">Заказать</button>
               <button type="button" class="btn product__btn sizer">Вызвать замерщика</button>
             </div>
             <div class="product__pop">
               <button type="button" id="product-pay" class="product__pop-btn">Способы оплаты</button>
               <button type="button" id="product-deliv" class="product__pop-btn">Доставка и сборка</button>
-              <button type="button" id="product-installment" class="product__pop-btn">Рассрочка</button>
+              <a href="installment.html" id="product-installment" class="product__pop-btn">Рассрочка</a>
             </div>
           </div>
         </div>
@@ -1959,6 +1958,18 @@
         </div>
       </div>
     </section>
+    <section class="pop-on pop-end">
+      <div class="pop-on__form pop-end__form">
+        <button type="button" class="pop-on__close pop-end__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <p class="pop-end__text">Ваше обращение отправлено, оно не останется без внимания и будет рассмотрено в ближайшее время.</p>
+      </div>
+    </section>
     <section class="pop-on pop-consultation">
       <form class="pop-on__form pop-consultation__form">
         <button type="button" class="pop-on__close pop-consultation__close">
@@ -2008,6 +2019,60 @@
           персональных данных и
           соглашаетесь c политикой конфиденциальности.</p>
         <button type="submit" class="btn pop-btn pop-consultation__btn">Отправить</button>
+      </form>
+    </section>
+    <section class="pop-on pop-order">
+      <form class="pop-on__form pop-order__form">
+        <button type="button" class="pop-on__close pop-order__close">
+          <svg class="pop-on__svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 6L6 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <h2 class="pop-on__title pop-order__title">заказать товар</h2>
+        <p class="pop-on__text pop-order__text">Выбрать салон</p>
+        <div class="select__label">
+          <input name="city" readonly type="text" required placeholder="г. Владимир"
+            class="pop-input search-input pop-order__input">
+          <svg class="section__btn" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8.7L12 16.7L21 8.7" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="select__options">
+            <span class="select__option">г. Владимир</span>
+            <span class="select__option">г. Карабаново</span>
+            <span class="select__option">г. Собинка</span>
+            <span class="select__option">г. Киржач</span>
+            <span class="select__option">г. Александров</span>
+            <span class="select__option">г. Судогда</span>
+            <span class="select__option">г. Лакинск</span>
+            <span class="select__option">г. Струнино</span>
+            <span class="select__option">г. Вязники</span>
+            <span class="select__option">г. Муром</span>
+            <span class="select__option">г. Гороховец</span>
+            <span class="select__option">г. Меленки</span>
+            <span class="select__option">г. Юрьев-Польский</span>
+            <span class="select__option">г. Кольчугино</span>
+            <span class="select__option">г. Ковров</span>
+            <span class="select__option">г. Петушки</span>
+            <span class="select__option">г. Покров</span>
+            <span class="select__option">г. Радужный</span>
+            <span class="select__option">г. Гусь-Хрустальный</span>
+          </span>
+        </div>
+        <p class="pop-on__text pop-order__text">Товар</p>
+        <div class="pop-order__inputs pop-inputs">
+          <input type="text" name="goods" required placeholder="Кухонный гарнитур" class="pop-input pop-order__input">
+          <input type="text" name="name" required placeholder="Ваше имя*" class="pop-input pop-order__input">
+          <input type="tel" name="tel" required placeholder="Ваш телефон*" class="pop-input pop-order__input">
+          <input type="email" name="email" placeholder="Почта" class="pop-input pop-order__input">
+        </div>
+        <p class="pop-on-description pop-order__description">Нажимая на кнопку, вы даете согласие на обработку
+          персональных данных и
+          соглашаетесь c политикой конфиденциальности.</p>
+        <button type="submit" class="btn pop-btn pop-order__btn">Отправить</button>
       </form>
     </section>
     <section class="pop-on pop-delivery">
