@@ -7363,3 +7363,15 @@ p.pop-order__text:nth-child(5) {
   font: 400 20px/28px var(--font-M);
   text-align: center;
 }
+
+.body-load::after {
+  content: "";
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000000CC;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000000;
+}

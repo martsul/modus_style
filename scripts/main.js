@@ -1352,16 +1352,17 @@ let registrationBtn = document.querySelectorAll(".registr");
 let registrationCurrPop = document.querySelector(".pop-registr");
 let registrationCurrClose = document.querySelector(".pop-registr__close");
 
-if (registrationBtn[0]) callPop(registrationBtn, registrationCurrPop, registrationCurrClose);
+if (registrationBtn[0])
+  callPop(registrationBtn, registrationCurrPop, registrationCurrClose);
 
 // Product curtain
 
 if (document.body.classList.contains("goods")) {
   console.log(123);
-  
+
   let block = document.querySelectorAll(".product__block");
   block.forEach((e) => {
-    e.querySelector(".product__item").addEventListener("click", () => {      
+    e.querySelector(".product__item").addEventListener("click", () => {
       e.querySelector(".product-curtain").classList.toggle(
         "product-curtain-on"
       );
@@ -1374,57 +1375,67 @@ if (document.body.classList.contains("goods")) {
 let labelsWithFile = document.querySelectorAll(".file-label");
 
 if (labelsWithFile[0]) {
-  labelsWithFile.forEach(e => {
+  labelsWithFile.forEach((e) => {
     let fileInput = e.querySelector("input[type=file]");
-    let fileText = e.querySelector(".file-name")
+    let fileText = e.querySelector(".file-name");
 
-    fileInput.addEventListener("change", function() {
+    fileInput.addEventListener("change", function () {
       if (this.files[0]) {
         e.classList.add("active");
-        fileText.innerHTML = this.files[0].name
-      }      
-    })
-  })
+        fileText.innerHTML = this.files[0].name;
+      }
+    });
+  });
 }
 
 // Submit pop
 
-let submitForms = document.querySelectorAll("form")
-let endPop = document.querySelector(".pop-end")
+let submitForms = document.querySelectorAll("form");
+let endPop = document.querySelector(".pop-end");
 
 if (submitForms[0]) {
-  submitForms.forEach(e => {
-    e.addEventListener("submit", event => {
+  submitForms.forEach((e) => {
+    e.addEventListener("submit", async function (event) {
       event.preventDefault();
-      document.querySelector(".pop-on-full").classList.remove("pop-on-full")
-      document.body.classList.add("body-hidden")
-      endPop.classList.add("pop-on-full")
+      document.body.classList.add("body-load");
+      document.body.classList.add("body-hidden");
+      let resendForm = await new Promise((resolve) => {
+        setTimeout(resolve, 1000);
+      });
+
+      document.body.classList.remove("body-load");
+      if (document.querySelector(".pop-on-full")) {
+        document.querySelector(".pop-on-full").classList.remove("pop-on-full");
+      }
+      endPop.classList.add("pop-on-full");
       let timeOutPop = setTimeout(() => {
-        document.body.classList.remove("body-hidden")
-        endPop.classList.remove("pop-on-full")
-      }, 1500)
+        document.body.classList.remove("body-hidden");
+        endPop.classList.remove("pop-on-full");
+      }, 1500);
 
-      document.querySelector(".pop-end__close").addEventListener("click", () => {        
-        clearTimeout(timeOutPop);
-        document.body.classList.remove("body-hidden")
-        endPop.classList.remove("pop-on-full")
-      })
+      document
+        .querySelector(".pop-end__close")
+        .addEventListener("click", () => {
+          clearTimeout(timeOutPop);
+          document.body.classList.remove("body-hidden");
+          endPop.classList.remove("pop-on-full");
+        });
 
-      endPop.addEventListener("click", event => {
+      endPop.addEventListener("click", (event) => {
         if (event.target.classList.contains("pop-end")) {
           clearTimeout(timeOutPop);
-          document.body.classList.remove("body-hidden")
-          endPop.classList.remove("pop-on-full")
+          document.body.classList.remove("body-hidden");
+          endPop.classList.remove("pop-on-full");
         }
-      })
+      });
 
-      document.addEventListener("keydown", event => {
-        if (event.key = "Escape") {
+      document.addEventListener("keydown", (event) => {
+        if ((event.key = "Escape")) {
           clearTimeout(timeOutPop);
-          document.body.classList.remove("body-hidden")
-          endPop.classList.remove("pop-on-full")
+          document.body.classList.remove("body-hidden");
+          endPop.classList.remove("pop-on-full");
         }
-      })
-    })
-  })
+      });
+    });
+  });
 }
