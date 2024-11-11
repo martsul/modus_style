@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Каталог</title>
   <link rel="stylesheet" href="styles/swiper.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
@@ -289,6 +289,8 @@
                 <a href="#" class="menu__mini-link">Запись в салон</a>
                 <a href="#" class="menu__mini-link">Замер</a>
                 <a href="#" class="menu__mini-link">Прислать эскиз</a>
+                <a href="#" class="menu__mini-link">Рассчитать кухню</a>
+                <a href="#" class="menu__mini-link">Рассчитать шкаф</a>
               </div>
             </div>
             <div class="menu__mini-block">
@@ -1210,6 +1212,7 @@
                 эксплуатацию.</p>
             </li>
           </ul>
+          <img src="img/contract-cut.png" alt="Договор" class="work__img">
           <a download="#" class="work__download">
             <span class="work__download-text">Скачать образец договора</span>
             <svg class="work__download-svg" width="26" height="8" viewBox="0 0 26 8" fill="none"
@@ -1227,7 +1230,8 @@
         <h2 class="advantages__title">наши преимущества</h2>
         <div class="advantages__block">
           <div class="advantages__card">
-            <img src="img/advantages-1.png" alt="Мастер" class="advantages__img">
+            <div class="advantage__img-container"><img src="img/advantages-1.png" alt="Мастер" class="advantages__img">
+            </div>
             <div class="advantages__info">
               <h3 class="advantages__name">Сервис под ключ </h3>
               <ol class="advantages__list">
@@ -1240,7 +1244,8 @@
             </div>
           </div>
           <div class="advantages__card">
-            <img src="img/advantages-2.png" alt="Дизайнер" class="advantages__img">
+            <div class="advantage__img-container"><img src="img/advantages-2.png" alt="Дизайнер"
+                class="advantages__img"></div>
             <div class="advantages__info">
               <h3 class="advantages__name">Замер и 3D дизайн-проект бесплатно</h3>
               <p class="advantages__text">Вы получаете замер, проект и визуализацию в подарок при заказе мебели в нашей
@@ -1249,7 +1254,8 @@
             </div>
           </div>
           <div class="advantages__card">
-            <img src="img/advantages-3.png" alt="Проект" class="advantages__img">
+            <div class="advantage__img-container"><img src="img/advantages-3.png" alt="Проект" class="advantages__img">
+            </div>
             <div class="advantages__info">
               <h3 class="advantages__name">На замер выезжает Дизайнер</h3>
               <p class="advantages__text">В "случае необходимости" на замер, выезжает профессиональный Дизайнер, а не
@@ -1258,7 +1264,8 @@
             </div>
           </div>
           <div class="advantages__card">
-            <img src="img/advantages-4.png" alt="Девушка" class="advantages__img">
+            <div class="advantage__img-container"><img src="img/advantages-4.png" alt="Девушка" class="advantages__img">
+            </div>
             <div class="advantages__info">
               <h3 class="advantages__name">акции и Скидки</h3>
               <p class="advantages__text">Для клиентов у нас предусмотрена гибкая система скидок, которая дарит нашим
@@ -1267,7 +1274,8 @@
             </div>
           </div>
           <div class="advantages__card">
-            <img src="img/advantages-5.png" alt="Мужчина" class="advantages__img">
+            <div class="advantage__img-container"><img src="img/advantages-5.png" alt="Мужчина" class="advantages__img">
+            </div>
             <div class="advantages__info">
               <h3 class="advantages__name">Нам нужно срочно!</h3>
               <p class="advantages__text">Мы понимаем, если вам требуется изготовить мебель в срочном порядке, и идем
@@ -1276,7 +1284,8 @@
             </div>
           </div>
           <div class="advantages__card">
-            <img src="img/advantages-6.png" alt="Расчет" class="advantages__img">
+            <div class="advantage__img-container"><img src="img/advantages-6.png" alt="Расчет" class="advantages__img">
+            </div>
             <div class="advantages__info">
               <h3 class="advantages__name">Остаток суммы</h3>
               <p class="advantages__text">Оставшуюся сумму клиент оплачивает только после того, как изделие будет
@@ -1383,9 +1392,9 @@
           </svg>
         </button>
         <h2 class="pop-on__title pop-consultation__title">консультация специалиста</h2>
-        <p class="pop-on__text pop-consultation__text">Выбрать салон</p>
+        <p class="pop-on__text pop-consultation__text">Выбрать город</p>
         <div class="pop-on__inputs pop-consultation__inputs">
-          <input name="tel" type="text" required placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
+          <input name="tel" type="tel" required placeholder="Ваш телефон*" class="pop-input pop-consultation__input">
           <input name="name" type="text" required placeholder="Ваше имя*" class="pop-input pop-consultation__input">
           <div class="select__label">
             <input name="city" readonly type="text" required placeholder="г. Владимир"
@@ -1521,7 +1530,7 @@
             <a href="#" class="footer__link">Замер</a>
             <a href="#" class="footer__link">Прислать эскиз</a>
             <a href="#" class="footer__link">Рассчитать кухню</a>
-            <a href="#" class="footer__link">Расчитать шкаф</a>
+            <a href="#" class="footer__link">Рассчитать шкаф</a>
           </div>
           <div class="footer__group">
             <h4 class="footer__name">информация</h4>

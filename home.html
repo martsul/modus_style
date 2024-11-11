@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Главная</title>
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/swiper.css">
@@ -289,6 +289,8 @@
                 <a href="#" class="menu__mini-link">Запись в салон</a>
                 <a href="#" class="menu__mini-link">Замер</a>
                 <a href="#" class="menu__mini-link">Прислать эскиз</a>
+                <a href="#" class="menu__mini-link">Рассчитать кухню</a>
+                <a href="#" class="menu__mini-link">Рассчитать шкаф</a>
               </div>
             </div>
             <div class="menu__mini-block">
@@ -1546,6 +1548,7 @@
                 эксплуатацию.</p>
             </li>
           </ul>
+          <img src="img/contract-cut.png" alt="Договор" class="work__img">
           <a download="#" class="work__download">
             <span class="work__download-text">Скачать образец договора</span>
             <svg class="work__download-svg" width="26" height="8" viewBox="0 0 26 8" fill="none"
@@ -2008,7 +2011,7 @@
         </div>
         <p class="pop-on__text pop-present__text">Ваш город</p>
         <div class="pop-on__inputs pop-present__inputs">
-          <input type="text" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-present__input">
+          <input type="tel" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-present__input">
           <input type="text" required placeholder="Ваше имя*" name="name" class="pop-input pop-present__input">
           <div class="select__label">
             <input readonly type="text" name="search" required placeholder="г. Владимир"
@@ -2057,9 +2060,9 @@
           </svg>
         </button>
         <h2 class="pop-on__title pop-consultation__title">консультация специалиста</h2>
-        <p class="pop-on__text pop-consultation__text">Выбрать салон</p>
+        <p class="pop-on__text pop-consultation__text">Выбрать город</p>
         <div class="pop-on__inputs pop-consultation__inputs">
-          <input type="text" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-consultation__input">
+          <input type="tel" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-consultation__input">
           <input type="text" required placeholder="Ваше имя*" name="name" class="pop-input pop-consultation__input">
           <div class="select__label">
             <input name="city" readonly type="text" required placeholder="г. Владимир"
@@ -2108,7 +2111,7 @@
           </svg>
         </button>
         <h2 class="pop-on__title pop-sizer__title">запись на замер</h2>
-        <p class="pop-on__text pop-sizer__text">Выбрать усулгу</p>
+        
         <div class="select__label">
           <input name="order" readonly type="text" required placeholder="Запись на замер"
             class="pop-input search-input pop-sizer__input">
@@ -2125,7 +2128,7 @@
             <span class="select__option">Запись на замер</span>
           </span>
         </div>
-        <p class="pop-on__text pop-sizer__text">Выбрать салон</p>
+        <p class="pop-on__text pop-sizer__text">Выбрать город</p>
         <div class="pop-on__inputs pop-sizer__inputs">
           <input type="text" name="tel" required placeholder="Ваш телефон*" class="pop-input pop-sizer__input">
           <input type="text" name="name" required placeholder="Ваше имя*" class="pop-input pop-sizer__input">
@@ -2178,7 +2181,7 @@
         <h2 class="pop-on__title pop-discount__title">запись на замер</h2>
         <p class="pop-on__text pop-discount__text">Выбрать город</p>
         <div class="pop-on__inputs pop-discount__inputs">
-          <input name="tel" type="text" required placeholder="Ваш телефон*" class="pop-input pop-discount__input">
+          <input name="tel" type="tel" required placeholder="Ваш телефон*" class="pop-input pop-discount__input">
           <input name="name" type="text" required placeholder="Ваше имя*" class="pop-input pop-discount__input">
           <div class="select__label">
             <input name="city" readonly type="text" required placeholder="г. Владимир"
@@ -2302,7 +2305,7 @@
             <a href="#" class="footer__link">Замер</a>
             <a href="#" class="footer__link">Прислать эскиз</a>
             <a href="#" class="footer__link">Рассчитать кухню</a>
-            <a href="#" class="footer__link">Расчитать шкаф</a>
+            <a href="#" class="footer__link">Рассчитать шкаф</a>
           </div>
           <div class="footer__group">
             <h4 class="footer__name">информация</h4>

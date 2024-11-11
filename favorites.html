@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Избранное</title>
   <link rel="stylesheet" href="styles/swiper.css">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/fonts.css">
@@ -289,6 +289,8 @@
                 <a href="#" class="menu__mini-link">Запись в салон</a>
                 <a href="#" class="menu__mini-link">Замер</a>
                 <a href="#" class="menu__mini-link">Прислать эскиз</a>
+                <a href="#" class="menu__mini-link">Рассчитать кухню</a>
+                <a href="#" class="menu__mini-link">Рассчитать шкаф</a>
               </div>
             </div>
             <div class="menu__mini-block">
@@ -878,18 +880,33 @@
         <form class="refinement__form">
           <div class="refinement__inputs">
             <div class="refinement__label select__label">
-              <p class="refinement__input-name">Выбрать салон</p>
+              <p class="refinement__input-name">Выбрать город</p>
               <svg class="refinement__svg" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 1.7002L10 9.7002L19 1.7002" stroke="#FE3C00" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
-              <input name="place" placeholder="г.Владимир, ТЦ Подкова" type="text" readonly
+              <input name="place" placeholder="г. Владимир" type="text" readonly
                 class="search-input refinement__input input">
               <span class="select__options refinement__options">
-                <span class="refinement__option select__option">г.Владимир, ТЦ Подкова</span>
-                <span class="refinement__option select__option">г.Владимир, ТЦ Подкова</span>
-                <span class="refinement__option select__option">г.Владимир, ТЦ Подкова</span>
-                <span class="refinement__option select__option">г.Владимир, ТЦ Подкова</span>
+                <span class="select__option refinement__option">г. Владимир</span>
+                <span class="select__option refinement__option">г. Карабаново</span>
+                <span class="select__option refinement__option">г. Собинка</span>
+                <span class="select__option refinement__option">г. Киржач</span>
+                <span class="select__option refinement__option">г. Александров</span>
+                <span class="select__option refinement__option">г. Судогда</span>
+                <span class="select__option refinement__option">г. Лакинск</span>
+                <span class="select__option refinement__option">г. Струнино</span>
+                <span class="select__option refinement__option">г. Вязники</span>
+                <span class="select__option refinement__option">г. Муром</span>
+                <span class="select__option refinement__option">г. Гороховец</span>
+                <span class="select__option refinement__option">г. Меленки</span>
+                <span class="select__option refinement__option">г. Юрьев-Польский</span>
+                <span class="select__option refinement__option">г. Кольчугино</span>
+                <span class="select__option refinement__option">г. Ковров</span>
+                <span class="select__option refinement__option">г. Петушки</span>
+                <span class="select__option refinement__option">г. Покров</span>
+                <span class="select__option refinement__option">г. Радужный</span>
+                <span class="select__option refinement__option">г. Гусь-Хрустальный</span>
               </span>
             </div>
             <input name="name" type="text" placeholder="Ваше имя*" required class="refinement__input input">
@@ -912,7 +929,8 @@
             <path d="M6 6L18 18" stroke="#4F4F4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-        <p class="pop-end__text">Ваше обращение отправлено, оно не останется без внимания и будет рассмотрено в ближайшее время.</p>
+        <p class="pop-end__text">Ваше обращение отправлено, оно не останется без внимания и будет рассмотрено в
+          ближайшее время.</p>
       </div>
     </section>
     <aside class="aside">
@@ -942,9 +960,9 @@
           </svg>
         </button>
         <h2 class="pop-on__title pop-consultation__title">консультация специалиста</h2>
-        <p class="pop-on__text pop-consultation__text">Выбрать салон</p>
+        <p class="pop-on__text pop-consultation__text">Выбрать город</p>
         <div class="pop-on__inputs pop-consultation__inputs">
-          <input type="text" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-consultation__input">
+          <input type="tel" required placeholder="Ваш телефон*" name="tel" class="pop-input pop-consultation__input">
           <input type="text" required placeholder="Ваше имя*" name="name" class="pop-input pop-consultation__input">
           <div class="select__label">
             <input readonly type="text" name="city" required placeholder="г. Владимир"
@@ -1068,7 +1086,7 @@
             <a href="#" class="footer__link">Замер</a>
             <a href="#" class="footer__link">Прислать эскиз</a>
             <a href="#" class="footer__link">Рассчитать кухню</a>
-            <a href="#" class="footer__link">Расчитать шкаф</a>
+            <a href="#" class="footer__link">Рассчитать шкаф</a>
           </div>
           <div class="footer__group">
             <h4 class="footer__name">информация</h4>

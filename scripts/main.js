@@ -239,6 +239,20 @@ let callCurrBtn = document.querySelectorAll(".bell");
 let callCurrPop = document.querySelector(".pop-consultation");
 let callCurrClose = document.querySelector(".pop-consultation__close");
 
+let btnsBell = document.querySelectorAll(".bell");
+
+if (btnsBell[0]) {
+  btnsBell.forEach(e => {
+    e.addEventListener("click", () => {
+      if (e.hasAttribute("data-bell")) {
+        document.querySelector(".pop-consultation__title").innerText = "консультация специалиста";
+      } else {
+        document.querySelector(".pop-consultation__title").innerText = "обратный звонок";
+      }
+    })
+  })
+}
+
 callPop(callCurrBtn, callCurrPop, callCurrClose);
 
 // Delivery
@@ -1397,6 +1411,15 @@ if (submitForms[0]) {
   submitForms.forEach((e) => {
     e.addEventListener("submit", async function (event) {
       event.preventDefault();
+
+      let tel = event.target.querySelector("input[type=tel]");
+      if (!/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(tel.value)) {
+        tel.style.borderColor = "red";
+        return
+      }  
+
+      tel.style.borderColor = "";
+
       document.body.classList.add("body-load");
       document.body.classList.add("body-hidden");
       let resendForm = await new Promise((resolve) => {
@@ -1439,3 +1462,4 @@ if (submitForms[0]) {
     });
   });
 }
+
