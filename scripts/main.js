@@ -1352,6 +1352,7 @@ let sendCurrClose = document.querySelector(".pop-send__close");
 
 if (sendBtn[0]) callPop(sendBtn, sendCurrPop, sendCurrClose);
 
+
 // Director pop-on
 
 let directorBtn = document.querySelectorAll(".director");
@@ -1407,18 +1408,20 @@ if (labelsWithFile[0]) {
 let submitForms = document.querySelectorAll("form");
 let endPop = document.querySelector(".pop-end");
 
+$("input[type=tel]").mask("+7 (988) 888-88-88");
+
 if (submitForms[0]) {
   submitForms.forEach((e) => {
     e.addEventListener("submit", async function (event) {
       event.preventDefault();
 
-      let tel = event.target.querySelector("input[type=tel]");
-      if (!/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(tel.value)) {
-        tel.style.borderColor = "red";
-        return
-      }  
+      // let tel = event.target.querySelector("input[type=tel]");
+      // if (!/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/.test(tel.value)) {
+      //   tel.style.borderColor = "red";
+      //   return
+      // }  
 
-      tel.style.borderColor = "";
+      // tel.style.borderColor = "";
 
       document.body.classList.add("body-load");
       document.body.classList.add("body-hidden");
